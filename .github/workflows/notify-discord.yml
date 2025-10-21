@@ -10,6 +10,5 @@ jobs:
       - name: Notify Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-    run: |
-  MESSAGE="📢 Push in **${GITHUB_REPOSITORY}** von **${GITHUB_ACTOR}**"
-  curl -H "Content-Type: application/json" -X POST -d "{\"content\":\"$MESSAGE\"}" "$DISCORD_WEBHOOK"
+        run: |
+          curl -H "Content-Type: application/json" -X POST -d "{\"content\":\"📢 Push in **${{ github.repository }}** von **${{ github.actor }}**\\n${{ github.event.head_commit.message }}\\nhttps://github.com/${{ github.repository }}/commit/${{ github.sha }}\"}" \"$DISCORD_WEBHOOK\"
