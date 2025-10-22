@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="landing.css">
 </head>
 <body>
   <nav>
@@ -15,9 +16,16 @@
   </nav>
 
   <header>
-    <h1>Willkommen bei LiftED</h1>
-    <p>LiftED kombiniert Training, Ernährung und Lernen – für ganzheitliche Entwicklung von Körper und Geist.</p>
+    <h1 style="text-align: center;">
+      <img src="path/to/logo.png" alt="LiftED Logo" style="max-width: 100%; height: auto;">
+    </h1>
+    <p style="text-align: center;">Train your body. Lift your Mind.</p>
   </header>
+
+  <video class="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="path/to/training-video.mp4" type="video/mp4">
+    Ihr Browser unterstützt das Video-Tag nicht.
+  </video>
 
   <section>
     <h2>Über LiftED</h2>
@@ -27,30 +35,23 @@
 
   <section>
     <h2>Unsere Bereiche</h2>
-    <p>Erfahre mehr über die drei Kernbereiche von LiftED:</p>
-    <ul>
-      <li><strong><a href="training.html">Trainingslehre</a>:</strong> Smarte Trainingspläne und adaptive Workouts.</li>
-      <li><strong><a href="meal.html">Meals</a>:</strong> Ernährungsempfehlungen und Rezepte, abgestimmt auf deine Ziele.</li>
-      <li><strong><a href="learning.html">E-Learning</a>:</strong> Lernmodule für mentale Stärke und Wissen während deiner Regeneration.</li>
-    </ul>
-  </section>
+  <div class="blocks">
+    <div class="block" onclick="location.href='training.html'">
+        <h3>Trainingslehre</h3>
+        <p>Smarte Trainingspläne und adaptive Workouts.</p>
+    </div>
+    <div class="block" onclick="location.href='meal.html'">
+        <h3>Meals</h3>
+        <p>Ernährungsempfehlungen und Rezepte, abgestimmt auf deine Ziele.</p>
+    </div>
+    <div class="block" onclick="location.href='learning.html'">
+        <h3>E-Learning</h3>
+        <p>Lernmodule für mentale Stärke und Wissen während deiner Regeneration.</p>
+    </div>
+</div>
 
   <footer>
     <p>&copy; 2025 LiftED. Alle Rechte vorbehalten.</p>
   </footer>
-
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
-    nav { background: #222; padding: 1em 0; }
-    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
-    nav ul li { margin: 0 1.5em; }
-    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
-    header, section, footer { max-width: 800px; margin: 2em auto; padding: 0 1em; }
-    header h1 { margin-bottom: 0.5em; }
-    footer { text-align: center; font-size: 0.9em; color: #666; }
-    ul { list-style: disc; margin-left: 2em; }
-    ul li a { color: #007acc; text-decoration: none; }
-    ul li a:hover { text-decoration: underline; }
-  </style>
 </body>
 </html>
