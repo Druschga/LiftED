@@ -4,21 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LiftED – Trainingslehre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="header.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="training.html">Training</a></li>
-      </a></li>
-      <li><a href="meal.html">Meals</a></li>
-      <li><a href="learning.html">E-Learning</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Trainingslehre & Pläne</h1>
-    <p>Dein individueller Weg zu mehr Leistung und Fokus.</p>
+  <header class="main-header">
+    <div class="header-content">
+      <div class="logo-container">
+        <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo" style="max-width: 120px; height: auto;"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="meal.html">Meals</a></li>
+          <li><a href="learning.html">E-Learning</a></li>
+        </ul>
+      </nav>
+      <div class="login-button">
+        <label for="login-toggle" title="Login" style="cursor: pointer;"><i class="fas fa-user-circle"></i></label>
+      </div>
+    </div>
   </header>
+
+  <main>
+    <header>
+      <h1>Trainingslehre & Pläne</h1>
+      <p>Dein individueller Weg zu mehr Leistung und Fokus.</p>
+    </header>
 
   <section>
     <h2>Was ist die Trainingslehre?</h2>
@@ -40,8 +56,28 @@
     </ul>
   </section>
 
+  </main>
+
   <footer>
     <p>&copy; 2025 LiftED. Alle Rechte vorbehalten.</p>
   </footer>
+  
+  <input type="checkbox" id="login-toggle" class="modal-toggle" aria-hidden="true">
+  <div id="login-modal" class="modal">
+    <label class="modal-overlay" for="login-toggle" aria-hidden="true"></label>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <label class="modal-close" for="login-toggle" aria-label="Schließen">&times;</label>
+      <h3 id="login-title">Login</h3>
+      <form class="login-form" action="#" method="post">
+        <label for="email">E-Mail
+          <input id="email" type="email" name="email" required>
+        </label>
+        <label for="password">Passwort
+          <input id="password" type="password" name="password" required>
+        </label>
+        <button type="submit">Einloggen</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
