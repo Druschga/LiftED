@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 4rem 200px;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.footer > div {
+    flex: 0 1 auto;
+    min-width: 100px;
+}
+
+.footer .logo {
+    margin-right: 500px;
+}
+
+.footer .traing {
+    text-align: center;
+}
+
+.footer .meals {
+    text-align: center;
+}
+
+.footer .e-learning {
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.footer p {
+    margin: 0.3rem 0;
+}
