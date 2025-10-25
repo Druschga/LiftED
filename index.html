@@ -19,13 +19,36 @@
       </div>
       <nav>
         <ul>
-          <li><a href="training.html">Trainingslehre</a></li>
-          <li><a href="meal.html">Meals</a></li>
-          <li><a href="learning.html">E-Learning</a></li>
+          <li class="has-submenu">
+            <input type="checkbox" id="nav-training-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-training-toggle" class="nav-link">Training</label>
+            <div class="nav-submenu" role="menu" aria-label="Training Menü">
+              <a href="training_plan.html" role="menuitem">Trainingsplan</a>
+              <a href="muskel.html" role="menuitem">Muskel</a>
+              <a href="uebung.html" role="menuitem">Übung</a>
+            </div>
+          </li>
+          <li class="has-submenu">
+            <input type="checkbox" id="nav-meals-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-meals-toggle" class="nav-link">Meals</label>
+            <div class="nav-submenu" role="menu" aria-label="Meals Menü">
+              <a href="meals/chicken_rice_bowl.html" role="menuitem">Hünchen</a>
+              <a href="meals/reis.html" role="menuitem">Reis</a>
+              <a href="meals/leberkaese.html" role="menuitem">Leberkäse</a>
+            </div>
+          </li>
+          <li class="has-submenu">
+            <input type="checkbox" id="nav-learning-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-learning-toggle" class="nav-link">E-Learning</label>
+            <div class="nav-submenu" role="menu" aria-label="E-Learning Menü">
+              <a href="learning/karteikarten.html" role="menuitem">Karteikarten</a>
+              <a href="learning/gehirntraining.html" role="menuitem">Gehirntraining</a>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="login-button">
-        <label for="login-toggle" title="Login" style="cursor: pointer;"><i class="fas fa-user-circle"></i></label>
+        <span title="Login"><i class="fas fa-user-circle"></i></span>
       </div>
     </div>
   </header>
@@ -72,22 +95,6 @@
     ul li a:hover { text-decoration: underline; }
   </style>
   
-  <input type="checkbox" id="login-toggle" class="modal-toggle" aria-hidden="true">
-  <div id="login-modal" class="modal">
-    <label class="modal-overlay" for="login-toggle" aria-hidden="true"></label>
-    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="login-title">
-      <label class="modal-close" for="login-toggle" aria-label="Schließen">&times;</label>
-      <h3 id="login-title">Login</h3>
-      <form class="login-form" action="#" method="post">
-        <label for="email">E-Mail
-          <input id="email" type="email" name="email" required>
-        </label>
-        <label for="password">Passwort
-          <input id="password" type="password" name="password" required>
-        </label>
-        <button type="submit">Einloggen</button>
-      </form>
-    </div>
-  </div>
+  
 </body>
 </html>

@@ -216,6 +216,7 @@ img { max-width: 100%; display: block; }
 }
 
 .block {
+  position: relative;
   background: rgba(255,255,255,0.9);
   border: 2px solid rgba(255,255,255,0.12);
   border-radius: 12px;
@@ -224,46 +225,37 @@ img { max-width: 100%; display: block; }
   width: 300px;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
-  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+  transition: transform .2s ease, box-shadow .2s ease;
+  overflow: hidden;
 }
 
 .block:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  background: rgba(255,255,255,1);
 }
 
 .block--training {
-  background-image: url('/img/blocks/training.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/training.jpg');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--meals {
-  background-image: url('/img/blocks/meals.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/meals.jpg');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--learning {
-  background-image: url('/img/blocks/learning.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/learning.jpg');
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-.block::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35));
-  border-radius: 12px;
-  pointer-events: none;
-}
-
 .block h3, .block p {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 700px) {
