@@ -56,6 +56,7 @@
     </div>
   </header>
   <input type="checkbox" id="login-toggle" class="login-toggle" aria-hidden="true">
+  <input type="checkbox" id="login-success" class="login-success" aria-hidden="true">
   <label for="login-toggle" class="login-modal-overlay" aria-hidden="true"></label>
   <div class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
     <header>
@@ -72,9 +73,17 @@
         <label class="remember"><input type="checkbox" name="remember"> Angemeldet bleiben</label>
         <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Passwort vergessen?</a>
       </div>
-      <button class="submit" type="submit">Anmelden</button>
+      <label class="submit" for="login-success" style="display:inline-block;text-align:center;">Anmelden</label>
       <div class="alt">Noch kein Konto? <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Registrieren</a></div>
     </form>
+    <div class="success-panel" role="alert" aria-live="polite">
+      <div class="icon">✓</div>
+      <h3>Willkommen zurück!</h3>
+      <p>Du bist jetzt eingeloggt (Demo).</p>
+      <div class="actions">
+        <label for="login-toggle" class="submit" style="display:inline-block;text-align:center;">Weiter</label>
+      </div>
+    </div>
   </div>
 
   <main>

@@ -258,10 +258,10 @@ nav .nav-link:hover::after { width: 100%; }
 .login-form .submit:hover { filter: brightness(1.08); }
 .login-form .alt { margin-top: 0.7rem; text-align: center; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
 
-/* Content should start directly under the fixed header without extra gap */
+/* Content overlaps under fixed header (no extra gap) */
 main {
-    margin-top: 0;        /* remove extra offset */
-    padding-top: 64px;    /* offset equals approx. header height so content isn't hidden */
+    margin-top: 0;
+    padding-top: 0; /* no gap between header and first heading */
 }
 
 /* Remove default top margin on the first H1 to keep it visually flush */
@@ -271,4 +271,16 @@ main > header:first-child h1:first-child {
 }
 
 /* removed: modal and login form styles */
+
+/* --- Fake login success state --- */
+.login-success { position: absolute; left: -9999px; }
+
+.success-panel { display: none; text-align: center; padding-top: 0.25rem; }
+.success-panel .icon { font-size: 2.25rem; line-height: 1; margin: 0.25rem 0 0.5rem; color: var(--primary, #0ea5a4); }
+.success-panel h3 { margin: 0.25rem 0; }
+.success-panel p { margin: 0.25rem 0 0.75rem; color: rgba(255,255,255,0.85); }
+.success-panel .actions { margin-top: 0.25rem; }
+
+.login-success:checked ~ .login-modal .login-form { display: none; }
+.login-success:checked ~ .login-modal .success-panel { display: block; }
 
