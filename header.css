@@ -45,7 +45,6 @@ nav ul {
     padding: 0;
 }
 
-/* enable submenu positioning */
 nav li { position: relative; }
 
 nav a {
@@ -78,7 +77,6 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* CSS-only toggle for Training submenu */
 .nav-toggle { position: absolute; left: -9999px; }
 nav .nav-link {
     color: white;
@@ -140,7 +138,7 @@ nav .nav-link:hover::after { width: 100%; }
     transition-delay: 0.3s;
 }
 .has-submenu .nav-submenu {
-    transition-delay: 0.3s; /* Verzögerung beim Schließen */
+    transition-delay: 0.3s;
 }
 #nav-training-toggle:checked + label + .nav-submenu,
 #nav-meals-toggle:checked + label + .nav-submenu,
@@ -154,20 +152,12 @@ nav .nav-link:hover::after { width: 100%; }
     opacity: 1;
     visibility: visible;
 }
-/* Content overlaps under fixed header (no extra gap) */
 main {
     margin-top: 0;
-    padding-top: 0; /* no gap between header and first heading */
+    padding-top: 0;
 }
 
-/* Remove default top margin on the first H1 to keep it visually flush */
 main > h1:first-child,
 main > header:first-child h1:first-child {
     margin-top: 0;
 }
-.success-panel p { margin: 0.25rem 0 0.75rem; color: rgba(255,255,255,0.85); }
-.success-panel .actions { margin-top: 0.25rem; }
-
-.login-success:checked ~ .login-modal .login-form { display: none; }
-.login-success:checked ~ .login-modal .success-panel { display: block; }
-
