@@ -19,9 +19,6 @@ html, body {
 
 img { max-width: 100%; display: block; }
 
-
-/* removed unused design-system utility classes to keep CSS minimal */
-
 .blocks {
   display: flex;
   justify-content: center;
@@ -51,21 +48,18 @@ img { max-width: 100%; display: block; }
 }
 
 .block--training {
-  /* updated to provided asset name */
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/Training.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--meals {
-  /* use existing repo image for now */
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/meals/chicken-rice-bowl.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--learning {
-  /* updated to provided asset name */
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/E-Learning.png');
   background-size: cover;
   background-position: center;
