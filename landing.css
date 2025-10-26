@@ -235,19 +235,22 @@ img { max-width: 100%; display: block; }
 }
 
 .block--training {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/training.jpg');
+  /* updated to provided asset name */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/Training.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--meals {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/meals.jpg');
+  /* use existing repo image for now */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/meals/chicken-rice-bowl.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
 .block--learning {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/blocks/learning.jpg');
+  /* updated to provided asset name */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/E-Learning.png');
   background-size: cover;
   background-position: center;
   color: white;
