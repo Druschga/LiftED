@@ -114,14 +114,12 @@ nav .nav-link:hover::after { width: 100%; }
     border-radius: 8px;
     min-width: 180px;
     padding: 0.4rem 0;
-    display: block; /* keep in DOM to allow close-delay */
+    display: none;
     z-index: 1500;
     box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-    transition: opacity 0.25s ease, visibility 0.25s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none; /* non-interactive while hidden */
-    transition-delay: 0.6s; /* delay applies when hiding */
 }
 .nav-submenu a {
     display: block;
@@ -136,19 +134,25 @@ nav .nav-link:hover::after { width: 100%; }
 
 .has-submenu:hover .nav-submenu,
 .has-submenu:focus-within .nav-submenu { 
+    display: block; 
     opacity: 1;
     visibility: visible;
-    pointer-events: auto; /* interactive when visible */
-    transition-delay: 0s; /* show immediately */
+    transition-delay: 0.3s;
+}
+.has-submenu .nav-submenu {
+    transition-delay: 0.3s; /* Verzögerung beim Schließen */
 }
 #nav-training-toggle:checked + label + .nav-submenu,
 #nav-meals-toggle:checked + label + .nav-submenu,
-#nav-learning-toggle:checked + label + .nav-submenu,
-.nav-toggle:checked + label + .nav-submenu { 
+#nav-learning-toggle:checked + label + .nav-submenu { 
+    display: block; 
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
-    transition-delay: 0s;
+}
+.nav-toggle:checked + label + .nav-submenu { 
+    display: block; 
+    opacity: 1;
+    visibility: visible;
 }
 
 .login-button {
@@ -198,50 +202,4 @@ main > header:first-child h1:first-child {
 }
 
 /* removed: modal and login form styles */
-
-.footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #222;
-    color: white;
-    padding: 4rem 200px;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-}
-
-.footer > div {
-    flex: 0 1 auto;
-    min-width: 100px;
-}
-
-.footer .logo {
-    margin-right: 500px;
-}
-
-.footer .traing {
-    text-align: center;
-}
-
-.footer .meals {
-    text-align: center;
-}
-
-.footer .e-learning {
-    text-align: center;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-
-.footer p {
-    margin: 0.3rem 0;
-}
 
