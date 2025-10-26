@@ -7,9 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="landing.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="main-header">
@@ -20,8 +18,7 @@
       <nav>
         <ul>
           <li class="has-submenu">
-            <input type="checkbox" id="nav-training-toggle" class="nav-toggle" aria-hidden="true">
-            <label for="nav-training-toggle" class="nav-link">Training</label>
+            <a href="training.html" class="nav-link">Training</a>
             <div class="nav-submenu" role="menu" aria-label="Training Menü">
               <a href="training_plan.html" role="menuitem">Trainingsplan</a>
               <a href="muskel.html" role="menuitem">Muskel</a>
@@ -29,8 +26,7 @@
             </div>
           </li>
           <li class="has-submenu">
-            <input type="checkbox" id="nav-meals-toggle" class="nav-toggle" aria-hidden="true">
-            <label for="nav-meals-toggle" class="nav-link">Meals</label>
+            <a href="meal.html" class="nav-link">Meals</a>
             <div class="nav-submenu" role="menu" aria-label="Meals Menü">
               <a href="meals/chicken_rice_bowl.html" role="menuitem">Hünchen</a>
               <a href="meals/reis.html" role="menuitem">Reis</a>
@@ -38,8 +34,7 @@
             </div>
           </li>
           <li class="has-submenu">
-            <input type="checkbox" id="nav-learning-toggle" class="nav-toggle" aria-hidden="true">
-            <label for="nav-learning-toggle" class="nav-link">E-Learning</label>
+            <a href="learning.html" class="nav-link">E-Learning</a>
             <div class="nav-submenu" role="menu" aria-label="E-Learning Menü">
               <a href="learning/karteikarten.html" role="menuitem">Karteikarten</a>
               <a href="learning/gehirntraining.html" role="menuitem">Gehirntraining</a>
@@ -60,18 +55,18 @@
 
     <section>
       <div class="blocks">
-        <div class="block block--training" onclick="location.href='training.html'">
+        <a class="block block--training" href="training.html">
           <h3>Trainingslehre</h3>
           <p>Smarte Trainingspläne und adaptive Workouts.</p>
-        </div>
-        <div class="block block--meals" onclick="location.href='meal.html'">
+        </a>
+        <a class="block block--meals" href="meal.html">
           <h3>Meals</h3>
           <p>Rezepte und Ernährung – abgestimmt auf deine Ziele.</p>
-        </div>
-        <div class="block block--learning" onclick="location.href='learning.html'">
+        </a>
+        <a class="block block--learning" href="learning.html">
           <h3>E-Learning</h3>
           <p>Wissen & Gehirntraining für deine Regeneration.</p>
-        </div>
+        </a>
       </div>
     </section>
   </main>
