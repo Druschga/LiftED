@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
   <header class="main-header">
@@ -48,10 +49,31 @@
         </ul>
       </nav>
       <div class="login-button">
-        <span title="Login"><i class="fas fa-user-circle"></i></span>
+        <label for="login-toggle" title="Login"><i class="fas fa-user-circle"></i></label>
       </div>
     </div>
   </header>
+  <input type="checkbox" id="login-toggle" class="login-toggle" aria-hidden="true">
+  <label for="login-toggle" class="login-modal-overlay" aria-hidden="true"></label>
+  <div class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <header>
+      <h2 id="login-title">Anmelden</h2>
+      <label for="login-toggle" class="login-close" aria-label="Schließen">&times;</label>
+      <p class="sub">Melde dich mit deinem Konto an.</p>
+    </header>
+    <form class="login-form" action="#" method="post">
+      <label for="login-email">E-Mail</label>
+      <input id="login-email" type="email" name="email" placeholder="name@example.com" required>
+      <label for="login-password">Passwort</label>
+      <input id="login-password" type="password" name="password" placeholder="••••••••" required>
+      <div class="row">
+        <label class="remember"><input type="checkbox" name="remember"> Angemeldet bleiben</label>
+        <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Passwort vergessen?</a>
+      </div>
+      <button class="submit" type="submit">Anmelden</button>
+      <div class="alt">Noch kein Konto? <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Registrieren</a></div>
+    </form>
+  </div>
 
   <main>
     <header>
@@ -81,8 +103,36 @@
 
   </main>
 
-  <footer>
-    <p>&copy; 2025 LiftED. Alle Rechte vorbehalten.</p>
+  <footer class="footer">
+    <div class="left">
+      <p><a href="service.html">Kundenservice</a></p>
+      <p><a href="kontakt.html">Kontakt</a></p>
+      <p><a href="hilfe+faq.html">Hilfe & FAQ</a></p>
+    </div>
+
+    <div class="centerleft">
+      <p><a href="unternehmen.html">Unternehmen</a></p>
+      <p><a href="überuns.html">Über uns</a></p>
+      <p><a href="impressum.html">Impressum</a></p>
+      <p><a href="agb.html">AGB</a></p>
+      <p><a href="ds.html">Datenschutz</a></p>
+      <p><a href="Compliance.html">Compliance</a></p>
+      <p><a href="Grundsatzerklärung.html">Grundsatzerklärung</a></p>
+    </div>
+
+    <div class="centerright">
+      <p><a href="Kategorien.html">Kategorien</a></p>
+      <p><a href="training.html">Trainingslehre</a></p>
+      <p><a href="meal.html">Meals</a></p>
+      <p><a href="learning.html">E-learnings</a></p>
+    </div>
+
+    <div class="right">
+      <p>Socials</p>
+      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
+      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
+      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
+    </div>
   </footer>
   
   

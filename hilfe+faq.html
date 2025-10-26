@@ -49,10 +49,31 @@
         </ul>
       </nav>
       <div class="login-button">
-        <span title="Login"><i class="fas fa-user-circle"></i></span>
+        <label for="login-toggle" title="Login"><i class="fas fa-user-circle"></i></label>
       </div>
     </div>
   </header>
+  <input type="checkbox" id="login-toggle" class="login-toggle" aria-hidden="true">
+  <label for="login-toggle" class="login-modal-overlay" aria-hidden="true"></label>
+  <div class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <header>
+      <h2 id="login-title">Anmelden</h2>
+      <label for="login-toggle" class="login-close" aria-label="Schließen">&times;</label>
+      <p class="sub">Melde dich mit deinem Konto an.</p>
+    </header>
+    <form class="login-form" action="#" method="post">
+      <label for="login-email">E-Mail</label>
+      <input id="login-email" type="email" name="email" placeholder="name@example.com" required>
+      <label for="login-password">Passwort</label>
+      <input id="login-password" type="password" name="password" placeholder="••••••••" required>
+      <div class="row">
+        <label class="remember"><input type="checkbox" name="remember"> Angemeldet bleiben</label>
+        <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Passwort vergessen?</a>
+      </div>
+      <button class="submit" type="submit">Anmelden</button>
+      <div class="alt">Noch kein Konto? <a href="#" style="color: var(--primary, #0ea5a4); text-decoration: none;">Registrieren</a></div>
+    </form>
+  </div>
 
   <main>
     <header>
