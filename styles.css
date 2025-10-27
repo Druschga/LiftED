@@ -266,6 +266,18 @@ a.block {
   opacity: 0.85;
 }
 
+.muscle-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(0%, -60%);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
