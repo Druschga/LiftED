@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Tailwind Play CDN + config for quick prototyping -->
   <script>
     window.tailwind = window.tailwind || {};
     tailwind.config = {
@@ -57,18 +56,16 @@
       
     </div>
   </header>
-  
+  <div class="page-dim" aria-hidden="true"></div>
+
   <section class="hero-section relative min-h-screen flex items-center">
-    <!-- Video background (fills the hero area) -->
     <video class="hero-video absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata">
       <source src="/img/video.mp4" type="video/mp4">
       Ihr Browser unterstützt das Video-Tag nicht.
     </video>
 
-    <!-- dark overlay for readability -->
-    <div class="hero-overlay absolute inset-0 bg-black/60 z-10"></div>
+  <div class="hero-overlay absolute inset-0 bg-black/60 z-10"></div>
 
-    <!-- content sits above video and overlay -->
     <div class="hero-content relative z-20 w-full max-w-4xl mx-auto text-center px-6 py-24">
         <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-clip-text text-transparent" style="background-image: linear-gradient(90deg,#0ea5a4,#0dd4d3)">LiftED</h1>
         <p class="hero-subtitle text-lg md:text-2xl font-semibold mt-4">Trainiere deinen Körper. Fordere deinen Geist.</p>
