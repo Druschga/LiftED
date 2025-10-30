@@ -21,7 +21,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="legacy">
   <header class="main-header">
     <div class="header-content">
       <div class="logo-container">
@@ -58,23 +58,27 @@
     </div>
   </header>
   
-  <div class="hero-section bg-gradient-to-br from-black/80 to-black/60">
-    <!-- Section-scoped background video -->
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+  <section class="hero-section relative min-h-screen flex items-center">
+    <!-- Video background (fills the hero area) -->
+    <video class="hero-video absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata">
       <source src="/img/video.mp4" type="video/mp4">
       Ihr Browser unterstützt das Video-Tag nicht.
     </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-extrabold bg-clip-text text-transparent" style="background-image: linear-gradient(90deg,#0ea5a4,#0dd4d3)">LiftED</h1>
-        <p class="hero-subtitle text-xl md:text-2xl font-semibold mt-4">Trainiere deinen Körper. Fordere deinen Geist.</p>
-        <p class="hero-description text-sm md:text-base mt-3 max-w-2xl mx-auto">Die erste Plattform, die Training und Lernen intelligent verbindet</p>
-        <div class="hero-cta mt-6 flex gap-4 justify-center">
+
+    <!-- dark overlay for readability -->
+    <div class="hero-overlay absolute inset-0 bg-black/60 z-10"></div>
+
+    <!-- content sits above video and overlay -->
+    <div class="hero-content relative z-20 w-full max-w-4xl mx-auto text-center px-6 py-24">
+        <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-clip-text text-transparent" style="background-image: linear-gradient(90deg,#0ea5a4,#0dd4d3)">LiftED</h1>
+        <p class="hero-subtitle text-lg md:text-2xl font-semibold mt-4">Trainiere deinen Körper. Fordere deinen Geist.</p>
+        <p class="hero-description text-sm md:text-base mt-3 max-w-2xl mx-auto text-white/90">Die erste Plattform, die Training und Lernen intelligent verbindet</p>
+        <div class="hero-cta mt-8 flex gap-4 justify-center">
           <a href="#features" class="btn btn-primary inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-primary to-cyan-300 shadow-lg hover:scale-[1.02] transition-transform">Mehr erfahren</a>
           <a href="training.html" class="btn btn-secondary inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/30">Jetzt starten</a>
         </div>
     </div>
-  </div>
+  </section>
 
   <section class="stats-section py-12">
     <div class="stats-container max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -97,10 +101,10 @@
     </div>
   </section>
 
-  <section class="about-section" id="features">
-    <div class="about-container max-w-3xl mx-auto text-center">
-      <h2 class="section-title">Über LiftED</h2>
-      <p class="section-intro">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
+  <section class="about-section py-12 bg-black/70" id="features">
+    <div class="about-container max-w-3xl mx-auto text-center px-6">
+      <h2 class="section-title text-3xl md:text-4xl font-extrabold text-primary mb-4">Über LiftED</h2>
+      <p class="section-intro text-lg text-white/80 leading-relaxed">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
     </div>
   </section>
 
@@ -122,107 +126,114 @@
     </div>
   </section>
 
-  <section class="benefits-section">
-    <h2 class="section-title">Warum LiftED?</h2>
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <div class="benefit-icon">💪</div>
-        <h3>Effektives Training</h3>
-        <p>Wissenschaftlich fundierte Trainingspläne für maximale Ergebnisse</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">🧠</div>
-        <h3>Mentale Stärke</h3>
-        <p>Nutze Regenerationsphasen für gezieltes Mentaltraining</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">🍽️</div>
-        <h3>Optimale Ernährung</h3>
-        <p>Individuelle Meal-Pläne passend zu deinen Zielen</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">📊</div>
-        <h3>Tracking & Analyse</h3>
-        <p>Verfolge deinen Fortschritt in Training und Lernen</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">🎯</div>
-        <h3>Personalisiert</h3>
-        <p>Alle Inhalte angepasst an dein Level und deine Ziele</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">⚡</div>
-        <h3>Zeiteffizient</h3>
-        <p>Maximaler Output bei minimalem Zeitaufwand</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-it-works-section">
-    <h2 class="section-title">So funktioniert's</h2>
-    <div class="steps-container">
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3>Training starten</h3>
-        <p>Wähle deinen personalisierten Trainingsplan und leg los</p>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>Pausen nutzen</h3>
-        <p>In Regenerationsphasen erscheinen passende Lernmodule</p>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>Fortschritt tracken</h3>
-        <p>Beobachte deine Entwicklung in beiden Bereichen</p>
-      </div>
-      <div class="step">
-        <div class="step-number">4</div>
-        <h3>Ziele erreichen</h3>
-        <p>Werde stärker – körperlich und mental</p>
+  <section class="benefits-section py-16 bg-black/70">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-center mb-8">Warum LiftED?</h2>
+      <div class="benefits-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">💪</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Effektives Training</h3>
+          <p class="text-sm text-white/80">Wissenschaftlich fundierte Trainingspläne für maximale Ergebnisse</p>
+        </div>
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">🧠</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Mentale Stärke</h3>
+          <p class="text-sm text-white/80">Nutze Regenerationsphasen für gezieltes Mentaltraining</p>
+        </div>
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">🍽️</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Optimale Ernährung</h3>
+          <p class="text-sm text-white/80">Individuelle Meal-Pläne passend zu deinen Zielen</p>
+        </div>
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Tracking & Analyse</h3>
+          <p class="text-sm text-white/80">Verfolge deinen Fortschritt in Training und Lernen</p>
+        </div>
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Personalisiert</h3>
+          <p class="text-sm text-white/80">Alle Inhalte angepasst an dein Level und deine Ziele</p>
+        </div>
+        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="benefit-icon text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-semibold text-primary mb-2">Zeiteffizient</h3>
+          <p class="text-sm text-white/80">Maximaler Output bei minimalem Zeitaufwand</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2>Bereit für die nächste Stufe?</h2>
-      <p>Starte jetzt und erlebe die perfekte Verbindung von Training und Lernen</p>
-      <a href="training.html" class="btn btn-primary btn-large">Kostenlos starten</a>
+  <section class="how-it-works-section py-16 bg-gradient-to-b from-primary/10 to-black/80">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-center mb-8">So funktioniert's</h2>
+      <div class="steps-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="step text-center p-4">
+          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">1</div>
+          <h3 class="font-semibold">Training starten</h3>
+          <p class="text-sm text-white/80 mt-2">Wähle deinen personalisierten Trainingsplan und leg los</p>
+        </div>
+        <div class="step text-center p-4">
+          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">2</div>
+          <h3 class="font-semibold">Pausen nutzen</h3>
+          <p class="text-sm text-white/80 mt-2">In Regenerationsphasen erscheinen passende Lernmodule</p>
+        </div>
+        <div class="step text-center p-4">
+          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">3</div>
+          <h3 class="font-semibold">Fortschritt tracken</h3>
+          <p class="text-sm text-white/80 mt-2">Beobachte deine Entwicklung in beiden Bereichen</p>
+        </div>
+        <div class="step text-center p-4">
+          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">4</div>
+          <h3 class="font-semibold">Ziele erreichen</h3>
+          <p class="text-sm text-white/80 mt-2">Werde stärker – körperlich und mental</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <section class="cta-section py-20 bg-gradient-to-br from-primary/20 to-black/80 border-t-2 border-primary">
+    <div class="cta-content max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-extrabold text-primary mb-4">Bereit für die nächste Stufe?</h2>
+      <p class="text-lg text-white/90 mb-6">Starte jetzt und erlebe die perfekte Verbindung von Training und Lernen</p>
+      <a href="training.html" class="inline-block bg-gradient-to-r from-primary to-cyan-300 text-white px-6 py-3 rounded-full font-bold shadow-lg">Kostenlos starten</a>
+    </div>
   </section>
 
-  <footer class="footer">
-    <div class="left">
-      <p><a href="service.html">Kundenservice</a></p>
-      <p><a href="Footer/kontakt.html">Kontakt</a></p>
-      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
-    </div>
 
-    <div class="centerleft">
-      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
-      <p><a href="Footer/überuns.html">Über uns</a></p>
-      <p><a href="Footer/impressum.html">Impressum</a></p>
-      <p><a href="Footer/agb.html">AGB</a></p>
-      <p><a href="Footer/ds.html">Datenschutz</a></p>
-      <p><a href="Footer/Compliance.html">Compliance</a></p>
-      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
-    </div>
+  <footer class="footer bg-[#0b0b0b] text-white py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="left space-y-2">
+        <p><a class="text-white/90 hover:underline" href="service.html">Kundenservice</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/kontakt.html">Kontakt</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
+      </div>
 
-    <div class="centerright">
-      <p><a href="Kategorien.html">Kategorien</a></p>
-      <p><a href="training.html">Trainingslehre</a></p>
-      <p><a href="meal.html">Meals</a></p>
-      <p><a href="learning.html">E-learnings</a></p>
-    </div>
+      <div class="centerleft space-y-2">
+        <p><a class="text-white/90 hover:underline" href="Footer/unternehmen.html">Unternehmen</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/überuns.html">Über uns</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/impressum.html">Impressum</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/agb.html">AGB</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/ds.html">Datenschutz</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/Compliance.html">Compliance</a></p>
+        <p><a class="text-white/90 hover:underline" href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
+      </div>
 
-    <div class="right">
-      <p>Socials</p>
-      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
-      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
-      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
+      <div class="centerright space-y-2">
+        <p><a class="text-white/90 hover:underline" href="Kategorien.html">Kategorien</a></p>
+        <p><a class="text-white/90 hover:underline" href="training.html">Trainingslehre</a></p>
+        <p><a class="text-white/90 hover:underline" href="meal.html">Meals</a></p>
+        <p><a class="text-white/90 hover:underline" href="learning.html">E-learnings</a></p>
+      </div>
+
+      <div class="right space-y-3">
+        <p class="font-medium">Socials</p>
+        <div class="flex items-center gap-3">
+          <a href="https://discord.gg/badqpgnDFr" class="opacity-90 hover:opacity-100"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
+          <a href="https://instagram.com" class="opacity-90 hover:opacity-100"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
+          <a href="https://github.com/Druschga/LiftED" class="opacity-90 hover:opacity-100"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>

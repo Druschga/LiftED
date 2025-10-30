@@ -1,6 +1,8 @@
 :root{
   --text: #ffffff;
   --primary: #0ea5a4;
+  /* approximate header height used to offset fixed header so content isn't hidden */
+  --header-height: 72px;
   /* maximum height the header should expand to when a submenu opens */
   --submenu-height: 320px;
   --shadow-sm: 0 6px 18px rgba(12, 18, 30, 0.06);
@@ -20,6 +22,13 @@ img { max-width: 100%; display: block; }
 
 .legacy .hero-section {
   background: black;
+}
+
+/* when the page opts into legacy appearance (body has .legacy) use a dark page background
+   so content edges and gaps don't show bright white while scrolling */
+body.legacy {
+  background-color: #050505;
+  color: var(--text);
 }
 
 .hero-section {
@@ -356,86 +365,92 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 768px) {
-  .hero-title {
+  .legacy .hero-title {
     font-size: 3rem;
   }
-  
-  .hero-subtitle {
+
+  .legacy .hero-subtitle {
     font-size: 1.5rem;
   }
-  
-  .hero-description {
+
+  .legacy .hero-description {
     font-size: 1rem;
   }
-  
-  .hero-cta {
+
+  .legacy .hero-cta {
     flex-direction: column;
     gap: 1rem;
   }
-  
-  .btn {
+
+  .legacy .btn {
     padding: 0.9rem 2rem;
     font-size: 1rem;
   }
-  
-  .btn-large {
+
+  .legacy .btn-large {
     padding: 1rem 2.2rem;
     font-size: 1.1rem;
   }
-  
-  .stats-container {
+
+  .legacy .stats-container {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
   }
-  
-  .stat-number {
+
+  .legacy .stat-number {
     font-size: 2.2rem;
   }
-  
-  .stat-label {
+
+  .legacy .stat-label {
     font-size: 0.9rem;
   }
-  
-  .section-title {
+
+  .legacy .section-title {
     font-size: 2rem;
   }
-  
-  .section-intro {
+
+  .legacy .section-intro {
     font-size: 1rem;
   }
-  
-  .benefits-grid {
+
+  .legacy .benefits-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
-  .steps-container {
+
+  .legacy .steps-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .cta-content h2 {
+
+  .legacy .cta-content h2 {
     font-size: 2rem;
   }
-  
-  .cta-content p {
+
+  .legacy .cta-content p {
     font-size: 1.1rem;
   }
 }
 
 .main-header {
-  width: 100%;
-  background-color: rgba(51, 51, 51, 0.95);
+  /* centered pill / glass header */
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 1200px;
   z-index: 2000;
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  /* allow the header background to extend when a submenu opens */
+  background: rgba(255,255,255,0.04); /* subtle light tint to create glass on dark bg */
+  color: var(--text);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
   overflow: visible;
-  padding-bottom: 0;
-  transition: padding-bottom 260ms cubic-bezier(.2,.9,.2,1);
+  padding: 8px 16px;
+  transition: padding-bottom 260ms cubic-bezier(.2,.9,.2,1), transform 180ms ease, box-shadow 180ms ease;
 }
 
 .header-content {
@@ -591,11 +606,22 @@ nav:hover .has-submenu:not(:hover) .nav-submenu { opacity: 0; visibility: hidden
 @media (max-width: 768px) {
   .main-header:has(.has-submenu:hover),
   .main-header:has(.has-submenu:focus-within) { padding-bottom: calc(var(--submenu-height) / 2); }
+
+  /* on small screens make the header less inset and less rounded */
+  .main-header {
+    left: 12px;
+    right: 12px;
+    transform: none;
+    width: calc(100% - 24px);
+    border-radius: 14px;
+    top: 8px;
+  }
 }
 
+/* push main content below fixed header so the top is always visible */
 main {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: var(--header-height);
 }
 
 main > h1:first-child,
