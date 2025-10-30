@@ -7,6 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN + config for quick prototyping -->
+  <script>
+    window.tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#0ea5a4' }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,7 +58,7 @@
     </div>
   </header>
   
-  <div class="hero-section">
+  <div class="hero-section bg-gradient-to-br from-black/80 to-black/60">
     <!-- Section-scoped background video -->
     <video class="hero-video" autoplay muted loop playsinline preload="metadata">
       <source src="/img/video.mp4" type="video/mp4">
@@ -54,18 +66,18 @@
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-title">LiftED</h1>
-      <p class="hero-subtitle">Trainiere deinen Körper. Fordere deinen Geist.</p>
-      <p class="hero-description">Die erste Plattform, die Training und Lernen intelligent verbindet</p>
-      <div class="hero-cta">
-        <a href="#features" class="btn btn-primary">Mehr erfahren</a>
-        <a href="training.html" class="btn btn-secondary">Jetzt starten</a>
+      <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-extrabold bg-clip-text text-transparent" style="background-image: linear-gradient(90deg,#0ea5a4,#0dd4d3)">LiftED</h1>
+      <p class="hero-subtitle text-xl md:text-2xl font-semibold mt-4">Trainiere deinen Körper. Fordere deinen Geist.</p>
+      <p class="hero-description text-sm md:text-base mt-3">Die erste Plattform, die Training und Lernen intelligent verbindet</p>
+      <div class="hero-cta mt-6 flex gap-4 justify-center">
+        <a href="#features" class="btn btn-primary px-6 py-3 rounded-full bg-gradient-to-r from-primary to-cyan-300">Mehr erfahren</a>
+        <a href="training.html" class="btn btn-secondary px-6 py-3 rounded-full border-white/30">Jetzt starten</a>
       </div>
     </div>
   </div>
 
-  <section class="stats-section">
-    <div class="stats-container">
+  <section class="stats-section py-12">
+  <div class="stats-container max-w-5xl mx-auto">
       <div class="stat-item">
         <div class="stat-number">500+</div>
         <div class="stat-label">Übungen</div>
@@ -86,27 +98,26 @@
   </section>
 
   <section class="about-section" id="features">
-    <div class="about-container">
+    <div class="about-container max-w-3xl mx-auto text-center">
       <h2 class="section-title">Über LiftED</h2>
-      <p class="section-intro">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. 
-      Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
+      <p class="section-intro">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
     </div>
   </section>
 
-  <section class="features-section">
-    <h2 class="section-title">Unsere Bereiche</h2>
-    <div class="blocks">
-      <a class="block block--training" href="training.html">
-        <h3>Trainingslehre</h3>
-        <p>Smarte Trainingspläne und adaptive Workouts.</p>
+  <section class="features-section py-12">
+    <h2 class="section-title text-center">Unsere Bereiche</h2>
+    <div class="blocks flex flex-wrap justify-center gap-6 mt-6">
+      <a class="block block--training w-80 p-6 rounded-xl shadow-lg" href="training.html">
+        <h3 class="text-2xl font-semibold">Trainingslehre</h3>
+        <p class="mt-2 text-sm">Smarte Trainingspläne und adaptive Workouts.</p>
       </a>
-      <a class="block block--meals" href="meal.html">
-        <h3>Meals</h3>
-        <p>Ernährungsempfehlungen und Rezepte, abgestimmt auf deine Ziele.</p>
+      <a class="block block--meals w-80 p-6 rounded-xl shadow-lg" href="meal.html">
+        <h3 class="text-2xl font-semibold">Meals</h3>
+        <p class="mt-2 text-sm">Ernährungsempfehlungen und Rezepte, abgestimmt auf deine Ziele.</p>
       </a>
-      <a class="block block--learning" href="learning.html">
-        <h3>E-Learning</h3>
-        <p>Lernmodule für mentale Stärke und Wissen während deiner Regeneration.</p>
+      <a class="block block--learning w-80 p-6 rounded-xl shadow-lg" href="learning.html">
+        <h3 class="text-2xl font-semibold">E-Learning</h3>
+        <p class="mt-2 text-sm">Lernmodule für mentale Stärke und Wissen während deiner Regeneration.</p>
       </a>
     </div>
   </section>
