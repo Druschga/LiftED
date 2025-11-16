@@ -6,7 +6,7 @@
 /* ---------- Design Tokens (Light) ---------- */
 :root {
   /* Core palette */
-  --white: #ffffff;
+  --white: #f2f2f2;
   --bg: #fafbff;                   /* sehr helles Grundweiß */
   --surface: #ffffff;
   --surface-2: #f3f6ff;            /* zarte Kartenfläche */
