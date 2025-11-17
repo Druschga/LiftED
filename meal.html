@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -44,35 +42,133 @@
           </li>
         </ul>
       </nav>
-      
+
     </div>
   </header>
-  
+
 
   <main>
-    <header>
-      <h1>Meals & Ernährung</h1>
-      <p>Die richtige Ernährung ist der Schlüssel zu deinem Trainingserfolg.</p>
-    </header>
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Meals & Ernährung</h1>
+      <p>Smart essen, besser trainieren: Hier findest du alltagstaugliche Rezepte sortiert nach Ziel – Muskelaufbau, Fettverlust und Body Recomp. Klicke eine Kategorie, um alle passenden Meals mit Bild anzuzeigen.</p>
+    </section>
 
-  <section>
-    <h2>Warum Ernährung entscheidend ist</h2>
-    <p>Eine ausgewogene Ernährung liefert dir nicht nur Energie für dein Training, sondern unterstützt auch deine Regeneration, den Muskelaufbau und dein allgemeines Wohlbefinden. 
-    Unsere Ernährungsphilosophie basiert auf Einfachheit, Balance und Nachhaltigkeit – keine strikten Diäten, sondern ein flexibler Ansatz, der zu deinem Alltag passt.</p>
-  </section>
+    <section class="accordion" aria-label="Rezeptkategorien">
+      <!-- Muskelaufbau -->
+      <details class="acc-item" open>
+        <summary>
+          <span class="acc-title">💪 Muskelaufbau</span>
+          <span class="chev">▶</span>
+        </summary>
+        <div class="grid">
+          <div class="card" style="background-image:url('/img/meals/chicken-rice-bowl.png')">
+            <a href="meals/chicken_rice_bowl.html" aria-label="Chicken Rice Bowl">
+              <span class="label">Chicken Rice Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/beef-sweet-potato.png')">
+            <a href="meals/beef_sweet_potato.html" aria-label="Beef Sweet Potato Plate">
+              <span class="label">Beef Sweet Potato Plate</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/salmon-quinoa-bowl.png')">
+            <a href="meals/salmon_quinoa_bowl.html" aria-label="Lachs-Quinoa-Bowl">
+              <span class="label">Lachs‑Quinoa‑Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/protein-pasta-bowl.png')">
+            <a href="meals/protein_pasta_bowl.html" aria-label="Protein Pasta Bowl">
+              <span class="label">Protein Pasta Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/oatmeal-power-bowl.png')">
+            <a href="meals/oatmeal_power_bowl.html" aria-label="Oatmeal Power Bowl">
+              <span class="label">Oatmeal Power Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/teriyaki-chicken-bowl.png')">
+            <a href="meals/teriyaki_chicken_bowl.html" aria-label="Teriyaki Chicken Bowl">
+              <span class="label">Teriyaki Chicken Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/turkey-avocado-wraps.png')">
+            <a href="meals/turkey_avocado_wraps.html" aria-label="Turkey Avocado Wraps">
+              <span class="label">Turkey Avocado Wraps</span>
+            </a>
+          </div>
+        </div>
+      </details>
 
-  <section>
-    <h2>Entdecke Rezepte</h2>
-    <p>Hier findest du bald eine Auswahl an Rezepten, die dich auf deinem Weg begleiten – von schnellen Protein-Snacks bis hin zu ausgewogenen Hauptmahlzeiten:</p>
-    <ul>
-      <li><a href="#">Proteinreiche Frühstücksideen</a></li>
-      <li><a href="#">Meal-Prep für die Trainingswoche</a></li>
-      <li><a href="#">Vegetarische Power-Gerichte</a></li>
-      <li><a href="#">Snacks für Zwischendurch</a></li>
-      <li><a href="#">Erfrischende Post-Workout-Smoothies</a></li>
-    </ul>
-  </section>
+      <!-- Fettverlust -->
+      <details class="acc-item" open>
+        <summary>
+          <span class="acc-title">🔥 Fettverlust</span>
+          <span class="chev">▶</span>
+        </summary>
+        <div class="grid">
+          <div class="card" style="background-image:url('/img/meals/cottage-cheese-plate.png')">
+            <a href="meals/cottage_cheese_plate.html" aria-label="Cottage Cheese Plate">
+              <span class="label">Cottage Cheese Plate</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/greek-chicken-bowl.png')">
+            <a href="meals/greek_chicken_bowl.html" aria-label="Greek Chicken Bowl">
+              <span class="label">Greek Chicken Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/shrimp-stir-fry.png')">
+            <a href="meals/shrimp_stir_fry.html" aria-label="Shrimp Stir Fry">
+              <span class="label">Shrimp Stir Fry</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/salmon-veggies.png')">
+            <a href="meals/salmon_veggies.html" aria-label="Salmon Veggies">
+              <span class="label">Salmon Veggies</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/zoodle-pute.png')">
+            <a href="meals/zoodle_pute.html" aria-label="Zoodle Pute">
+              <span class="label">Zoodle Pute</span>
+            </a>
+          </div>
+        </div>
+      </details>
 
+      <!-- Body Recomp -->
+      <details class="acc-item" open>
+        <summary>
+          <span class="acc-title">⚖️ Body Recomp</span>
+          <span class="chev">▶</span>
+        </summary>
+        <div class="grid">
+          <div class="card" style="background-image:url('/img/meals/fitness-leberkaese.png')">
+            <a href="meals/fitness_leberkaese.html" aria-label="Fitness Leberkäse">
+              <span class="label">Fitness Leberkäse</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/mediterrane-quinoa-bowl.png')">
+            <a href="meals/mediterrane_quinoa_bowl.html" aria-label="Mediterrane Quinoa Bowl">
+              <span class="label">Mediterrane Quinoa Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/puten-gemuese-pfanne.png')">
+            <a href="meals/puten_gemuese_pfanne.html" aria-label="Puten-Gemüse-Pfanne">
+              <span class="label">Puten‑Gemüse‑Pfanne</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/balanced-breakfast-bowl.png')">
+            <a href="meals/balanced_breakfast_bowl.html" aria-label="Balanced Breakfast Bowl">
+              <span class="label">Balanced Breakfast Bowl</span>
+            </a>
+          </div>
+          <div class="card" style="background-image:url('/img/meals/veggie-egg-wraps.png')">
+            <a href="meals/veggie_egg_wraps.html" aria-label="Veggie Egg Wraps">
+              <span class="label">Veggie Egg Wraps</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </section>
   </main>
 
   <footer class="footer">
