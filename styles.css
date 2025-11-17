@@ -45,6 +45,14 @@ body.theme-training { --brand: var(--blue);   --brand-weak: var(--blue-weak); }
 body.theme-meals    { --brand: var(--lime);   --brand-weak: var(--lime-weak); }
 body.theme-learning { --brand: var(--orange); --brand-weak: var(--orange-weak); }
 
+/* Allgemeines LiftED-Theme – kombiniert die Brand-Farben zu einem neutralen Akzent */
+body.theme-general,
+body.theme-lifted {
+  /* Farbton liegt ungefähr zwischen Blau, Lime und Orange */
+  --brand: #6fc6cf;         /* türkis/teal, wirkt wie Mischung aller drei */
+  --brand-weak: #e6f6f8;    /* sehr helles, leicht türkises Hintergrundweiß */
+}
+
 /* ---------- Base ---------- */
 html, body { height: 100%; }
 html { scroll-behavior: smooth; }
@@ -657,3 +665,155 @@ main > header:first-child h1:first-child {
   pointer-events: none;
 }
 
+
+/* =========================================
+   Meals – Übersicht (Cards nach Kategorien)
+   ========================================= */
+
+/* Hero-Bereich über den Kategorien */
+.hero {
+  margin: 24px auto 8px;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  background: linear-gradient(135deg, var(--brand-weak), #ffffff);
+}
+
+.hero h1 {
+  margin: 0 0 6px;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Accordion-Kategorien (z. B. Muskelaufbau / Fettverlust / Body Recomp) */
+.accordion {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+details.acc-item {
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+details.acc-item[open] {
+  box-shadow: var(--shadow-md);
+}
+
+details.acc-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+details.acc-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.acc-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chev {
+  transition: transform 0.2s ease;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+details[open] .chev {
+  transform: rotate(90deg);
+}
+
+/* Grid mit Bildkarten je Kategorie */
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 14px;
+}
+
+/* Einzelne Meal-Karte – Bild im Hintergrund, Titel als Button */
+.card {
+  position: relative;
+  height: 0;
+  padding-top: 62%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.75)
+  );
+  opacity: 0.0;
+  transition: opacity 0.2s ease;
+}
+
+.card a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 14px;
+  text-decoration: none;
+}
+
+/* Titel-Button über dem Bild */
+.card .label {
+  position: relative;
+  z-index: 1;
+  padding: 0.45rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--brand-weak);
+  border: 1px solid color-mix(in oklab, var(--brand) 22%, #0000);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+/* Hover-Effekt: Card hebt sich, Button wirkt klickbar */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in oklab, var(--brand) 24%, rgba(11, 18, 32, 0.12));
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover .label {
+  background: color-mix(in oklab, var(--brand) 18%, #ffffff);
+}
