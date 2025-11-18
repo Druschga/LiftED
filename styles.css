@@ -116,18 +116,10 @@ nav li { position: relative; }
   opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%, 0);
 }
 
-.main-header:has(.has-submenu:hover),
-.main-header:has(.has-submenu:focus-within) {
-  padding-bottom: var(--submenu-height);
-  border-radius: 0;
-}
 
 nav:hover .has-submenu:not(:hover) .nav-submenu { opacity: 0; visibility: hidden; pointer-events: none; transform: translateX(-50%) translateY(-8px); transition-delay: 0s; }
 
 @media (max-width: 768px) {
-  .main-header:has(.has-submenu:hover),
-  .main-header:has(.has-submenu:focus-within) { padding-bottom: calc(var(--submenu-height) / 2); border-radius: 0; }
-
   .main-header {
     left: 0;
     right: 0;
@@ -660,6 +652,52 @@ main > header:first-child h1:first-child {
   pointer-events: none;
 }
 
+
+/* =========================================
+   Landing – Feature-Blocks (Trainingslehre / Meals / E-Learning)
+   ========================================= */
+
+.features-section .block {
+  background: var(--surface);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 18, 32, 0.06);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.features-section .block:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in oklab, var(--brand) 24%, rgba(11, 18, 32, 0.14));
+}
+
+.block--training {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--blue-weak) 70%, #ffffff),
+    #ffffff
+  );
+}
+
+.block--meals {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--lime-weak) 70%, #ffffff),
+    #ffffff
+  );
+}
+
+.block--learning {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--orange-weak) 70%, #ffffff),
+    #ffffff
+  );
+}
 
 /* =========================================
    Meals – Übersicht (Cards nach Kategorien)
