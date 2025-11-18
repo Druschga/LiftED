@@ -850,3 +850,81 @@ details[open] .chev {
 .card:hover .label {
   background: color-mix(in oklab, var(--brand) 18%, #ffffff);
 }
+/* Page-Layout für Meal-Detail */
+.meal-page {
+    min-height: 100vh;
+}
+
+/* Section mit Hintergrundbild und Card */
+.meal-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 1.5rem 3rem; /* Platz für Header + Footer */
+    box-sizing: border-box;
+}
+
+/* Hintergrundbild-Layer (Parallax-Effekt via fixed) */
+.meal-hero__bg {
+    position: fixed;   /* bleibt „hinter“ stehen → wirkt wie Parallax */
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.meal-hero__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    transform: scale(1.08); /* etwas größer, damit Rand vom Blur nicht sichtbar ist */
+}
+
+/* Das eigentliche Widget / Card */
+.meal-card {
+    max-width: 900px;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Falls du ein Fettverlust-Theme hast, z.B. am Body */
+body.theme-meal-fettverlust .meal-card {
+    /* selbe Farbwelt wie dein Theme – Beispiel: */
+    background: linear-gradient(135deg, #7cd992 0%, #ffffff 50%, #1a1a1f 100%);
+}
+
+/* Wenn du (noch) kein Theme nutzt, kannst du z.B. so starten: */
+.meal-card {
+    background: linear-gradient(135deg, rgb(124, 217, 146), rgb(255, 255, 255));
+}
+
+/* Typo etwas ordnen */
+.meal-card h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.meal-card h2 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.meal-card p,
+.meal-card li {
+    line-height: 1.5;
+}
+
+/* Links im Card lesbar machen */
+.meal-card a {
+    color: #fff;
+    text-decoration: underline;
+}
+.meal-card a:hover {
+    text-decoration: none;
+}
