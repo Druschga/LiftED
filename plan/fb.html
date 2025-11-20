@@ -1,11 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LiftED - Upper/Lower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="theme-training">
-  <a href="planselector.html">Landing</a>
+<body>
+<header class="main-header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="logo-container">
+          <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+        </div>
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li class="has-submenu">
+              <a href="training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
+              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
+                <li><a href="plan/planselector.html">Trainingsplan</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
+              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
+                <li><a href="meal.html#fettverlust">Fettverlust</a></li>
+                <li><a href="meal.html#body-recomp">Body Recomp</a></li>
+                <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
+              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
+                <li><a href="learning/karteikarten.html">Karteikarten</a></li>
+                <li><a href="learning/gehirntraining.html">Gehirntraining</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <a href="sofunktionierts.html" class="header-cta">So funktioniert's</a>
+      </div>
+    </div>
+  </header>
+<main class="tp-page">
+  <div class="tp-container">
+    <nav class="tp-breadcrumb" aria-label="Brotkrumen-Navigation">
+      <a href="training.html">Training</a>
+      <span class="tp-breadcrumb-separator">›</span>
+      <a href="planselector.html">Trainingspläne</a>
+      <span class="tp-breadcrumb-separator">›</span>
+      <span class="tp-breadcrumb-current">Full Body</span>
+    </nav>
+    <!-- HERO / INTRO -->
+    <section class="tp-hero">
+      <span class="tp-badge badge">Trainingsplan · Full Body</span>
+      <h1 class="tp-title glow-title">Full Body Trainingsplan</h1>
+      <p class="tp-subtitle">
+        Dieser Full Body Plan besteht aus drei Einheiten pro Woche.
+        Jeder Trainingstag deckt den gesamten Körper ab, mit unterschiedlichen
+        Schwerpunkten pro Einheit. Alle Inhalte sind Platzhalter und können
+        frei an dein Ziel angepasst werden.
+      </p>
+    </section>
+    <!-- META INFOS -->
+    <section class="tp-meta">
+      <div class="tp-meta-grid">
+        <div class="tp-meta-item">
+          <span class="tp-meta-label">Level</span>
+          <span class="tp-meta-value">Platzhalter – frei anpassbar</span>
+        </div>
+        <div class="tp-meta-item">
+          <span class="tp-meta-label">Einheiten pro Woche</span>
+          <span class="tp-meta-value">3 Einheiten (z. B. Mo / Mi / Fr)</span>
+        </div>
+        <div class="tp-meta-item">
+          <span class="tp-meta-label">Trainingsziel</span>
+          <span class="tp-meta-value">Platzhalter (z. B. Muskelaufbau oder Gesundheit)</span>
+        </div>
+        <div class="tp-meta-item">
+          <span class="tp-meta-label">Empfohlene Dauer</span>
+          <span class="tp-meta-value">8–12 Wochen</span>
+        </div>
+      </div>
+    </section>
+    <!-- TRAININGSWOCHE (3 TAGE – TILE-LAYOUT) -->
+    <section class="tp-week tp-week--fb">
+      <header class="tp-week-header">
+        <h2 class="tp-week-title section-heading">Deine Trainingswoche</h2>
+        <p class="tp-week-text section-text">
+          Dieser Full Body Plan besteht aus drei Einheiten, die du über die Woche
+          verteilen kannst. Typisch wäre zum Beispiel: Montag – Mittwoch – Freitag.
+          Alle Übungen sind Platzhalter und können leicht ersetzt werden.
+        </p>
+      </header>
+      <div class="tp-week-grid">
+        <!-- TAG 1 -->
+        <article class="tp-day-card tp-day-card--fb">
+          <div class="tp-day-header">
+            <span class="tp-day-badge">Tag 1</span>
+            <h3 class="tp-day-title">Full Body A</h3>
+          </div>
+          <p class="tp-day-tagline">
+            Schwerpunkt: Grundübungen und große Muskelgruppen.
+          </p>
+          <ul class="tp-exercise-list tp-exercise-list--compact">
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 1 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 2 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 3 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 4 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+          </ul>
+        </article>
+        <!-- TAG 2 -->
+        <article class="tp-day-card tp-day-card--fb">
+          <div class="tp-day-header">
+            <span class="tp-day-badge">Tag 2</span>
+            <h3 class="tp-day-title">Full Body B</h3>
+          </div>
+          <p class="tp-day-tagline">
+            Schwerpunkt: Zugübungen und hintere Kette.
+          </p>
+          <ul class="tp-exercise-list tp-exercise-list--compact">
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 1 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 2 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 3 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 4 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+          </ul>
+        </article>
+        <!-- TAG 3 -->
+        <article class="tp-day-card tp-day-card--fb">
+          <div class="tp-day-header">
+            <span class="tp-day-badge">Tag 3</span>
+            <h3 class="tp-day-title">Full Body C</h3>
+          </div>
+          <p class="tp-day-tagline">
+            Schwerpunkt: Rumpf, Schultern und Variationen.
+          </p>
+          <ul class="tp-exercise-list tp-exercise-list--compact">
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 1 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 2 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 3 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+            <li class="tp-exercise-item">
+              <span class="tp-ex-name">Übung 4 (Platzhalter)</span>
+              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!-- HINWEISE -->
+    <section class="tp-hints">
+      <h2 class="tp-hints-title section-heading">Hinweise zum Full Body Plan</h2>
+      <p class="tp-hints-text section-text">
+        Alle Felder sind Platzhalter. Du kannst später echte Übungen, Satzschemata
+        und Progressionstipps einfügen oder den Plan komplett austauschen.
+      </p>
+      <ul class="tp-hint-list">
+        <li class="tp-hint-item">
+          Hinweis 1 (Platzhalter): Hier könnte ein Tipp zum Aufwärmen stehen.
+        </li>
+        <li class="tp-hint-item">
+          Hinweis 2 (Platzhalter): Ergänze Infos zur Satz- und Wiederholungswahl.
+        </li>
+        <li class="tp-hint-item">
+          Hinweis 3 (Platzhalter): Notiere Varianten für Zuhause oder unterwegs.
+        </li>
+      </ul>
+    </section>
+    
+    <div class="tp-back-bottom-wrapper">
+      <a href="planselector.html" class="tp-back-bottom">← Zurück zu den Trainingsplänen</a>
+    </div>
+  </div>
+</main>
+
+
+ <footer class="footer">
+    <div class="left">
+      <p><a href="service.html">Kundenservice</a></p>
+      <p><a href="Footer/kontakt.html">Kontakt</a></p>
+      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
+    </div>
+    <div class="centerleft">
+      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
+      <p><a href="Footer/überuns.html">Über uns</a></p>
+      <p><a href="Footer/impressum.html">Impressum</a></p>
+      <p><a href="Footer/agb.html">AGB</a></p>
+      <p><a href="Footer/ds.html">Datenschutz</a></p>
+      <p><a href="Footer/Compliance.html">Compliance</a></p>
+      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
+    </div>
+    <div class="centerright">
+      <p><a href="Kategorien.html">Kategorien</a></p>
+      <p><a href="training.html">Trainingslehre</a></p>
+      <p><a href="meal.html">Meals</a></p>
+      <p><a href="learning.html">E-learnings</a></p>
+    </div>
+    <div class="right">
+      <p>Socials</p>
+      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
+      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
+      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
+    </div>
+  </footer>
 </body>
 </html>
