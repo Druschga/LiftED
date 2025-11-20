@@ -1,256 +1,279 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiftED - Upper/Lower</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<header class="main-header">
-    <div class="header-content">
-      <div class="header-left">
-        <div class="logo-container">
-          <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED - Upper/Lower</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="theme-training">
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="../landing.html"
+              ><img src="/img/Logo.png" alt="LiftED Logo"
+            /></a>
+          </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="../training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
+                  <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
+                  <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li>
+                    <a href="../learning/karteikarten.html">Karteikarten</a>
+                  </li>
+                  <li>
+                    <a href="../learning/gehirntraining.html">Gehirntraining</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav aria-label="Hauptnavigation">
-          <ul>
-            <li class="has-submenu">
-              <a href="training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                <li><a href="plan/planselector.html">Trainingsplan</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                <li><a href="meal.html#fettverlust">Fettverlust</a></li>
-                <li><a href="meal.html#body-recomp">Body Recomp</a></li>
-                <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                <li><a href="learning/karteikarten.html">Karteikarten</a></li>
-                <li><a href="learning/gehirntraining.html">Gehirntraining</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="header-actions">
+          <a href="../sofunktionierts.html" class="header-cta">Mehr erfahren</a>
+        </div>
+      </div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
+    <main class="tp-page" id="main-content" tabindex="-1">
+      <div class="tp-container">
+        <nav class="tp-breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../training_plan.html">Training</a>
+          <span class="tp-breadcrumb-separator">›</span>
+          <a href="planselector.html">Trainingspläne</a>
+          <span class="tp-breadcrumb-separator">›</span>
+          <span class="tp-breadcrumb-current">Upper / Lower</span>
         </nav>
-      </div>
-      <div class="header-actions">
-        <a href="sofunktionierts.html" class="header-cta">So funktioniert's</a>
-      </div>
-    </div>
-  </header>
-  <main class="tp-page">
-    <div class="tp-container">
-    
-      <nav class="tp-breadcrumb" aria-label="Brotkrumen-Navigation">
-      <a href="training.html">Training</a>
-      <span class="tp-breadcrumb-separator">›</span>
-      <a href="planselector.html">Trainingspläne</a>
-      <span class="tp-breadcrumb-separator">›</span>
-      <span class="tp-breadcrumb-current">Upper / Lower</span>
-    </nav>
-    <!-- HERO / INTRO -->
-    <section class="tp-hero">
-      <span class="tp-badge badge">Trainingsplan · Upper / Lower</span>
-      <h1 class="tp-title glow-title">Upper / Lower Trainingsplan</h1>
-      <p class="tp-subtitle">
-        Dieser Plan kombiniert eine klare Upper Einheit und eine Lower Einheit.
-        Du trainierst alle wichtigen Muskelgruppen zwei Mal pro Woche, mit Fokus
-        auf saubere Technik, kontrollierte Progression und sinnvolle Isolationsübungen.
-      </p>
-    </section>
-    <!-- META INFOS -->
-    <section class="tp-meta">
-      <div class="tp-meta-grid">
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Level</span>
-          <span class="tp-meta-value">Fortgeschrittene Anfänger bis Fortgeschritten</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Einheiten pro Woche</span>
-          <span class="tp-meta-value">2 bis 4 Trainingstage</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Trainingsziel</span>
-          <span class="tp-meta-value">Kraft und Muskelaufbau im Ober- und Unterkörper</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Empfohlene Dauer</span>
-          <span class="tp-meta-value">mindestens 8 Wochen</span>
-        </div>
-      </div>
-    </section>
-    <!-- TRAININGSWOCHE -->
-    <section class="tp-week">
-      <header class="tp-week-header">
-        <h2 class="tp-week-title section-heading">Deine Trainingswoche</h2>
-        <p class="tp-week-text section-text">
-          Plane diesen Upper Lower Plan zum Beispiel so:
-          Montag Upper, Dienstag Lower, Donnerstag Upper, Freitag oder Samstag Lower.
-          Achte darauf, dass zwischen den gleichen Einheiten immer mindestens ein Pausentag liegt.
-        </p>
-      </header>
-      <div class="tp-week-grid">
-        <!-- TAG 1: UPPER -->
-        <article class="tp-day-card">
-          <h3 class="tp-day-title">Tag 1 - Upper</h3>
-          <p class="tp-day-tagline">
-            Fokus: Brust, Rücken, Schultern und Arme.
+        <!-- HERO / INTRO -->
+        <section class="tp-hero">
+          <span class="tp-badge badge">Trainingsplan · Upper / Lower</span>
+          <h1 class="tp-title glow-title">Upper / Lower Trainingsplan</h1>
+          <p class="tp-subtitle">
+            Dieser Plan kombiniert eine klare Upper Einheit und eine Lower
+            Einheit. Du trainierst alle wichtigen Muskelgruppen zwei Mal pro
+            Woche, mit Fokus auf saubere Technik, kontrollierte Progression und
+            sinnvolle Isolationsübungen.
           </p>
-          <ul class="tp-exercise-list">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Dumbbell Bench Press</span>
-              <span class="tp-ex-sets">2 bis 3 Sätze</span>
+        </section>
+        <!-- META INFOS -->
+        <section class="tp-meta">
+          <div class="tp-meta-grid">
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Level</span>
+              <span class="tp-meta-value"
+                >Fortgeschrittene Anfänger bis Fortgeschritten</span
+              >
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Einheiten pro Woche</span>
+              <span class="tp-meta-value">2 bis 4 Trainingstage</span>
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Trainingsziel</span>
+              <span class="tp-meta-value"
+                >Kraft und Muskelaufbau im Ober- und Unterkörper</span
+              >
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Empfohlene Dauer</span>
+              <span class="tp-meta-value">mindestens 8 Wochen</span>
+            </div>
+          </div>
+        </section>
+        <!-- TRAININGSWOCHE -->
+        <section class="tp-week">
+          <header class="tp-week-header">
+            <h2 class="tp-week-title section-heading">Deine Trainingswoche</h2>
+            <p class="tp-week-text section-text">
+              Plane diesen Upper Lower Plan zum Beispiel so: Montag Upper,
+              Dienstag Lower, Donnerstag Upper, Freitag oder Samstag Lower.
+              Achte darauf, dass zwischen den gleichen Einheiten immer
+              mindestens ein Pausentag liegt.
+            </p>
+          </header>
+          <div class="tp-week-grid">
+            <!-- TAG 1: UPPER -->
+            <article class="tp-day-card">
+              <h3 class="tp-day-title">Tag 1 - Upper</h3>
+              <p class="tp-day-tagline">
+                Fokus: Brust, Rücken, Schultern und Arme.
+              </p>
+              <ul class="tp-exercise-list">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Dumbbell Bench Press</span>
+                  <span class="tp-ex-sets">2 bis 3 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Pec Dec</span>
+                  <span class="tp-ex-sets">1 bis 2 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Breiter Latzug</span>
+                  <span class="tp-ex-sets">1 bis 2 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Enges Rudern am Kabelturm</span>
+                  <span class="tp-ex-sets">1 bis 2 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Breites Rudern am Kabelturm</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Lateral Raises</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Preacher Curls</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Triceps Overhead Extension</span>
+                  <span class="tp-ex-sets">2 bis 3 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Triceps Pushdown</span>
+                  <span class="tp-ex-sets">1 Satz</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Reverse Butterfly</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Shoulder Press</span>
+                  <span class="tp-ex-sets">2 bis 3 Sätze</span>
+                </li>
+              </ul>
+            </article>
+            <!-- TAG 2: LOWER -->
+            <article class="tp-day-card">
+              <h3 class="tp-day-title">Tag 2 - Lower</h3>
+              <p class="tp-day-tagline">
+                Fokus: Oberschenkel, Gesäß, Waden und Core.
+              </p>
+              <ul class="tp-exercise-list">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Seated Leg Curl</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Leg Extension</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Stiff Leg RDL</span>
+                  <span class="tp-ex-sets">1 bis 2 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Leg Press</span>
+                  <span class="tp-ex-sets">1 bis 2 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Calf Raises</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Cable Crunches</span>
+                  <span class="tp-ex-sets">2 bis 4 Sätze</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Adduktor</span>
+                  <span class="tp-ex-sets">2 bis 3 Sätze</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <!-- HINWEISE -->
+        <section class="tp-hints">
+          <h2 class="tp-hints-title section-heading">Hinweise zum Plan</h2>
+          <p class="tp-hints-text section-text">
+            Nutze diesen Upper Lower Plan als stabile Basis für mehrere Monate.
+            Steigere die Gewichte nur dann, wenn du alle Wiederholungen sauber
+            und kontrolliert schaffst. Technik kommt vor Gewicht.
+          </p>
+          <ul class="tp-hint-list">
+            <li class="tp-hint-item">
+              Starte jede Einheit mit 5 bis 10 Minuten lockerem Aufwärmen und
+              ein bis zwei Aufwärmsätzen bei der ersten großen Übung.
             </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Pec Dec</span>
-              <span class="tp-ex-sets">1 bis 2 Sätze</span>
+            <li class="tp-hint-item">
+              Wähle zu Beginn eher die untere Satzanzahl. Wenn du dich sicher
+              fühlst und gut regenerierst, kannst du langsam erhöhen.
             </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Breiter Latzug</span>
-              <span class="tp-ex-sets">1 bis 2 Sätze</span>
+            <li class="tp-hint-item">
+              Achte auf mindestens einen kompletten Pausentag pro Woche. Zwei
+              Pausentage sind sinnvoll, wenn Schule, Studium oder Job stressig
+              sind.
             </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Enges Rudern am Kabelturm</span>
-              <span class="tp-ex-sets">1 bis 2 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Breites Rudern am Kabelturm</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Lateral Raises</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Preacher Curls</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Triceps Overhead Extension</span>
-              <span class="tp-ex-sets">2 bis 3 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Triceps Pushdown</span>
-              <span class="tp-ex-sets">1 Satz</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Reverse Butterfly</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Shoulder Press</span>
-              <span class="tp-ex-sets">2 bis 3 Sätze</span>
+            <li class="tp-hint-item">
+              Plane alle sechs bis acht Wochen eine leichtere Woche ein, in der
+              du das Gewicht etwas reduzierst und den Fokus auf Technik legst.
             </li>
           </ul>
-        </article>
-        <!-- TAG 2: LOWER -->
-        <article class="tp-day-card">
-          <h3 class="tp-day-title">Tag 2 - Lower</h3>
-          <p class="tp-day-tagline">
-            Fokus: Oberschenkel, Gesäß, Waden und Core.
-          </p>
-          <ul class="tp-exercise-list">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Seated Leg Curl</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Leg Extension</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Stiff Leg RDL</span>
-              <span class="tp-ex-sets">1 bis 2 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Leg Press</span>
-              <span class="tp-ex-sets">1 bis 2 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Calf Raises</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Cable Crunches</span>
-              <span class="tp-ex-sets">2 bis 4 Sätze</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Adduktor</span>
-              <span class="tp-ex-sets">2 bis 3 Sätze</span>
-            </li>
-          </ul>
-        </article>
+        </section>
+        <div class="tp-back-bottom-wrapper">
+          <a href="../training_plan.html" class="tp-back-bottom"
+            >← Zurück zur Trainingsübersicht</a
+          >
+        </div>
       </div>
-    </section>
-    <!-- HINWEISE -->
-    <section class="tp-hints">
-      <h2 class="tp-hints-title section-heading">Hinweise zum Plan</h2>
-      <p class="tp-hints-text section-text">
-        Nutze diesen Upper Lower Plan als stabile Basis für mehrere Monate.
-        Steigere die Gewichte nur dann, wenn du alle Wiederholungen sauber und
-        kontrolliert schaffst. Technik kommt vor Gewicht.
-      </p>
-      <ul class="tp-hint-list">
-        <li class="tp-hint-item">
-          Starte jede Einheit mit 5 bis 10 Minuten lockerem Aufwärmen
-          und ein bis zwei Aufwärmsätzen bei der ersten großen Übung.
-        </li>
-        <li class="tp-hint-item">
-          Wähle zu Beginn eher die untere Satzanzahl.
-          Wenn du dich sicher fühlst und gut regenerierst, kannst du langsam erhöhen.
-        </li>
-        <li class="tp-hint-item">
-          Achte auf mindestens einen kompletten Pausentag pro Woche.
-          Zwei Pausentage sind sinnvoll, wenn Schule, Studium oder Job stressig sind.
-        </li>
-        <li class="tp-hint-item">
-          Plane alle sechs bis acht Wochen eine leichtere Woche ein,
-          in der du das Gewicht etwas reduzierst und den Fokus auf Technik legst.
-        </li>
-      </ul>
-    </section>
-<div class="tp-back-bottom-wrapper">
-  <a href="planselector.html" class="tp-back-bottom">← Zurück zu den Trainingsplänen</a>
-</div>
-  </div>
-</main>
- <footer class="footer">
-    <div class="left">
-      <p><a href="service.html">Kundenservice</a></p>
-      <p><a href="Footer/kontakt.html">Kontakt</a></p>
-      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
-    </div>
-    <div class="centerleft">
-      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
-      <p><a href="Footer/überuns.html">Über uns</a></p>
-      <p><a href="Footer/impressum.html">Impressum</a></p>
-      <p><a href="Footer/agb.html">AGB</a></p>
-      <p><a href="Footer/ds.html">Datenschutz</a></p>
-      <p><a href="Footer/Compliance.html">Compliance</a></p>
-      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
-    </div>
-    <div class="centerright">
-      <p><a href="Kategorien.html">Kategorien</a></p>
-      <p><a href="training.html">Trainingslehre</a></p>
-      <p><a href="meal.html">Meals</a></p>
-      <p><a href="learning.html">E-learnings</a></p>
-    </div>
-    <div class="right">
-      <p>Socials</p>
-      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
-      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
-      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
-    </div>
-  </footer>
-</body>
+    </main>
+    <footer class="footer">
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
 </html>

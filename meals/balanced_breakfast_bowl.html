@@ -1,106 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiftED – Balanced Breakfast Bowl</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-                      <header class="main-header">
-    <div class="header-content">
-      <div class="header-left">
-        <div class="logo-container">
-          <a href="../landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED – Balanced Breakfast Bowl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="../landing.html"
+              ><img src="/img/Logo.png" alt="LiftED Logo"
+            /></a>
+          </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="../training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="../plan/planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
+                  <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
+                  <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li>
+                    <a href="../learning/karteikarten.html">Karteikarten</a>
+                  </li>
+                  <li>
+                    <a href="../learning/gehirntraining.html">Gehirntraining</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav aria-label="Hauptnavigation">
-          <ul>
-            <li class="has-submenu">
-              <a href="../training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                <li><a href="../plan/planselector.html">Trainingsplan</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="../meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
-                <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
-                <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="../learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                <li><a href="../learning/karteikarten.html">Karteikarten</a></li>
-                <li><a href="../learning/gehirntraining.html">Gehirntraining</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-actions">
+          <a href="../sofunktionierts.html" class="header-cta">Mehr erfahren</a>
+        </div>
       </div>
-      <div class="header-actions">
-        <a href="../sofunktionierts.html" class="header-cta">So funktioniert's</a>
-      </div>
-    </div>
-  </header>
-  <div class="page-dim" aria-hidden="true"></div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
 
-  <main id="main-content" tabindex="-1">
-    <img src="/img/meals/balanced-breakfast-bowl.png" alt="Balanced Breakfast Bowl" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;">
+    <main id="main-content" tabindex="-1">
+      <img
+        src="/img/meals/balanced-breakfast-bowl.png"
+        alt="Balanced Breakfast Bowl"
+        style="
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
+          border-radius: 12px;
+        "
+      />
 
-    <h1>Balanced Breakfast Bowl</h1>
-    <p><strong>Kategorie:</strong> Body Recomp</p>
+      <h1>Balanced Breakfast Bowl</h1>
+      <p><strong>Kategorie:</strong> Body Recomp</p>
 
-    <section>
-      <h2>Beschreibung</h2>
-      <p>Die Balanced Breakfast Bowl ist dein perfekter Start in den Tag: eine Kombination aus griechischem Joghurt, frischen Beeren, Haferflocken, Nüssen und einem Hauch Honig. Sie liefert ausgewogene Energie, viele Ballaststoffe und hochwertiges Eiweiß – ideal, um den Stoffwechsel zu aktivieren und lange satt zu bleiben.</p>
-    </section>
+      <section>
+        <h2>Beschreibung</h2>
+        <p>
+          Die Balanced Breakfast Bowl ist dein perfekter Start in den Tag: eine
+          Kombination aus griechischem Joghurt, frischen Beeren, Haferflocken,
+          Nüssen und einem Hauch Honig. Sie liefert ausgewogene Energie, viele
+          Ballaststoffe und hochwertiges Eiweiß – ideal, um den Stoffwechsel zu
+          aktivieren und lange satt zu bleiben.
+        </p>
+      </section>
 
-    <section>
-      <h2>Zutaten</h2>
-      <ul>
-        <li>200 g Griechischer Joghurt (0–2 % Fett)</li>
-        <li>40 g Haferflocken</li>
-        <li>80 g gemischte Beeren (z. B. Heidelbeeren, Himbeeren, Erdbeeren)</li>
-        <li>15 g gehackte Nüsse (Mandeln oder Walnüsse)</li>
-        <li>1 TL Honig oder Agavendicksaft</li>
-        <li>1 TL Chiasamen (optional)</li>
-        <li>etwas Zimt oder Vanillepulver nach Geschmack</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Zutaten</h2>
+        <ul>
+          <li>200 g Griechischer Joghurt (0–2 % Fett)</li>
+          <li>40 g Haferflocken</li>
+          <li>
+            80 g gemischte Beeren (z. B. Heidelbeeren, Himbeeren, Erdbeeren)
+          </li>
+          <li>15 g gehackte Nüsse (Mandeln oder Walnüsse)</li>
+          <li>1 TL Honig oder Agavendicksaft</li>
+          <li>1 TL Chiasamen (optional)</li>
+          <li>etwas Zimt oder Vanillepulver nach Geschmack</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Zubereitung</h2>
-      <ol>
-        <li>Haferflocken in einer Schüssel mit etwas heißem Wasser oder Milch anrühren und 2–3 Minuten quellen lassen.</li>
-        <li>Joghurt darüber geben und glattstreichen.</li>
-        <li>Beeren waschen und zusammen mit den gehackten Nüssen auf dem Joghurt anrichten.</li>
-        <li>Mit Honig beträufeln und optional mit Chiasamen und Zimt verfeinern.</li>
-      </ol>
-    </section>
+      <section>
+        <h2>Zubereitung</h2>
+        <ol>
+          <li>
+            Haferflocken in einer Schüssel mit etwas heißem Wasser oder Milch
+            anrühren und 2–3 Minuten quellen lassen.
+          </li>
+          <li>Joghurt darüber geben und glattstreichen.</li>
+          <li>
+            Beeren waschen und zusammen mit den gehackten Nüssen auf dem Joghurt
+            anrichten.
+          </li>
+          <li>
+            Mit Honig beträufeln und optional mit Chiasamen und Zimt verfeinern.
+          </li>
+        </ol>
+      </section>
 
-    <section>
-      <h2>Nährwerte (pro Portion, ca.)</h2>
-      <ul>
-        <li>Kalorien: ~430 kcal</li>
-        <li>Protein: ~28 g</li>
-        <li>Kohlenhydrate: ~40 g</li>
-        <li>Fett: ~14 g</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Nährwerte (pro Portion, ca.)</h2>
+        <ul>
+          <li>Kalorien: ~430 kcal</li>
+          <li>Protein: ~28 g</li>
+          <li>Kohlenhydrate: ~40 g</li>
+          <li>Fett: ~14 g</li>
+        </ul>
+      </section>
 
-    <section>
-      <p><a href="../meal.html">← Zurück zur Übersicht</a></p>
-    </section>
-  </main>
+      <section>
+        <p><a href="../meal.html">← Zurück zur Übersicht</a></p>
+      </section>
+    </main>
 
     <footer class="footer">
-    <p>LiftED ist ein Schülerprojekt.</p>
-  </footer>
-</body>
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
 </html>

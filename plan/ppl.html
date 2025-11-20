@@ -1,285 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body class="theme-training">
-  <a href="planselector.html">Landing</a>
-</body>
-</html>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiftED - Upper/Lower</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<header class="main-header">
-    <div class="header-content">
-      <div class="header-left">
-        <div class="logo-container">
-          <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED - Push / Pull / Legs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="theme-training">
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="../landing.html"
+              ><img src="/img/Logo.png" alt="LiftED Logo"
+            /></a>
+          </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="../training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
+                  <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
+                  <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li>
+                    <a href="../learning/karteikarten.html">Karteikarten</a>
+                  </li>
+                  <li>
+                    <a href="../learning/gehirntraining.html">Gehirntraining</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav aria-label="Hauptnavigation">
-          <ul>
-            <li class="has-submenu">
-              <a href="training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                <li><a href="plan/planselector.html">Trainingsplan</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                <li><a href="meal.html#fettverlust">Fettverlust</a></li>
-                <li><a href="meal.html#body-recomp">Body Recomp</a></li>
-                <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                <li><a href="learning/karteikarten.html">Karteikarten</a></li>
-                <li><a href="learning/gehirntraining.html">Gehirntraining</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="header-actions">
+          <a href="../sofunktionierts.html" class="header-cta">Mehr erfahren</a>
+        </div>
+      </div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
+
+    <main class="tp-page" id="main-content" tabindex="-1">
+      <div class="tp-container">
+        <nav class="tp-breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../training_plan.html">Training</a>
+          <span class="tp-breadcrumb-separator">›</span>
+          <a href="planselector.html">Trainingspläne</a>
+          <span class="tp-breadcrumb-separator">›</span>
+          <span class="tp-breadcrumb-current">Push / Pull / Legs</span>
         </nav>
-      </div>
-      <div class="header-actions">
-        <a href="sofunktionierts.html" class="header-cta">So funktioniert's</a>
-      </div>
-    </div>
-  </header>
-<main class="tp-page">
-  
-  <div class="tp-container">
-    <nav class="tp-breadcrumb" aria-label="Brotkrumen-Navigation">
-      <a href="training.html">Training</a>
-      <span class="tp-breadcrumb-separator">›</span>
-      <a href="planselector.html">Trainingspläne</a>
-      <span class="tp-breadcrumb-separator">›</span>
-      <span class="tp-breadcrumb-current">Push / Pull / Legs</span>
-    </nav>
-    <!-- HERO / INTRO -->
-    <section class="tp-hero">
-      <span class="tp-badge badge">Trainingsplan · Push / Pull / Legs</span>
-      <h1 class="tp-title glow-title">Push / Pull / Legs Trainingsplan</h1>
-      <p class="tp-subtitle">
-        Dieser Push / Pull / Legs Plan besteht aus vier Trainingstagen.
-        Drei Einheiten bilden das klassische PPL-Gerüst, der vierte Tag
-        ist als flexible Zusatz- oder Fokus-Einheit gedacht. Alle Inhalte
-        sind Platzhalter und können später durch deinen eigenen Plan ersetzt werden.
-      </p>
-    </section>
-    <!-- META INFOS -->
-    <section class="tp-meta">
-      <div class="tp-meta-grid">
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Level</span>
-          <span class="tp-meta-value">Platzhalter – frei anpassbar</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Einheiten pro Woche</span>
-          <span class="tp-meta-value">4 Einheiten (z. B. P / P / L / Bonus)</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Trainingsziel</span>
-          <span class="tp-meta-value">Platzhalter (z. B. Muskelaufbau, Kraft)</span>
-        </div>
-        <div class="tp-meta-item">
-          <span class="tp-meta-label">Empfohlene Dauer</span>
-          <span class="tp-meta-value">mindestens 12 Wochen</span>
-        </div>
-      </div>
-    </section>
-    <!-- TRAININGSWOCHE (4 TAGE – TILE-LAYOUT) -->
-    <section class="tp-week tp-week--ppl">
-      <header class="tp-week-header">
-        <h2 class="tp-week-title section-heading">Deine PPL-Woche</h2>
-        <p class="tp-week-text section-text">
-          Dieser Plan nutzt eine klassische Push / Pull / Legs Struktur mit
-          einem zusätzlichen vierten Trainingstag. Alle Übungen und Sätze sind
-          Platzhalter und können später individuell gefüllt werden.
-        </p>
-      </header>
-      <div class="tp-week-grid">
-        <!-- TAG 1 – PUSH -->
-        <article class="tp-day-card tp-day-card--ppl">
-          <div class="tp-day-header">
-            <span class="tp-day-badge">Tag 1</span>
-            <h3 class="tp-day-title">Push</h3>
-          </div>
-          <p class="tp-day-tagline">
-            Fokus: Brust, vordere Schultern und Trizeps.
+        <!-- HERO / INTRO -->
+        <section class="tp-hero">
+          <span class="tp-badge badge">Trainingsplan · Push / Pull / Legs</span>
+          <h1 class="tp-title glow-title">Push / Pull / Legs Trainingsplan</h1>
+          <p class="tp-subtitle">
+            Dieser Push / Pull / Legs Plan besteht aus vier Trainingstagen. Drei
+            Einheiten bilden das klassische PPL-Gerüst, der vierte Tag ist als
+            flexible Zusatz- oder Fokus-Einheit gedacht. Alle Inhalte sind
+            Platzhalter und können später durch deinen eigenen Plan ersetzt
+            werden.
           </p>
-          <ul class="tp-exercise-list tp-exercise-list--compact">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Push Übung 1 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
+        </section>
+        <!-- META INFOS -->
+        <section class="tp-meta">
+          <div class="tp-meta-grid">
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Level</span>
+              <span class="tp-meta-value">Platzhalter – frei anpassbar</span>
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Einheiten pro Woche</span>
+              <span class="tp-meta-value"
+                >4 Einheiten (z. B. P / P / L / Bonus)</span
+              >
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Trainingsziel</span>
+              <span class="tp-meta-value"
+                >Platzhalter (z. B. Muskelaufbau, Kraft)</span
+              >
+            </div>
+            <div class="tp-meta-item">
+              <span class="tp-meta-label">Empfohlene Dauer</span>
+              <span class="tp-meta-value">mindestens 12 Wochen</span>
+            </div>
+          </div>
+        </section>
+        <!-- TRAININGSWOCHE (4 TAGE – TILE-LAYOUT) -->
+        <section class="tp-week tp-week--ppl">
+          <header class="tp-week-header">
+            <h2 class="tp-week-title section-heading">Deine PPL-Woche</h2>
+            <p class="tp-week-text section-text">
+              Dieser Plan nutzt eine klassische Push / Pull / Legs Struktur mit
+              einem zusätzlichen vierten Trainingstag. Alle Übungen und Sätze
+              sind Platzhalter und können später individuell gefüllt werden.
+            </p>
+          </header>
+          <div class="tp-week-grid">
+            <!-- TAG 1 – PUSH -->
+            <article class="tp-day-card tp-day-card--ppl">
+              <div class="tp-day-header">
+                <span class="tp-day-badge">Tag 1</span>
+                <h3 class="tp-day-title">Push</h3>
+              </div>
+              <p class="tp-day-tagline">
+                Fokus: Brust, vordere Schultern und Trizeps.
+              </p>
+              <ul class="tp-exercise-list tp-exercise-list--compact">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Push Übung 1 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Push Übung 2 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Push Übung 3 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Push Übung 4 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+              </ul>
+            </article>
+            <!-- TAG 2 – PULL -->
+            <article class="tp-day-card tp-day-card--ppl">
+              <div class="tp-day-header">
+                <span class="tp-day-badge">Tag 2</span>
+                <h3 class="tp-day-title">Pull</h3>
+              </div>
+              <p class="tp-day-tagline">
+                Fokus: Rücken, hintere Schultern und Bizeps.
+              </p>
+              <ul class="tp-exercise-list tp-exercise-list--compact">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Pull Übung 1 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Pull Übung 2 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Pull Übung 3 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Pull Übung 4 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+              </ul>
+            </article>
+            <!-- TAG 3 – LEGS -->
+            <article class="tp-day-card tp-day-card--ppl">
+              <div class="tp-day-header">
+                <span class="tp-day-badge">Tag 3</span>
+                <h3 class="tp-day-title">Legs</h3>
+              </div>
+              <p class="tp-day-tagline">Fokus: Unterkörper und Core.</p>
+              <ul class="tp-exercise-list tp-exercise-list--compact">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Legs Übung 1 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Legs Übung 2 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Legs Übung 3 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Legs Übung 4 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+              </ul>
+            </article>
+            <!-- TAG 4 – BONUS / FOKUS -->
+            <article class="tp-day-card tp-day-card--ppl">
+              <div class="tp-day-header">
+                <span class="tp-day-badge">Tag 4</span>
+                <h3 class="tp-day-title">Bonus / Fokus</h3>
+              </div>
+              <p class="tp-day-tagline">
+                Flexible Einheit: z. B. Arme, Technik, Schwachstellen oder eine
+                leichte Full Body Session.
+              </p>
+              <ul class="tp-exercise-list tp-exercise-list--compact">
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Bonus Übung 1 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Bonus Übung 2 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Bonus Übung 3 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+                <li class="tp-exercise-item">
+                  <span class="tp-ex-name">Bonus Übung 4 (Platzhalter)</span>
+                  <span class="tp-ex-sets">Sätze / Wdh.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <!-- HINWEISE (PLATZHALTER) -->
+        <section class="tp-hints">
+          <h2 class="tp-hints-title section-heading">Hinweise zum PPL-Plan</h2>
+          <p class="tp-hints-text section-text">
+            Alle Inhalte sind Platzhalter. Du kannst hier später erklären, wie
+            dein PPL-Plan aufgebaut ist, wie du Belastung und Pausen verteilst
+            und welche Varianten es für unterschiedliche Ziele gibt.
+          </p>
+          <ul class="tp-hint-list">
+            <li class="tp-hint-item">
+              Hinweis 1 (Platzhalter): Wie viele Wochen der Plan am Stück laufen
+              soll.
             </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Push Übung 2 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            <li class="tp-hint-item">
+              Hinweis 2 (Platzhalter): Welche Satz- und Wiederholungsbereiche
+              sinnvoll sind.
             </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Push Übung 3 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Push Übung 4 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
+            <li class="tp-hint-item">
+              Hinweis 3 (Platzhalter): Hinweise zu Deload-Wochen oder optionalen
+              Pausentagen.
             </li>
           </ul>
-        </article>
-        <!-- TAG 2 – PULL -->
-        <article class="tp-day-card tp-day-card--ppl">
-          <div class="tp-day-header">
-            <span class="tp-day-badge">Tag 2</span>
-            <h3 class="tp-day-title">Pull</h3>
-          </div>
-          <p class="tp-day-tagline">
-            Fokus: Rücken, hintere Schultern und Bizeps.
-          </p>
-          <ul class="tp-exercise-list tp-exercise-list--compact">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Pull Übung 1 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Pull Übung 2 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Pull Übung 3 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Pull Übung 4 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-          </ul>
-        </article>
-        <!-- TAG 3 – LEGS -->
-        <article class="tp-day-card tp-day-card--ppl">
-          <div class="tp-day-header">
-            <span class="tp-day-badge">Tag 3</span>
-            <h3 class="tp-day-title">Legs</h3>
-          </div>
-          <p class="tp-day-tagline">
-            Fokus: Unterkörper und Core.
-          </p>
-          <ul class="tp-exercise-list tp-exercise-list--compact">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Legs Übung 1 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Legs Übung 2 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Legs Übung 3 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Legs Übung 4 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-          </ul>
-        </article>
-        <!-- TAG 4 – BONUS / FOKUS -->
-        <article class="tp-day-card tp-day-card--ppl">
-          <div class="tp-day-header">
-            <span class="tp-day-badge">Tag 4</span>
-            <h3 class="tp-day-title">Bonus / Fokus</h3>
-          </div>
-          <p class="tp-day-tagline">
-            Flexible Einheit: z. B. Arme, Technik, Schwachstellen
-            oder eine leichte Full Body Session.
-          </p>
-          <ul class="tp-exercise-list tp-exercise-list--compact">
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Bonus Übung 1 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Bonus Übung 2 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Bonus Übung 3 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-            <li class="tp-exercise-item">
-              <span class="tp-ex-name">Bonus Übung 4 (Platzhalter)</span>
-              <span class="tp-ex-sets">Sätze / Wdh.</span>
-            </li>
-          </ul>
-        </article>
+        </section>
+        <div class="tp-back-bottom-wrapper">
+          <a href="../training_plan.html" class="tp-back-bottom"
+            >← Zurück zur Trainingsübersicht</a
+          >
+        </div>
       </div>
-    </section>
-    <!-- HINWEISE (PLATZHALTER) -->
-    <section class="tp-hints">
-      <h2 class="tp-hints-title section-heading">Hinweise zum PPL-Plan</h2>
-      <p class="tp-hints-text section-text">
-        Alle Inhalte sind Platzhalter. Du kannst hier später erklären, wie dein
-        PPL-Plan aufgebaut ist, wie du Belastung und Pausen verteilst und welche
-        Varianten es für unterschiedliche Ziele gibt.
-      </p>
-      <ul class="tp-hint-list">
-        <li class="tp-hint-item">
-          Hinweis 1 (Platzhalter): Wie viele Wochen der Plan am Stück laufen soll.
-        </li>
-        <li class="tp-hint-item">
-          Hinweis 2 (Platzhalter): Welche Satz- und Wiederholungsbereiche sinnvoll sind.
-        </li>
-        <li class="tp-hint-item">
-          Hinweis 3 (Platzhalter): Hinweise zu Deload-Wochen oder optionalen Pausentagen.
-        </li>
-      </ul>
-    </section>
-<div class="tp-back-bottom-wrapper">
-  <a href="planselector.html" class="tp-back-bottom">← Zurück zu den Trainingsplänen</a>
-</div>
-  </div>
-</main>
+    </main>
 
- <footer class="footer">
-    <div class="left">
-      <p><a href="service.html">Kundenservice</a></p>
-      <p><a href="Footer/kontakt.html">Kontakt</a></p>
-      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
-    </div>
-    <div class="centerleft">
-      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
-      <p><a href="Footer/überuns.html">Über uns</a></p>
-      <p><a href="Footer/impressum.html">Impressum</a></p>
-      <p><a href="Footer/agb.html">AGB</a></p>
-      <p><a href="Footer/ds.html">Datenschutz</a></p>
-      <p><a href="Footer/Compliance.html">Compliance</a></p>
-      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
-    </div>
-    <div class="centerright">
-      <p><a href="Kategorien.html">Kategorien</a></p>
-      <p><a href="training.html">Trainingslehre</a></p>
-      <p><a href="meal.html">Meals</a></p>
-      <p><a href="learning.html">E-learnings</a></p>
-    </div>
-    <div class="right">
-      <p>Socials</p>
-      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
-      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
-      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
-    </div>
-  </footer>
-</body>
+    <footer class="footer">
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
 </html>
-

@@ -1,183 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiftED – Meals</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="theme-meals">
-  <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-                      <header class="main-header">
-    <div class="header-content">
-      <div class="header-left">
-        <div class="logo-container">
-          <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED – Meals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-meals">
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="landing.html"
+              ><img src="/img/Logo.png" alt="LiftED Logo"
+            /></a>
+          </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="plan/planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li><a href="meal.html#fettverlust">Fettverlust</a></li>
+                  <li><a href="meal.html#body-recomp">Body Recomp</a></li>
+                  <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li><a href="learning/karteikarten.html">Karteikarten</a></li>
+                  <li>
+                    <a href="learning/gehirntraining.html">Gehirntraining</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav aria-label="Hauptnavigation">
-          <ul>
-            <li class="has-submenu">
-              <a href="training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                <li><a href="plan/planselector.html">Trainingsplan</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                <li><a href="meal.html#fettverlust">Fettverlust</a></li>
-                <li><a href="meal.html#body-recomp">Body Recomp</a></li>
-                <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                <li><a href="learning/karteikarten.html">Karteikarten</a></li>
-                <li><a href="learning/gehirntraining.html">Gehirntraining</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-actions">
+          <a href="sofunktionierts.html" class="header-cta">Mehr erfahren</a>
+        </div>
       </div>
-      <div class="header-actions">
-        <a href="sofunktionierts.html" class="header-cta">So funktioniert's</a>
-      </div>
-    </div>
-  </header>
-  <div class="page-dim" aria-hidden="true"></div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
 
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Meals & Ernährung</h1>
+        <p>
+          Smart essen, besser trainieren: Hier findest du alltagstaugliche
+          Rezepte sortiert nach Ziel – Fettverlust, Body Recomp und
+          Muskelaufbau. Klicke eine Kategorie, um alle passenden Meals mit Bild
+          anzuzeigen.
+        </p>
+      </section>
 
-  <main id="main-content" tabindex="-1">
-    <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">Meals & Ernährung</h1>
-      <p>Smart essen, besser trainieren: Hier findest du alltagstaugliche Rezepte sortiert nach Ziel – Fettverlust, Body Recomp und Muskelaufbau. Klicke eine Kategorie, um alle passenden Meals mit Bild anzuzeigen.</p>
-    </section>
+      <section class="accordion" aria-label="Rezeptkategorien">
+        <!-- Fettverlust -->
+        <details class="acc-item" open id="fettverlust">
+          <summary>
+            <span class="acc-title">🔥 Fettverlust</span>
+            <span class="chev">▶</span>
+          </summary>
+          <div class="grid">
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/cottage-cheese-plate.png&quot;);
+              "
+            >
+              <a
+                href="meals/cottage_cheese_plate.html"
+                aria-label="Cottage Cheese Plate"
+              >
+                <span class="label">Cottage Cheese Plate</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/greek-chicken-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/greek_chicken_bowl.html"
+                aria-label="Greek Chicken Bowl"
+              >
+                <span class="label">Greek Chicken Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/shrimp-stir-fry.png&quot;);
+              "
+            >
+              <a href="meals/shrimp_stir_fry.html" aria-label="Shrimp Stir Fry">
+                <span class="label">Shrimp Stir Fry</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/salmon-veggies.png&quot;);
+              "
+            >
+              <a href="meals/salmon_veggies.html" aria-label="Salmon Veggies">
+                <span class="label">Salmon Veggies</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/zoodle-pute.png&quot;);
+              "
+            >
+              <a href="meals/zoodle_pute.html" aria-label="Zoodle Pute">
+                <span class="label">Zoodle Pute</span>
+              </a>
+            </div>
+          </div>
+        </details>
 
-    <section class="accordion" aria-label="Rezeptkategorien">
-      <!-- Fettverlust -->
-  <details class="acc-item" open id="fettverlust">
-        <summary>
-          <span class="acc-title">🔥 Fettverlust</span>
-          <span class="chev">▶</span>
-        </summary>
-        <div class="grid">
-          <div class="card" style="background-image:url('/img/meals/cottage-cheese-plate.png')">
-            <a href="meals/cottage_cheese_plate.html" aria-label="Cottage Cheese Plate">
-              <span class="label">Cottage Cheese Plate</span>
-            </a>
+        <!-- Body Recomp -->
+        <details class="acc-item" open id="body-recomp">
+          <summary>
+            <span class="acc-title">⚖️ Body Recomp</span>
+            <span class="chev">▶</span>
+          </summary>
+          <div class="grid">
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/fitness-leberkaese.png&quot;);
+              "
+            >
+              <a
+                href="meals/fitness_leberkaese.html"
+                aria-label="Fitness Leberkäse"
+              >
+                <span class="label">Fitness Leberkäse</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/mediterrane-quinoa-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/mediterrane_quinoa_bowl.html"
+                aria-label="Mediterrane Quinoa Bowl"
+              >
+                <span class="label">Mediterrane Quinoa Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/puten-gemuese-pfanne.png&quot;);
+              "
+            >
+              <a
+                href="meals/puten_gemuese_pfanne.html"
+                aria-label="Puten-Gemüse-Pfanne"
+              >
+                <span class="label">Puten‑Gemüse‑Pfanne</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/balanced-breakfast-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/balanced_breakfast_bowl.html"
+                aria-label="Balanced Breakfast Bowl"
+              >
+                <span class="label">Balanced Breakfast Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/veggie-egg-wraps.png&quot;);
+              "
+            >
+              <a
+                href="meals/veggie_egg_wraps.html"
+                aria-label="Veggie Egg Wraps"
+              >
+                <span class="label">Veggie Egg Wraps</span>
+              </a>
+            </div>
           </div>
-          <div class="card" style="background-image:url('/img/meals/greek-chicken-bowl.png')">
-            <a href="meals/greek_chicken_bowl.html" aria-label="Greek Chicken Bowl">
-              <span class="label">Greek Chicken Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/shrimp-stir-fry.png')">
-            <a href="meals/shrimp_stir_fry.html" aria-label="Shrimp Stir Fry">
-              <span class="label">Shrimp Stir Fry</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/salmon-veggies.png')">
-            <a href="meals/salmon_veggies.html" aria-label="Salmon Veggies">
-              <span class="label">Salmon Veggies</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/zoodle-pute.png')">
-            <a href="meals/zoodle_pute.html" aria-label="Zoodle Pute">
-              <span class="label">Zoodle Pute</span>
-            </a>
-          </div>
-        </div>
-      </details>
+        </details>
 
-      <!-- Body Recomp -->
-  <details class="acc-item" open id="body-recomp">
-        <summary>
-          <span class="acc-title">⚖️ Body Recomp</span>
-          <span class="chev">▶</span>
-        </summary>
-        <div class="grid">
-          <div class="card" style="background-image:url('/img/meals/fitness-leberkaese.png')">
-            <a href="meals/fitness_leberkaese.html" aria-label="Fitness Leberkäse">
-              <span class="label">Fitness Leberkäse</span>
-            </a>
+        <!-- Muskelaufbau -->
+        <details class="acc-item" open id="muskelaufbau">
+          <summary>
+            <span class="acc-title">💪 Muskelaufbau</span>
+            <span class="chev">▶</span>
+          </summary>
+          <div class="grid">
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/chicken-rice-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/chicken_rice_bowl.html"
+                aria-label="Chicken Rice Bowl"
+              >
+                <span class="label">Chicken Rice Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/beef-sweet-potato.png&quot;);
+              "
+            >
+              <a
+                href="meals/beef_sweet_potato.html"
+                aria-label="Beef Sweet Potato Plate"
+              >
+                <span class="label">Beef Sweet Potato Plate</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/salmon-quinoa-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/salmon_quinoa_bowl.html"
+                aria-label="Lachs-Quinoa-Bowl"
+              >
+                <span class="label">Lachs‑Quinoa‑Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/protein-pasta-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/protein_pasta_bowl.html"
+                aria-label="Protein Pasta Bowl"
+              >
+                <span class="label">Protein Pasta Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/oatmeal-power-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/oatmeal_power_bowl.html"
+                aria-label="Oatmeal Power Bowl"
+              >
+                <span class="label">Oatmeal Power Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/teriyaki-chicken-bowl.png&quot;);
+              "
+            >
+              <a
+                href="meals/teriyaki_chicken_bowl.html"
+                aria-label="Teriyaki Chicken Bowl"
+              >
+                <span class="label">Teriyaki Chicken Bowl</span>
+              </a>
+            </div>
+            <div
+              class="card"
+              style="
+                background-image: url(&quot;/img/meals/turkey-avocado-wraps.png&quot;);
+              "
+            >
+              <a
+                href="meals/turkey_avocado_wraps.html"
+                aria-label="Turkey Avocado Wraps"
+              >
+                <span class="label">Turkey Avocado Wraps</span>
+              </a>
+            </div>
           </div>
-          <div class="card" style="background-image:url('/img/meals/mediterrane-quinoa-bowl.png')">
-            <a href="meals/mediterrane_quinoa_bowl.html" aria-label="Mediterrane Quinoa Bowl">
-              <span class="label">Mediterrane Quinoa Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/puten-gemuese-pfanne.png')">
-            <a href="meals/puten_gemuese_pfanne.html" aria-label="Puten-Gemüse-Pfanne">
-              <span class="label">Puten‑Gemüse‑Pfanne</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/balanced-breakfast-bowl.png')">
-            <a href="meals/balanced_breakfast_bowl.html" aria-label="Balanced Breakfast Bowl">
-              <span class="label">Balanced Breakfast Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/veggie-egg-wraps.png')">
-            <a href="meals/veggie_egg_wraps.html" aria-label="Veggie Egg Wraps">
-              <span class="label">Veggie Egg Wraps</span>
-            </a>
-          </div>
-        </div>
-      </details>
-
-      <!-- Muskelaufbau -->
-  <details class="acc-item" open id="muskelaufbau">
-        <summary>
-          <span class="acc-title">💪 Muskelaufbau</span>
-          <span class="chev">▶</span>
-        </summary>
-        <div class="grid">
-          <div class="card" style="background-image:url('/img/meals/chicken-rice-bowl.png')">
-            <a href="meals/chicken_rice_bowl.html" aria-label="Chicken Rice Bowl">
-              <span class="label">Chicken Rice Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/beef-sweet-potato.png')">
-            <a href="meals/beef_sweet_potato.html" aria-label="Beef Sweet Potato Plate">
-              <span class="label">Beef Sweet Potato Plate</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/salmon-quinoa-bowl.png')">
-            <a href="meals/salmon_quinoa_bowl.html" aria-label="Lachs-Quinoa-Bowl">
-              <span class="label">Lachs‑Quinoa‑Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/protein-pasta-bowl.png')">
-            <a href="meals/protein_pasta_bowl.html" aria-label="Protein Pasta Bowl">
-              <span class="label">Protein Pasta Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/oatmeal-power-bowl.png')">
-            <a href="meals/oatmeal_power_bowl.html" aria-label="Oatmeal Power Bowl">
-              <span class="label">Oatmeal Power Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/teriyaki-chicken-bowl.png')">
-            <a href="meals/teriyaki_chicken_bowl.html" aria-label="Teriyaki Chicken Bowl">
-              <span class="label">Teriyaki Chicken Bowl</span>
-            </a>
-          </div>
-          <div class="card" style="background-image:url('/img/meals/turkey-avocado-wraps.png')">
-            <a href="meals/turkey_avocado_wraps.html" aria-label="Turkey Avocado Wraps">
-              <span class="label">Turkey Avocado Wraps</span>
-            </a>
-          </div>
-        </div>
-      </details>
-    </section>
-  </main>
+        </details>
+      </section>
+    </main>
 
     <footer class="footer">
-    <p>LiftED ist ein Schülerprojekt.</p>
-  </footer>
-  
-</body>
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
 </html>

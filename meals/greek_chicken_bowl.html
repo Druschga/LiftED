@@ -1,122 +1,169 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiftED – Greek Chicken Bowl</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-                      <header class="main-header">
-    <div class="header-content">
-      <div class="header-left">
-        <div class="logo-container">
-          <a href="../landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
-        </div>
-        <nav aria-label="Hauptnavigation">
-          <ul>
-            <li class="has-submenu">
-              <a href="../training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                <li><a href="../plan/planselector.html">Trainingsplan</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="../meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
-                <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
-                <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="../learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                <li><a href="../learning/karteikarten.html">Karteikarten</a></li>
-                <li><a href="../learning/gehirntraining.html">Gehirntraining</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-actions">
-        <a href="../sofunktionierts.html" class="header-cta">So funktioniert's</a>
-      </div>
-    </div>
-  </header>
-  <div class="page-dim" aria-hidden="true"></div>
-
-  <main class="meal-page" id="main-content" tabindex="-1">
-      <section class="meal-hero">
-
-          <!-- Hintergrundbild (blur + Parallax) -->
-          <div class="meal-hero__bg" aria-hidden="true">
-              <img src="/img/meals/greek-chicken-bowl.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED – Greek Chicken Bowl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="../landing.html"
+              ><img src="/img/Logo.png" alt="LiftED Logo"
+            /></a>
           </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="../training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="../plan/planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
+                  <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
+                  <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li>
+                    <a href="../learning/karteikarten.html">Karteikarten</a>
+                  </li>
+                  <li>
+                    <a href="../learning/gehirntraining.html">Gehirntraining</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <a href="../sofunktionierts.html" class="header-cta">Mehr erfahren</a>
+        </div>
+      </div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
 
-          <!-- Inhalt in einem Widget/Card -->
-          <article class="meal-card">
-              <h1>Greek Chicken Bowl</h1>
-              <p><strong>Kategorie:</strong> Fettverlust</p>
+    <main class="meal-page" id="main-content" tabindex="-1">
+      <section class="meal-hero">
+        <!-- Hintergrundbild (blur + Parallax) -->
+        <div class="meal-hero__bg" aria-hidden="true">
+          <img src="/img/meals/greek-chicken-bowl.png" alt="" />
+        </div>
 
-              <section>
-                  <h2>Beschreibung</h2>
-                  <p>Diese Greek Chicken Bowl bringt mediterranes Feeling in deine Fitnessküche: zartes Hähnchen trifft auf frisches Gemüse, Feta und ein leichtes Joghurtdressing.
-                      Ideal bei Fettverlust-Zielen – nährstoffreich, eiweißbetont und erfrischend leicht.</p>
-              </section>
+        <!-- Inhalt in einem Widget/Card -->
+        <article class="meal-card">
+          <h1>Greek Chicken Bowl</h1>
+          <p><strong>Kategorie:</strong> Fettverlust</p>
 
-              <section>
-                  <h2>Zutaten</h2>
-                  <ul>
-                      <li>150 g Hähnchenbrust</li>
-                      <li>100 g Gurke</li>
-                      <li>100 g Tomaten</li>
-                      <li>40 g Feta light</li>
-                      <li>1 EL Oliven</li>
-                      <li>2 EL fettarmer Joghurt</li>
-                      <li>1 TL Zitronensaft</li>
-                      <li>1 TL Olivenöl</li>
-                      <li>Salz, Pfeffer, Oregano</li>
-                  </ul>
-              </section>
+          <section>
+            <h2>Beschreibung</h2>
+            <p>
+              Diese Greek Chicken Bowl bringt mediterranes Feeling in deine
+              Fitnessküche: zartes Hähnchen trifft auf frisches Gemüse, Feta und
+              ein leichtes Joghurtdressing. Ideal bei Fettverlust-Zielen –
+              nährstoffreich, eiweißbetont und erfrischend leicht.
+            </p>
+          </section>
 
-              <section>
-                  <h2>Zubereitung</h2>
-                  <ol>
-                      <li>Hähnchenbrust würzen und in einer Pfanne goldbraun braten.</li>
-                      <li>Gurke und Tomaten würfeln, Feta zerbröseln und Oliven halbieren.</li>
-                      <li>Joghurt mit Zitronensaft, Olivenöl, Salz, Pfeffer und Oregano verrühren.</li>
-                      <li>Alles in einer Bowl anrichten und mit dem Dressing beträufeln.</li>
-                  </ol>
-              </section>
+          <section>
+            <h2>Zutaten</h2>
+            <ul>
+              <li>150 g Hähnchenbrust</li>
+              <li>100 g Gurke</li>
+              <li>100 g Tomaten</li>
+              <li>40 g Feta light</li>
+              <li>1 EL Oliven</li>
+              <li>2 EL fettarmer Joghurt</li>
+              <li>1 TL Zitronensaft</li>
+              <li>1 TL Olivenöl</li>
+              <li>Salz, Pfeffer, Oregano</li>
+            </ul>
+          </section>
 
-              <section>
-                  <h2>Nährwerte (pro Portion, ca.)</h2>
-                  <ul>
-                      <li>Kalorien: ~400 kcal</li>
-                      <li>Protein: ~45 g</li>
-                      <li>Kohlenhydrate: ~15 g</li>
-                      <li>Fett: ~14 g</li>
-                  </ul>
-              </section>
+          <section>
+            <h2>Zubereitung</h2>
+            <ol>
+              <li>
+                Hähnchenbrust würzen und in einer Pfanne goldbraun braten.
+              </li>
+              <li>
+                Gurke und Tomaten würfeln, Feta zerbröseln und Oliven halbieren.
+              </li>
+              <li>
+                Joghurt mit Zitronensaft, Olivenöl, Salz, Pfeffer und Oregano
+                verrühren.
+              </li>
+              <li>
+                Alles in einer Bowl anrichten und mit dem Dressing beträufeln.
+              </li>
+            </ol>
+          </section>
 
-              <section>
-                  <p><a href="../meal.html">← Zurück zur Übersicht</a></p>
-              </section>
-          </article>
+          <section>
+            <h2>Nährwerte (pro Portion, ca.)</h2>
+            <ul>
+              <li>Kalorien: ~400 kcal</li>
+              <li>Protein: ~45 g</li>
+              <li>Kohlenhydrate: ~15 g</li>
+              <li>Fett: ~14 g</li>
+            </ul>
+          </section>
 
+          <section>
+            <p><a href="../meal.html">← Zurück zur Übersicht</a></p>
+          </section>
+        </article>
       </section>
-  </main>
-
+    </main>
 
     <footer class="footer">
-    <p>LiftED ist ein Schülerprojekt.</p>
-  </footer>
-</body>
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
 </html>
