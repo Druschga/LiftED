@@ -131,6 +131,18 @@
 }
 
 .hero-cta .btn { min-width: 170px; }
+.hero-cta .btn-primary {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: #ffffff;
+  box-shadow: 0 22px 48px rgba(3, 12, 19, 0.42);
+  backdrop-filter: blur(12px);
+}
+
+.hero-cta .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 28px 56px rgba(3, 12, 19, 0.5);
+}
 
 .hero-floating-card {
   margin: 3rem auto 0;
@@ -900,23 +912,215 @@ section + .testimonials-section,
   line-height: 1.6;
 }
 
+
+.how-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.4rem, 6vw, 4rem);
+  background: linear-gradient(135deg, rgba(207, 223, 255, 0.45), #ffffff 68%);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand-weak) 78%, #ffffff), #ffffff 68%);
+}
+
+.how-hero::before,
+.how-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(32px);
+}
+
+.how-hero::before {
+  top: -140px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, rgba(91, 155, 255, 0.24), transparent 65%);
+}
+
+.how-hero::after {
+  bottom: -160px;
+  left: -140px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle at center, rgba(125, 217, 146, 0.18), transparent 68%);
+}
+
+.how-hero-shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.2rem);
+  align-items: stretch;
+}
+
+.how-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  color: var(--text);
+}
+
+.how-hero-title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.how-hero-subtitle {
+  margin: 0;
+  max-width: 40rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.how-hero-highlights {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-hero-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(91, 155, 255, 0.18);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.how-hero-highlights li span {
+  font-size: 1.1rem;
+}
+
+.how-hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.92), rgba(220, 235, 255, 0.9));
+  border: 1px solid rgba(91, 155, 255, 0.26);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 28px 60px rgba(11, 18, 32, 0.1);
+  backdrop-filter: blur(14px);
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+
+.how-hero-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(91, 155, 255, 0.18), transparent 65%);
+  pointer-events: none;
+}
+
+.how-hero-card > * { position: relative; z-index: 1; }
+
+.how-hero-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.how-hero-card-header p {
+  margin: 0;
+  color: color-mix(in oklab, var(--muted) 94%, #000000 6%);
+  line-height: 1.6;
+}
+
+.how-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--brand-weak) 65%, #ffffff);
+  border: 1px solid rgba(91, 155, 255, 0.28);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.how-hero-metrics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.95rem;
+  counter-reset: howStep;
+}
+
+.how-hero-metrics li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  align-items: start;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(91, 155, 255, 0.22);
+  box-shadow: 0 14px 26px rgba(11, 18, 32, 0.08);
+  color: var(--muted);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.how-hero-metrics li strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  margin-top: 0.1rem;
+}
+
+.how-hero-metrics li span {
+  grid-column: 2 / -1;
+  line-height: 1.55;
+}
+
+.how-hero-metrics li::before {
+  counter-increment: howStep;
+  content: counter(howStep);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(91, 155, 255, 0.2), rgba(91, 155, 255, 0.35));
+  border: 1px solid rgba(91, 155, 255, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: color-mix(in oklab, var(--brand) 80%, var(--text) 20%);
+}
+
 .journey-section {
   position: relative;
   overflow: hidden;
-  padding: clamp(2.6rem, 6vw, 3.4rem) 0;
+  padding: clamp(2.8rem, 6vw, 3.8rem) 0;
   background: linear-gradient(180deg,
-    rgba(10, 18, 28, 0.9) 0%,
-    rgba(10, 14, 24, 0.95) 62%,
-    rgba(7, 11, 20, 0.97) 100%);
+    rgba(207, 223, 255, 0.35) 0%,
+    rgba(233, 246, 246, 0.55) 48%,
+    #ffffff 100%);
 }
 
 .journey-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, rgba(13, 212, 211, 0.25), transparent 65%);
+  background: radial-gradient(circle at top right, rgba(91, 155, 255, 0.22), transparent 64%);
   pointer-events: none;
-  mix-blend-mode: screen;
+  opacity: 0.9;
 }
 
 .journey-wrapper { position: relative; z-index: 1; }
@@ -925,18 +1129,19 @@ section + .testimonials-section,
 
 .journey-header .section-title {
   color: var(--text);
-  text-shadow: 0 6px 22px rgba(11, 18, 32, 0.12);
+  text-shadow: none;
 }
 
 .journey-header .section-kicker {
-  background: rgba(233, 246, 246, 0.9);
-  border-color: rgba(14, 165, 164, 0.35);
-  color: var(--text);
+  background: color-mix(in oklab, var(--brand-weak) 75%, #ffffff);
+  border-color: color-mix(in oklab, var(--brand) 32%, transparent);
+  color: color-mix(in oklab, var(--text) 90%, var(--brand) 10%);
 }
 
 .journey-intro {
   color: var(--muted);
   margin: 0.6rem auto 0;
+  max-width: 38rem;
 }
 
 .journey-timeline {
@@ -960,7 +1165,7 @@ section + .testimonials-section,
   top: 58px;
   bottom: -1.8rem;
   width: 2px;
-  background: linear-gradient(180deg, rgba(13, 212, 211, 0.6), transparent 70%);
+  background: linear-gradient(180deg, rgba(91, 155, 255, 0.55), transparent 70%);
 }
 
 .journey-marker {
@@ -970,25 +1175,24 @@ section + .testimonials-section,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(14, 165, 164, 0.95), rgba(13, 212, 211, 0.82));
-  color: #031219;
+  background: linear-gradient(135deg, var(--brand), color-mix(in oklab, var(--brand) 65%, #ffffff));
+  color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 16px 36px rgba(13, 212, 211, 0.25);
+  box-shadow: 0 16px 36px rgba(91, 155, 255, 0.25);
 }
 
 .journey-marker span { font-size: 1.1rem; }
 
 .journey-card {
-  background: rgba(15, 23, 42, 0.68);
-  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(91, 155, 255, 0.2);
   border-radius: 1.1rem;
   padding: 1.7rem 1.8rem;
-  box-shadow: 0 26px 60px rgba(2, 6, 23, 0.4);
+  box-shadow: 0 18px 46px rgba(11, 18, 32, 0.12);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  color: #f8fafc;
-  position: relative;
+  color: var(--text);
 }
 
 .journey-card h3 {
@@ -999,7 +1203,7 @@ section + .testimonials-section,
 
 .journey-card p {
   margin: 0;
-  color: rgba(226, 232, 240, 0.78);
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -1015,45 +1219,45 @@ section + .testimonials-section,
   align-items: center;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(91, 155, 255, 0.35);
+  background: color-mix(in oklab, var(--brand-weak) 88%, #ffffff);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(226, 232, 240, 0.78);
+  color: color-mix(in oklab, var(--brand) 65%, var(--text) 35%);
 }
 
 .testimonials-section {
-  background: linear-gradient(180deg,
-    rgba(9, 14, 24, 0.92) 0%,
-    rgba(8, 11, 18, 0.97) 68%,
-    rgba(6, 8, 14, 0.98) 100%);
   position: relative;
   overflow: hidden;
-  padding: clamp(2.6rem, 6vw, 3.4rem) 0;
+  padding: clamp(2.6rem, 6vw, 3.6rem) 0;
+  background: linear-gradient(180deg,
+    rgba(233, 246, 246, 0.85) 0%,
+    #ffffff 100%);
 }
 
 .testimonials-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(14, 165, 164, 0.15), transparent 55%);
+  background: radial-gradient(circle at top left, rgba(91, 155, 255, 0.16), transparent 58%);
   pointer-events: none;
 }
 
 .testimonials-section .section-title,
 .testimonials-section .section-kicker,
-.testimonials-intro { color: #f8fafc; }
+.testimonials-intro { color: var(--text); }
 
 .testimonials-section .section-kicker {
-  background: rgba(15, 23, 42, 0.6);
-  border-color: rgba(148, 163, 184, 0.4);
+  background: color-mix(in oklab, var(--brand-weak) 70%, #ffffff);
+  border-color: color-mix(in oklab, var(--brand) 30%, transparent);
+  color: color-mix(in oklab, var(--text) 88%, var(--brand) 12%);
 }
 
 .testimonials-intro {
   margin: 0.6rem auto 0;
   max-width: 34rem;
-  color: rgba(226, 232, 240, 0.75);
+  color: var(--muted);
 }
 
 .testimonials-grid {
@@ -1065,11 +1269,11 @@ section + .testimonials-section,
 }
 
 .testimonial-card {
-  background: rgba(15, 23, 42, 0.75);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(91, 155, 255, 0.18);
   border-radius: 1.1rem;
   padding: 1.8rem;
-  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.4);
+  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -1079,36 +1283,35 @@ section + .testimonials-section,
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: rgba(248, 250, 252, 0.92);
+  color: var(--text);
 }
 
 .testimonial-meta {
-  color: rgba(226, 232, 240, 0.75);
+  color: var(--muted);
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
 
-.testimonial-name { font-weight: 700; color: #f8fafc; }
+.testimonial-name { font-weight: 700; color: var(--text); }
 
-.testimonial-role { opacity: 0.7; }
+.testimonial-role { color: color-mix(in oklab, var(--muted) 90%, #000000 10%); }
 
 .cta-section {
   position: relative;
   overflow: hidden;
   padding: clamp(2.6rem, 6vw, 3.6rem) 0;
   background: linear-gradient(180deg,
-    rgba(8, 11, 18, 0.92) 0%,
-    rgba(233, 246, 246, 0.65) 58%,
-    #ffffff 100%);
+    rgba(207, 223, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.98) 100%);
 }
 
 .cta-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at right, rgba(14, 165, 164, 0.14), transparent 62%);
+  background: radial-gradient(circle at right, rgba(91, 155, 255, 0.15), transparent 65%);
   pointer-events: none;
 }
 
@@ -1118,26 +1321,25 @@ section + .testimonials-section,
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  background: rgba(15, 23, 42, 0.72);
+  background: rgba(255, 255, 255, 0.92);
   border-radius: 1.2rem;
   padding: 2.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 22px 60px rgba(2, 6, 23, 0.35);
+  border: 1px solid rgba(91, 155, 255, 0.22);
+  box-shadow: 0 24px 60px rgba(11, 18, 32, 0.12);
 }
 
-.cta-copy { display: flex; flex-direction: column; gap: 0.75rem; color: #f8fafc; }
+.cta-copy { display: flex; flex-direction: column; gap: 0.75rem; color: var(--text); }
 
 .cta-copy .section-kicker {
   align-self: flex-start;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.18);
-  color: #f8fafc;
+  background: color-mix(in oklab, var(--brand-weak) 70%, #ffffff);
+  border-color: color-mix(in oklab, var(--brand) 32%, transparent);
+  color: color-mix(in oklab, var(--text) 88%, var(--brand) 12%);
 }
 
 .cta-title { font-size: clamp(2rem, 2.8vw, 2.6rem); font-weight: 800; margin: 0; }
 
-.cta-text { margin: 0; color: rgba(226, 232, 240, 0.78); line-height: 1.6; }
+.cta-text { margin: 0; color: var(--muted); line-height: 1.6; }
 
 .cta-actions {
   display: flex;
@@ -1147,24 +1349,10 @@ section + .testimonials-section,
 
 .cta-disclaimer {
   margin-top: 1.6rem;
-  color: rgba(226, 232, 240, 0.65);
+  color: color-mix(in oklab, var(--muted) 85%, #000000 15%);
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   text-align: center;
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
-}
-
-.btn-secondary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.45);
-  opacity: 0.96;
 }
 
 .stat-item {
@@ -1186,6 +1374,7 @@ section + .testimonials-section,
   .journey-item { grid-template-columns: 70px 1fr; }
   .journey-item:not(:last-child)::after { left: 35px; }
   .journey-marker { width: 60px; height: 60px; border-radius: 20px; }
+  .how-hero-shell { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
 }
 
 @media (min-width: 1024px) {
@@ -1339,20 +1528,22 @@ body {
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: 0.75rem;
-  transform: translateY(-150%);
+  top: 0;
+  transform: translateY(-220%);
+  opacity: 0;
   padding: 0.75rem 1.25rem;
   border-radius: 999px;
   background: var(--text);
   color: #ffffff;
   font-weight: 700;
   z-index: 10000;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .skip-link:focus,
 .skip-link:focus-visible {
   transform: translateY(0);
+  opacity: 1;
   outline: 3px solid var(--primary);
   outline-offset: 2px;
 }
@@ -1545,6 +1736,8 @@ nav li { position: relative; }
   transition: opacity .18s ease, transform .18s ease;
   list-style: none;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .nav-submenu li { margin: 0; }
 .nav-submenu li + li { margin-top: 4px; }
@@ -1592,55 +1785,19 @@ main > header:first-child h1:first-child {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: 2rem 1.5rem;
   background-color: var(--surface-2);
   color: var(--text);
-  padding: 2.5rem 20px;
-  flex-wrap: wrap;
-  font-size: 1rem;
-}
-
-
-.footer > div {
-    flex: 0 1 auto;
-    min-width: 100px;
-}
-
-
-.footer .left {
-    text-align: center;
-}
-
-.footer .centerleft {
-    text-align: center;
-}
-
-.footer .centerright {
-    text-align: center;
-}
-
-.footer .right {
-    text-align: center;
-
-}
-
-
-.footer a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-  color: var(--brand);
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 
 .footer p {
-    margin: 0.3rem 0;
+  margin: 0;
+  opacity: 0.8;
 }
 
 /* ==== Trainingsplan-Seite ==== */
@@ -1705,6 +1862,20 @@ main > header:first-child h1:first-child {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
+  opacity: 0.96;
+}
+
+.btn-secondary {
+  background: rgba(91, 155, 255, 0.14);
+  color: color-mix(in oklab, var(--text) 88%, var(--brand) 12%);
+  border: 1px solid rgba(91, 155, 255, 0.3);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 38px rgba(11, 18, 32, 0.18);
   opacity: 0.96;
 }
 

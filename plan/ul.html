@@ -10,43 +10,47 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="theme-training">
- <header class="main-header">
+  <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+                     <header class="main-header">
     <div class="header-content">
-      <div class="logo-container">
-        <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo" style="max-width: 120px; height: auto;"></a>
+      <div class="header-left">
+        <div class="logo-container">
+          <a href="../landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+        </div>
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li class="has-submenu">
+              <a href="../training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
+              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
+                <li><a href="planselector.html">Trainingsplan</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="../meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
+              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
+                <li><a href="../meal.html#fettverlust">Fettverlust</a></li>
+                <li><a href="../meal.html#body-recomp">Body Recomp</a></li>
+                <li><a href="../meal.html#muskelaufbau">Muskelaufbau</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="../learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
+              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
+                <li><a href="../learning/karteikarten.html">Karteikarten</a></li>
+                <li><a href="../learning/gehirntraining.html">Gehirntraining</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li class="has-submenu">
-            <a href="training.html" class="nav-link">Training</a>
-            <div class="nav-submenu" role="menu" aria-label="Training Menü">
-              <a href="training_plan.html" role="menuitem" aria-current="page">Trainingsplan</a>
-              <a href="muskel.html" role="menuitem">Muskel</a>
-              <a href="uebung.html" role="menuitem">Übung</a>
-            </div>
-          </li>
-          <li class="has-submenu">
-            <a href="meal.html" class="nav-link">Meals</a>
-            <div class="nav-submenu" role="menu" aria-label="Meals Menü">
-              <a href="meals/chicken_rice_bowl.html" role="menuitem">Hünchen</a>
-              <a href="meals/reis.html" role="menuitem">Reis</a>
-              <a href="meals/leberkaese.html" role="menuitem">Leberkäse</a>
-            </div>
-          </li>
-          <li class="has-submenu">
-            <a href="learning.html" class="nav-link">E-Learning</a>
-            <div class="nav-submenu" role="menu" aria-label="E-Learning Menü">
-              <a href="learning/karteikarten.html" role="menuitem">Karteikarten</a>
-              <a href="learning/gehirntraining.html" role="menuitem">Gehirntraining</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      
+      <div class="header-actions">
+        <a href="../sofunktionierts.html" class="header-cta">So funktioniert's</a>
+      </div>
     </div>
   </header>
+  <div class="page-dim" aria-hidden="true"></div>
   
-  <main class="page-plan-detail">
+  <main class="page-plan-detail" id="main-content" tabindex="-1">
   <section class="plan-section" id="trainingsplan">
     <div class="plan-container">
       <h2 class="plan-title">
@@ -85,36 +89,8 @@
 </main>
 
 
-<footer class="footer">
-    <div class="left">
-      <p><a href="service.html">Kundenservice</a></p>
-      <p><a href="Footer/kontakt.html">Kontakt</a></p>
-      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
-    </div>
-
-    <div class="centerleft">
-      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
-      <p><a href="Footer/überuns.html">Über uns</a></p>
-      <p><a href="Footer/impressum.html">Impressum</a></p>
-      <p><a href="Footer/agb.html">AGB</a></p>
-      <p><a href="Footer/ds.html">Datenschutz</a></p>
-      <p><a href="Footer/Compliance.html">Compliance</a></p>
-      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
-    </div>
-
-    <div class="centerright">
-      <p><a href="Kategorien.html">Kategorien</a></p>
-      <p><a href="training.html">Trainingslehre</a></p>
-      <p><a href="meal.html">Meals</a></p>
-      <p><a href="learning.html">E-learnings</a></p>
-    </div>
-
-    <div class="right">
-      <p>Socials</p>
-      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
-      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
-      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
-    </div>
+  <footer class="footer">
+    <p>LiftED ist ein Schülerprojekt.</p>
   </footer>
 </body>
 </html>
