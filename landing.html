@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,228 +7,384 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    window.tailwind = window.tailwind || {};
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { primary: '#0ea5a4' }
-        }
-      }
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="theme-general">
+  <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
   <header class="main-header">
     <div class="header-content">
-      <div class="logo-container">
-        <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo" style="max-width: 120px; height: auto;"></a>
+      <div class="header-left">
+        <div class="logo-container">
+          <a href="landing.html"><img src="/img/Logo.png" alt="LiftED Logo"></a>
+        </div>
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="#features" class="nav-link">Plattform</a></li>
+            <li class="has-submenu">
+              <a href="training.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
+              <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
+                <li><a href="training_plan.html">Trainingsplan</a></li>
+                <li><a href="muskel.html">Muskel</a></li>
+                <li><a href="uebung.html">Übung</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
+              <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
+                <li><a href="meals/chicken_rice_bowl.html">Hünchen</a></li>
+                <li><a href="meals/reis.html">Reis</a></li>
+                <li><a href="meals/leberkaese.html">Leberkäse</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
+              <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
+                <li><a href="learning/karteikarten.html">Karteikarten</a></li>
+                <li><a href="learning/gehirntraining.html">Gehirntraining</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li class="has-submenu">
-            <a href="training.html" class="nav-link">Training</a>
-            <div class="nav-submenu" role="menu" aria-label="Training Menü">
-              <a href="training_plan.html" role="menuitem">Trainingsplan</a>
-              <a href="muskel.html" role="menuitem">Muskel</a>
-              <a href="uebung.html" role="menuitem">Übung</a>
-            </div>
-          </li>
-          <li class="has-submenu">
-            <a href="meal.html" class="nav-link">Meals</a>
-            <div class="nav-submenu" role="menu" aria-label="Meals Menü">
-              <a href="meals/chicken_rice_bowl.html" role="menuitem">Hünchen</a>
-              <a href="meals/reis.html" role="menuitem">Reis</a>
-              <a href="meals/leberkaese.html" role="menuitem">Leberkäse</a>
-            </div>
-          </li>
-          <li class="has-submenu">
-            <a href="learning.html" class="nav-link">E-Learning</a>
-            <div class="nav-submenu" role="menu" aria-label="E-Learning Menü">
-              <a href="learning/karteikarten.html" role="menuitem">Karteikarten</a>
-              <a href="learning/gehirntraining.html" role="menuitem">Gehirntraining</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-actions">
+        <span class="header-badge"><span aria-hidden="true">🚀</span>Beta live</span>
+        <a href="Footer/kontakt.html" class="header-link">Kontakt</a>
+        <a href="training.html" class="header-cta">Kostenlos testen</a>
+      </div>
     </div>
   </header>
   <div class="page-dim" aria-hidden="true"></div>
 
-  <section class="hero-section relative min-h-screen flex items-center">
-    <video class="hero-video absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata">
+  <main id="main-content" tabindex="-1">
+  <section class="hero-section">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
       <source src="/img/video.mp4" type="video/mp4">
       Ihr Browser unterstützt das Video-Tag nicht.
     </video>
-
-    <div class="hero-overlay absolute inset-0 bg-black/60 z-10"></div>
-
-    <div class="hero-content relative z-20 w-full max-w-4xl mx-auto text-center px-6 py-24">
-      <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-clip-text text-transparent" style="background-image: linear-gradient(90deg,#0ea5a4,#0dd4d3)">LiftED</h1>
-      <p class="hero-subtitle text-lg md:text-2xl font-semibold mt-4 text-white">Trainiere deinen Körper. Fördere deinen Geist.</p>
-      <p class="hero-description text-sm md:text-base mt-3 max-w-2xl mx-auto text-white/90">Die erste Plattform, die Training und Lernen intelligent verbindet</p>
-      <div class="hero-cta mt-8 flex gap-4 justify-center">
-        <a href="#features" class="btn btn-primary inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-primary to-cyan-300 shadow-lg hover:scale-[1.02] transition-transform">Mehr erfahren</a>
-        <a href="training.html" class="btn btn-secondary inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/30 text-white">Jetzt starten</a>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badges">
+        <span class="hero-badge">Ganzheitlich</span>
+        <span class="hero-badge">Adaptive Workouts</span>
+        <span class="hero-badge">Wissensimpulse</span>
       </div>
+  <h1 class="hero-title">LiftED</h1>
+      <p class="hero-subtitle">Trainiere deinen Körper. Fördere deinen Geist.</p>
+      <p class="hero-description">Die erste Plattform, die Training und Lernen intelligent verbindet.</p>
+      <div class="hero-cta">
+        <a href="#features" class="btn btn-primary">Mehr erfahren</a>
+        <a href="training.html" class="btn btn-secondary">Jetzt starten</a>
+      </div>
+      <div class="hero-floating-card">
+        <div class="hero-floating-header">
+          <span class="hero-floating-badge">Neu</span>
+          <p>Balance aus Training und Wissensaufbau – abgestimmt auf dich.</p>
+        </div>
+        <ul class="hero-floating-list">
+          <li><span aria-hidden="true">🧠</span> Kurze Lernimpulse während deiner Pausen</li>
+          <li><span aria-hidden="true">🏋️</span> Adaptive Trainingspfade für jedes Niveau</li>
+          <li><span aria-hidden="true">📊</span> Fortschrittsanalyse in Echtzeit</li>
+        </ul>
+      </div>
+    </div>
+    <a href="#features" class="hero-scroll-indicator" aria-label="Weiter zu den Features">
+      <span class="hero-scroll-dot" aria-hidden="true"></span>
+      <span class="hero-scroll-line" aria-hidden="true"></span>
+      <span class="hero-scroll-text">Scroll</span>
+    </a>
+  </section>
+
+  <section class="stats-section">
+    <div class="section-shell">
+      <dl class="stats-container">
+        <div class="stat-item">
+          <dt class="stat-number">500+</dt>
+          <dd class="stat-label">Übungen</dd>
+        </div>
+        <div class="stat-item">
+          <dt class="stat-number">200+</dt>
+          <dd class="stat-label">Rezepte</dd>
+        </div>
+        <div class="stat-item">
+          <dt class="stat-number">100+</dt>
+          <dd class="stat-label">Lernmodule</dd>
+        </div>
+        <div class="stat-item">
+          <dt class="stat-number">24/7</dt>
+          <dd class="stat-label">Verfügbar</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
-  <section class="stats-section py-12">
-    <div class="stats-container max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="stat-item bg-white/5 rounded-lg p-6 text-center">
-        <div class="stat-number text-3xl font-bold text-primary">500+</div>
-        <div class="stat-label mt-2 text-sm uppercase tracking-wider text-white/80">Übungen</div>
-      </div>
-      <div class="stat-item bg-white/5 rounded-lg p-6 text-center">
-        <div class="stat-number text-3xl font-bold text-primary">200+</div>
-        <div class="stat-label mt-2 text-sm uppercase tracking-wider text-white/80">Rezepte</div>
-      </div>
-      <div class="stat-item bg-white/5 rounded-lg p-6 text-center">
-        <div class="stat-number text-3xl font-bold text-primary">100+</div>
-        <div class="stat-label mt-2 text-sm uppercase tracking-wider text-white/80">Lernmodule</div>
-      </div>
-      <div class="stat-item bg-white/5 rounded-lg p-6 text-center">
-        <div class="stat-number text-3xl font-bold text-primary">24/7</div>
-        <div class="stat-label mt-2 text-sm uppercase tracking-wider text-white/80">Verfügbar</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-section py-12 bg-gradient-to-b from-white via-white/70 to-white/40" id="features">
-    <div class="about-container max-w-3xl mx-auto text-center px-6">
-      <h2 class="section-title text-3xl md:text-4xl font-extrabold text-primary mb-4">Über LiftED</h2>
-      <p class="section-intro text-lg text-white/80 leading-relaxed">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
-    </div>
-  </section>
-
-  <section class="features-section py-12">
-    <h2 class="section-title text-center">Unsere Bereiche</h2>
-    <div class="blocks flex flex-wrap justify-center gap-6 mt-6">
-      <a class="block block--training w-80 p-6 rounded-xl shadow-lg" href="training.html">
-        <h3 class="text-2xl font-semibold">Trainingslehre</h3>
-        <p class="mt-2 text-sm">Smarte Trainingspläne und adaptive Workouts.</p>
-      </a>
-      <a class="block block--meals w-80 p-6 rounded-xl shadow-lg" href="meal.html">
-        <h3 class="text-2xl font-semibold">Meals</h3>
-        <p class="mt-2 text-sm">Ernährungsempfehlungen und Rezepte, abgestimmt auf deine Ziele.</p>
-      </a>
-      <a class="block block--learning w-80 p-6 rounded-xl shadow-lg" href="learning.html">
-        <h3 class="text-2xl font-semibold">E-Learning</h3>
-        <p class="mt-2 text-sm">Lernmodule für mentale Stärke und Wissen während deiner Regeneration.</p>
-      </a>
-    </div>
-  </section>
-
-  <section class="benefits-section py-16 bg-black/70">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-title text-center mb-8">Warum LiftED?</h2>
-      <div class="benefits-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">💪</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Effektives Training</h3>
-          <p class="text-sm text-white/80">Wissenschaftlich fundierte Trainingspläne für maximale Ergebnisse</p>
+  <section class="about-section" id="features">
+    <div class="section-shell">
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="section-title">Über LiftED</h2>
+          <p class="section-intro">LiftED ist eine innovative Plattform, die dich nicht nur beim Training begleitet, sondern auch in deinen Pausen fördert. Unser Ziel ist es, körperliches Wachstum und geistige Weiterentwicklung zu verbinden – effizient, modern und individuell auf dich abgestimmt.</p>
+          <ul class="about-list">
+            <li><span aria-hidden="true">⚡</span> Micro-Learning Sessions passend zu deinen Workouts</li>
+            <li><span aria-hidden="true">🧬</span> Datengestützte Anpassungen für nachhaltigen Fortschritt</li>
+            <li><span aria-hidden="true">🤝</span> Community-Features für Motivation und Austausch</li>
+          </ul>
         </div>
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">🧠</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Mentale Stärke</h3>
-          <p class="text-sm text-white/80">Nutze Regenerationsphasen für gezieltes Mentaltraining</p>
-        </div>
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">🍽️</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Optimale Ernährung</h3>
-          <p class="text-sm text-white/80">Individuelle Meal-Pläne passend zu deinen Zielen</p>
-        </div>
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">📊</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Tracking & Analyse</h3>
-          <p class="text-sm text-white/80">Verfolge deinen Fortschritt in Training und Lernen</p>
-        </div>
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">🎯</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Personalisiert</h3>
-          <p class="text-sm text-white/80">Alle Inhalte angepasst an dein Level und deine Ziele</p>
-        </div>
-        <div class="benefit-card bg-gradient-to-br from-primary/10 to-black/60 border border-primary/30 rounded-xl p-6 text-center transition-transform hover:-translate-y-2 hover:shadow-lg">
-          <div class="benefit-icon text-4xl mb-4">⚡</div>
-          <h3 class="text-xl font-semibold text-primary mb-2">Zeiteffizient</h3>
-          <p class="text-sm text-white/80">Maximaler Output bei minimalem Zeitaufwand</p>
+        <div class="about-highlight">
+          <div class="about-highlight-header">
+            <span class="about-highlight-badge">All-in-One Plattform</span>
+            <p class="about-highlight-title">Eine Routine, die sich deinem Alltag anpasst</p>
+          </div>
+          <div class="about-highlight-grid">
+            <div>
+              <p class="about-highlight-metric">+37%</p>
+              <p class="about-highlight-label">Motivationssteigerung*</p>
+            </div>
+            <div>
+              <p class="about-highlight-metric">4,9/5</p>
+              <p class="about-highlight-label">Beta-Feedback</p>
+            </div>
+          </div>
+          <p class="about-highlight-note">* Durchschnitt unserer 200 Beta-Tester:innen nach 8 Wochen Nutzung.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="how-it-works-section py-16 bg-gradient-to-b from-primary/10 to-black/80">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-title text-center mb-8">So funktioniert's</h2>
-      <div class="steps-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="step text-center p-4">
-          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">1</div>
-          <h3 class="font-semibold">Training starten</h3>
-          <p class="text-sm text-white/80 mt-2">Wähle deinen personalisierten Trainingsplan und leg los</p>
+  <section class="features-section">
+    <div class="section-shell">
+      <h2 class="section-title section-title--center">Unsere Bereiche</h2>
+      <div class="feature-list">
+        <a class="feature-card block--training" href="training.html">
+          <span class="feature-icon" aria-hidden="true">🏋️‍♀️</span>
+          <h3 class="feature-title">Trainingslehre</h3>
+          <p class="feature-copy">Smarte Trainingspläne, adaptive Workouts und klare Anleitung für jedes Ziel.</p>
+          <span class="feature-link">Zum Bereich</span>
+        </a>
+        <a class="feature-card block--meals" href="meal.html">
+          <span class="feature-icon" aria-hidden="true">🥗</span>
+          <h3 class="feature-title">Meals</h3>
+          <p class="feature-copy">Ernährungsempfehlungen, Meal-Prep Guides und Makro-Tracking in einem.</p>
+          <span class="feature-link">Zum Bereich</span>
+        </a>
+        <a class="feature-card block--learning" href="learning.html">
+          <span class="feature-icon" aria-hidden="true">📚</span>
+          <h3 class="feature-title">E-Learning</h3>
+          <p class="feature-copy">Lernmodule für mentale Stärke, Wissenstracks und Reflexionsübungen.</p>
+          <span class="feature-link">Zum Bereich</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <div class="experience-wrapper section-shell">
+      <div class="experience-header">
+        <span class="section-kicker">Workouts & Wissen vereint</span>
+        <h2 class="section-title">Deine Experience in drei Ebenen</h2>
+        <p class="experience-intro">Von der ersten Einheit bis zur langfristigen Routine. LiftED führt dich strukturiert durch Training, Ernährung und Mindset.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true">🧭</div>
+          <h3>Adaptive Trainingspfade</h3>
+          <p>Automatisierte Planupdates basierend auf deinem Feedback, Leistungsdaten und verfügbaren Geräten.</p>
+          <div class="experience-tags">
+            <span>KI-gestützt</span>
+            <span>Periodisiert</span>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true">🔁</div>
+          <h3>Synchrone Lernmomente</h3>
+          <p>Kurze Wissensimpulse in deinen Pausen helfen dir, Theorie und Praxis direkt zu verbinden.</p>
+          <div class="experience-tags">
+            <span>Micro-Learning</span>
+            <span>Gamification</span>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true">📈</div>
+          <h3>Insights & Motivation</h3>
+          <p>Visualisierte Fortschritte, Achievement-Badges und Community-Challenges halten dich am Ball.</p>
+          <div class="experience-tags">
+            <span>Dashboards</span>
+            <span>Community</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="benefits-wrapper section-shell">
+      <div class="benefits-header">
+        <span class="section-kicker">Warum LiftED?</span>
+        <h2 class="section-title">Mehr als ein Fitness-Coach</h2>
+        <p class="benefits-intro">LiftED verbindet Training, Ernährung und Wissen, damit du aus jeder Einheit mehr mitnimmst – ganz ohne zusätzlichen Planungsaufwand.</p>
+      </div>
+      <div class="benefits-body">
+        <div class="benefits-summary">
+          <div class="benefits-figure">
+            <span class="benefits-figure-value">82%</span>
+            <p class="benefits-figure-note">unserer Tester:innen trainieren mit LiftED häufiger und bleiben länger dran.</p>
+          </div>
+          <ul class="benefits-list">
+            <li><span aria-hidden="true">⏱️</span> Routinen, die sich flexibel an deinen Alltag anpassen</li>
+            <li><span aria-hidden="true">🧠</span> Lernimpulse, die Motivation und Fokus stärken</li>
+            <li><span aria-hidden="true">🌱</span> Nachhaltige Gewohnheiten statt kurzfristiger Sprints</li>
+          </ul>
         </div>
-        <div class="step text-center p-4">
-          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">2</div>
-          <h3 class="font-semibold">Pausen nutzen</h3>
-          <p class="text-sm text-white/80 mt-2">In Regenerationsphasen erscheinen passende Lernmodule</p>
-        </div>
-        <div class="step text-center p-4">
-          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">3</div>
-          <h3 class="font-semibold">Fortschritt tracken</h3>
-          <p class="text-sm text-white/80 mt-2">Beobachte deine Entwicklung in beiden Bereichen</p>
-        </div>
-        <div class="step text-center p-4">
-          <div class="step-number w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-xl font-bold bg-gradient-to-br from-primary to-cyan-300 text-white shadow-md">4</div>
-          <h3 class="font-semibold">Ziele erreichen</h3>
-          <p class="text-sm text-white/80 mt-2">Werde stärker – körperlich und mental</p>
+        <div class="benefits-grid">
+          <article class="benefits-card">
+            <span class="benefits-icon" aria-hidden="true">💡</span>
+            <h3>Intelligente Pläne</h3>
+            <p>Angepasste Workouts mit automatischen Progressionen, Deloads und Erholungsempfehlungen.</p>
+          </article>
+          <article class="benefits-card">
+            <span class="benefits-icon" aria-hidden="true">⚖️</span>
+            <h3>Ganzheitliche Balance</h3>
+            <p>Training, Ernährung und Wissen greifen ineinander, damit du körperlich und mental wächst.</p>
+          </article>
+          <article class="benefits-card">
+            <span class="benefits-icon" aria-hidden="true">📊</span>
+            <h3>Realtime Insights</h3>
+            <p>Klare Visualisierungen zeigen dir Fortschritt, Belastung und Lernfortschritte auf einen Blick.</p>
+          </article>
+          <article class="benefits-card">
+            <span class="benefits-icon" aria-hidden="true">🤝</span>
+            <h3>Community Drive</h3>
+            <p>Challenges, Feedback und Accountability-Partner:innen sorgen für konstante Motivation.</p>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-section py-20 bg-gradient-to-br from-primary/20 to-black/80 border-t-2 border-primary">
-    <div class="cta-content max-w-3xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-extrabold text-primary mb-4">Bereit für die nächste Stufe?</h2>
-      <p class="text-lg text-white/90 mb-6">Starte jetzt und erlebe die perfekte Verbindung von Training und Lernen</p>
-      <a href="training.html" class="inline-block bg-gradient-to-r from-primary to-cyan-300 text-white px-6 py-3 rounded-full font-bold shadow-lg">Kostenlos starten</a>
+  <section class="journey-section">
+    <div class="journey-wrapper section-shell">
+      <div class="journey-header">
+        <span class="section-kicker">So funktioniert's</span>
+        <h2 class="section-title">Dein Weg mit LiftED</h2>
+        <p class="journey-intro">Vier Schritte, die dich ohne Umwege zu einer konsistenten Routine führen – egal ob du neu startest oder neue Reize suchst.</p>
+      </div>
+      <div class="journey-timeline">
+        <div class="journey-item">
+          <div class="journey-marker"><span>1</span></div>
+          <div class="journey-card">
+            <h3>Profil & Ziele festlegen</h3>
+            <p>Definiere dein Trainingslevel, verfügbare Zeit und Lerninteressen – LiftED baut darauf deinen individuellen Fahrplan.</p>
+            <div class="journey-meta"><span>2 Min Setup</span></div>
+          </div>
+        </div>
+        <div class="journey-item">
+          <div class="journey-marker"><span>2</span></div>
+          <div class="journey-card">
+            <h3>Trainingsplan aktivieren</h3>
+            <p>Starte mit einem adaptiven Plan, der Übungen, Intensität und Erholungsphasen automatisch auf dich abstimmt.</p>
+            <div class="journey-meta"><span>Adaptive Workouts</span></div>
+          </div>
+        </div>
+        <div class="journey-item">
+          <div class="journey-marker"><span>3</span></div>
+          <div class="journey-card">
+            <h3>Lernimpulse nutzen</h3>
+            <p>Während Pausen erhältst du kurze Wissensnuggets – von Technik-Tipps bis Mindset-Reflexion – passend zum Trainingstag.</p>
+            <div class="journey-meta"><span>Micro-Learning</span></div>
+          </div>
+        </div>
+        <div class="journey-item">
+          <div class="journey-marker"><span>4</span></div>
+          <div class="journey-card">
+            <h3>Fortschritt feiern</h3>
+            <p>Insights, Badges und Community-Challenges zeigen, was du erreicht hast – und was als nächstes wartet.</p>
+            <div class="journey-meta"><span>Live-Analytics</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="footer bg-[#0b0b0b] text-white py-12">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="left space-y-2">
-        <p><a class="text-white/90 hover:underline" href="service.html">Kundenservice</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/kontakt.html">Kontakt</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
+  <section class="testimonials-section">
+    <div class="testimonials-wrapper section-shell">
+      <div class="testimonials-header">
+        <span class="section-kicker">Stimmen aus der Community</span>
+        <h2 class="section-title">Was Early Adopter über LiftED sagen</h2>
+        <p class="testimonials-intro">Unsere Beta-User:innen kombinieren Training und Lernen bereits täglich – und teilen ihre Ergebnisse.</p>
       </div>
-
-      <div class="centerleft space-y-2">
-        <p><a class="text-white/90 hover:underline" href="Footer/unternehmen.html">Unternehmen</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/überuns.html">Über uns</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/impressum.html">Impressum</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/agb.html">AGB</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/ds.html">Datenschutz</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/Compliance.html">Compliance</a></p>
-        <p><a class="text-white/90 hover:underline" href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <p class="testimonial-quote">“Ich habe endlich einen Plan, der meinen vollen Kalender respektiert. Die Lernimpulse zwischen den Sätzen machen mich mental genauso fit wie körperlich.”</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Anna K.</span>
+            <span class="testimonial-role">Product Managerin & Beta-Userin</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-quote">“LiftED verknüpft Training und Wissen so smart, dass ich täglich motiviert bin. Die Insights zeigen mir genau, wo ich Fortschritte mache.”</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Leon M.</span>
+            <span class="testimonial-role">Performance Coach</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-quote">“Als ehemalige Athletin liebe ich, dass ich meine Routine flexibel gestalten kann. Die Community-Challenges bringen extra Drive in jede Woche.”</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Sofia R.</span>
+            <span class="testimonial-role">Sportstudentin</span>
+          </div>
+        </article>
       </div>
+    </div>
+  </section>
 
-      <div class="centerright space-y-2">
-        <p><a class="text-white/90 hover:underline" href="Kategorien.html">Kategorien</a></p>
-        <p><a class="text-white/90 hover:underline" href="training.html">Trainingslehre</a></p>
-        <p><a class="text-white/90 hover:underline" href="meal.html">Meals</a></p>
-        <p><a class="text-white/90 hover:underline" href="learning.html">E-learnings</a></p>
-      </div>
-
-      <div class="right space-y-3">
-        <p class="font-medium">Socials</p>
-        <div class="flex items-center gap-3">
-          <a href="https://discord.gg/badqpgnDFr" class="opacity-90 hover:opacity-100"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
-          <a href="https://instagram.com" class="opacity-90 hover:opacity-100"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
-          <a href="https://github.com/Druschga/LiftED" class="opacity-90 hover:opacity-100"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
+  <section class="cta-section">
+    <div class="cta-content section-shell">
+      <div class="cta-inner">
+        <div class="cta-copy">
+          <span class="section-kicker">Kostenlos testen</span>
+          <h2 class="cta-title">Bereit für die nächste Stufe?</h2>
+          <p class="cta-text">Starte jetzt und erlebe die perfekte Verbindung von Training, Ernährung und Lernen – alles in einer App.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="training.html" class="btn btn-primary">Kostenlos starten</a>
+          <a href="service.html" class="btn btn-secondary">Live-Demo ansehen</a>
         </div>
       </div>
+      <p class="cta-disclaimer">Keine Kreditkarte nötig · Jederzeit kündbar · Zugriff auf alle Bereiche</p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="left">
+      <p><a href="service.html">Kundenservice</a></p>
+      <p><a href="Footer/kontakt.html">Kontakt</a></p>
+      <p><a href="Footer/hilfe+faq.html">Hilfe & FAQ</a></p>
+    </div>
+
+    <div class="centerleft">
+      <p><a href="Footer/unternehmen.html">Unternehmen</a></p>
+      <p><a href="Footer/überuns.html">Über uns</a></p>
+      <p><a href="Footer/impressum.html">Impressum</a></p>
+      <p><a href="Footer/agb.html">AGB</a></p>
+      <p><a href="Footer/ds.html">Datenschutz</a></p>
+      <p><a href="Footer/Compliance.html">Compliance</a></p>
+      <p><a href="Footer/Grundsatzerklärung.html">Grundsatzerklärung</a></p>
+    </div>
+
+    <div class="centerright">
+      <p><a href="Kategorien.html">Kategorien</a></p>
+      <p><a href="training.html">Trainingslehre</a></p>
+      <p><a href="meal.html">Meals</a></p>
+      <p><a href="learning.html">E-learnings</a></p>
+    </div>
+
+    <div class="right">
+      <p>Socials</p>
+      <a href="https://discord.gg/badqpgnDFr"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg" alt="Discord Icon" width="25" height="25"></a>
+      <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram Icon" width="25" height="25"></a>
+      <a href="https://github.com/Druschga/LiftED"><img src="img/GitHub.webp" alt="GitHub Logo" width="25" height="25"></a>
     </div>
   </footer>
 </body>
