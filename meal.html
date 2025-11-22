@@ -14,13 +14,14 @@
   </head>
   <body class="theme-meals">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+
     <header class="main-header">
       <div class="header-content">
         <div class="header-left">
           <div class="logo-container">
-            <a href="landing.html"
-              ><img src="/img/Logo.png" alt="LiftED Logo"
-            /></a>
+            <a href="landing.html">
+              <img src="/img/Logo.png" alt="LiftED Logo" />
+            </a>
           </div>
           <nav aria-label="Hauptnavigation">
             <ul>
@@ -85,20 +86,55 @@
         </div>
       </div>
     </header>
+
     <div class="page-dim" aria-hidden="true"></div>
 
     <main id="main-content" tabindex="-1">
+
+      <!-- Hero / Einführung -->
       <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Meals & Ernährung</h1>
+        <h1 id="hero-title">Meals &amp; Ernährung</h1>
         <p>
-          Smart essen, besser trainieren: Hier findest du alltagstaugliche
-          Rezepte sortiert nach Ziel – Fettverlust, Body Recomp und
-          Muskelaufbau. Klicke eine Kategorie, um alle passenden Meals mit Bild
-          anzuzeigen.
+          Essen, das dein Training unterstützt. Wähle ein Ziel – wir zeigen dir
+          passende, alltagstaugliche Rezepte mit klaren Nährwerten,
+          einfachen Zutaten und realistischen Portionsgrößen.
         </p>
+        <a href="#meal-kategorien" class="btn btn-primary">Zu den Kategorien</a>
       </section>
 
-      <section class="accordion" aria-label="Rezeptkategorien">
+      <!-- Info-Section -->
+      <section class="info-section">
+        <h2 class="section-heading">Wie funktionieren die Meals?</h2>
+        <p class="section-text">
+          Alle Rezepte sind so aufgebaut, dass du sie ohne großen Aufwand
+          in deinen Alltag integrieren kannst. Fokus: satt werden,
+          gute Makros, schnell gemacht.
+        </p>
+
+        <div class="card-grid">
+          <div class="info-card">
+            <h3>🎯 Zielorientiert</h3>
+            <p>Wähle dein Ziel: Fettverlust, Body Recomp oder Muskelaufbau.</p>
+          </div>
+          <div class="info-card">
+            <h3>🍽️ Einfache Zutaten</h3>
+            <p>Alle Rezepte basieren auf Lebensmitteln, die überall erhältlich sind.</p>
+          </div>
+          <div class="info-card">
+            <h3>⏱️ Schnell zubereitet</h3>
+            <p>Geringer Aufwand, klare Grammangaben, direkt umsetzbar.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meal Kategorien -->
+      <section
+        id="meal-kategorien"
+        class="accordion"
+        aria-label="Rezeptkategorien"
+      >
+        <h2 class="section-heading">Wähle dein Ziel</h2>
+
         <!-- Fettverlust -->
         <details class="acc-item" open id="fettverlust">
           <summary>
@@ -106,238 +142,122 @@
             <span class="chev">▶</span>
           </summary>
           <div class="grid">
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/cottage-cheese-plate.png&quot;);
-              "
-            >
-              <a
-                href="meals/cottage_cheese_plate.html"
-                aria-label="Cottage Cheese Plate"
+            <a class="card-link" href="meals/cottage_cheese_plate.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/cottage-cheese-plate.png');"
               >
                 <span class="label">Cottage Cheese Plate</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/greek-chicken-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/greek_chicken_bowl.html"
-                aria-label="Greek Chicken Bowl"
+              </div>
+            </a>
+            <a class="card-link" href="meals/greek_chicken_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/greek-chicken-bowl.png');"
               >
                 <span class="label">Greek Chicken Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/shrimp-stir-fry.png&quot;);
-              "
-            >
-              <a href="meals/shrimp_stir_fry.html" aria-label="Shrimp Stir Fry">
+              </div>
+            </a>
+            <a class="card-link" href="meals/shrimp_stir_fry.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/shrimp-stir-fry.png');"
+              >
                 <span class="label">Shrimp Stir Fry</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/salmon-veggies.png&quot;);
-              "
-            >
-              <a href="meals/salmon_veggies.html" aria-label="Salmon Veggies">
+              </div>
+            </a>
+            <a class="card-link" href="meals/salmon_veggies.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/salmon-veggies.png');"
+              >
                 <span class="label">Salmon Veggies</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/zoodle-pute.png&quot;);
-              "
-            >
-              <a href="meals/zoodle_pute.html" aria-label="Zoodle Pute">
-                <span class="label">Zoodle Pute</span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </details>
 
         <!-- Body Recomp -->
-        <details class="acc-item" open id="body-recomp">
+        <details class="acc-item" id="body-recomp" open>
           <summary>
             <span class="acc-title">⚖️ Body Recomp</span>
             <span class="chev">▶</span>
           </summary>
           <div class="grid">
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/fitness-leberkaese.png&quot;);
-              "
-            >
-              <a
-                href="meals/fitness_leberkaese.html"
-                aria-label="Fitness Leberkäse"
+            <a class="card-link" href="meals/fitness_leberkaese.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/fitness-leberkaese.png');"
               >
                 <span class="label">Fitness Leberkäse</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/mediterrane-quinoa-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/mediterrane_quinoa_bowl.html"
-                aria-label="Mediterrane Quinoa Bowl"
+              </div>
+            </a>
+            <a class="card-link" href="meals/mediterrane_quinoa_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/mediterrane-quinoa-bowl.png');"
               >
                 <span class="label">Mediterrane Quinoa Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/puten-gemuese-pfanne.png&quot;);
-              "
-            >
-              <a
-                href="meals/puten_gemuese_pfanne.html"
-                aria-label="Puten-Gemüse-Pfanne"
+              </div>
+            </a>
+            <a class="card-link" href="meals/puten_gemuese_pfanne.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/puten-gemuese-pfanne.png');"
               >
                 <span class="label">Puten‑Gemüse‑Pfanne</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/balanced-breakfast-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/balanced_breakfast_bowl.html"
-                aria-label="Balanced Breakfast Bowl"
+              </div>
+            </a>
+            <a class="card-link" href="meals/balanced_breakfast_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/balanced-breakfast-bowl.png');"
               >
                 <span class="label">Balanced Breakfast Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/veggie-egg-wraps.png&quot;);
-              "
-            >
-              <a
-                href="meals/veggie_egg_wraps.html"
-                aria-label="Veggie Egg Wraps"
-              >
-                <span class="label">Veggie Egg Wraps</span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </details>
 
         <!-- Muskelaufbau -->
-        <details class="acc-item" open id="muskelaufbau">
+        <details class="acc-item" id="muskelaufbau" open>
           <summary>
             <span class="acc-title">💪 Muskelaufbau</span>
             <span class="chev">▶</span>
           </summary>
           <div class="grid">
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/chicken-rice-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/chicken_rice_bowl.html"
-                aria-label="Chicken Rice Bowl"
+            <a class="card-link" href="meals/chicken_rice_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/chicken-rice-bowl.png');"
               >
                 <span class="label">Chicken Rice Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/beef-sweet-potato.png&quot;);
-              "
-            >
-              <a
-                href="meals/beef_sweet_potato.html"
-                aria-label="Beef Sweet Potato Plate"
+              </div>
+            </a>
+            <a class="card-link" href="meals/beef_sweet_potato.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/beef-sweet-potato.png');"
               >
                 <span class="label">Beef Sweet Potato Plate</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/salmon-quinoa-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/salmon_quinoa_bowl.html"
-                aria-label="Lachs-Quinoa-Bowl"
+              </div>
+            </a>
+            <a class="card-link" href="meals/salmon_quinoa_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/salmon-quinoa-bowl.png');"
               >
                 <span class="label">Lachs‑Quinoa‑Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/protein-pasta-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/protein_pasta_bowl.html"
-                aria-label="Protein Pasta Bowl"
+              </div>
+            </a>
+            <a class="card-link" href="meals/protein_pasta_bowl.html">
+              <div
+                class="card"
+                style="background-image:url('/img/meals/protein-pasta-bowl.png');"
               >
                 <span class="label">Protein Pasta Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/oatmeal-power-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/oatmeal_power_bowl.html"
-                aria-label="Oatmeal Power Bowl"
-              >
-                <span class="label">Oatmeal Power Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/teriyaki-chicken-bowl.png&quot;);
-              "
-            >
-              <a
-                href="meals/teriyaki_chicken_bowl.html"
-                aria-label="Teriyaki Chicken Bowl"
-              >
-                <span class="label">Teriyaki Chicken Bowl</span>
-              </a>
-            </div>
-            <div
-              class="card"
-              style="
-                background-image: url(&quot;/img/meals/turkey-avocado-wraps.png&quot;);
-              "
-            >
-              <a
-                href="meals/turkey_avocado_wraps.html"
-                aria-label="Turkey Avocado Wraps"
-              >
-                <span class="label">Turkey Avocado Wraps</span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </details>
       </section>

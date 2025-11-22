@@ -2714,6 +2714,7 @@ a.plan-card {
 
 /* Hero-Bereich über den Kategorien */
 .hero {
+    width: min(var(--container), 100% - 2rem);
     margin: 24px auto 8px;
     padding: 18px 20px;
     border-radius: var(--radius);
@@ -2729,6 +2730,59 @@ a.plan-card {
 .hero p {
     margin: 0;
     color: var(--muted);
+}
+
+/* Mehr Abstand zwischen Einleitungstext und Button im Meals-Hero */
+body.theme-meals .hero .btn {
+    margin-top: 2rem;
+}
+
+/* Intro-/Info-Section unter dem Hero (Meals-Erklärung) */
+.info-section {
+    width: min(var(--container), 100% - 2rem);
+    margin: 1.5rem auto 0;
+    padding: 1.8rem 1.9rem 2.1rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(11, 18, 32, 0.08);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.info-section .section-heading {
+    margin-bottom: 0.4rem;
+}
+
+.info-section .section-text {
+    margin-bottom: 1.5rem;
+}
+
+.info-section .card-grid {
+    margin-top: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Info-Karten (🎯 Zielorientiert, 🍽️ Einfache Zutaten, ⏱️ Schnell zubereitet) */
+.info-card {
+    background: color-mix(in oklab, var(--brand-weak) 18%, #ffffff);
+    border-radius: 1rem;
+    padding: 1.3rem 1.4rem;
+    border: 1px solid rgba(11, 18, 32, 0.06);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.info-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.info-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
 }
 
 /* Accordion-Kategorien (z. B. Muskelaufbau / Fettverlust / Body Recomp) */
@@ -2781,18 +2835,34 @@ details[open] .chev {
 }
 
 /* Grid mit Bildkarten je Kategorie */
+/* Grid mit Bildkarten je Kategorie */
 .grid {
     display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    padding: 14px;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1.5rem;
+}
+
+/* auf schmalen Bildschirmen nur eine Karte pro Zeile */
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Einzelne Meal-Karte – Bild im Hintergrund, Titel als Button */
+/* Link um die gesamte Card – macht das ganze Bild klickbar */
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Einzelne Meal-Karte – Bild im Hintergrund, Titel zentriert */
 .card {
     position: relative;
-    height: 0;
-    padding-top: 62%;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Verhältnis der Kartenfläche – etwas kompakter */
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(11, 18, 32, 0.08);
@@ -2803,6 +2873,7 @@ details[open] .chev {
     transition: transform 0.18s ease,
     box-shadow 0.18s ease,
     border-color 0.18s ease;
+    cursor: pointer;
 }
 
 .card::after {
@@ -2818,31 +2889,25 @@ details[open] .chev {
     transition: opacity 0.2s ease;
 }
 
-.card a {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 14px;
-    text-decoration: none;
-}
 
 /* Titel-Button über dem Bild */
+/* Titel-Badge über dem Bild, zentriert */
 .card .label {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
     z-index: 1;
-    padding: 0.45rem 1.3rem;
+    padding: 0.6rem 1.6rem;
     border-radius: 999px;
     font-weight: 800;
     letter-spacing: 0.02em;
     font-size: 0.95rem;
     color: var(--text);
-    background: var(--brand-weak);
-    border: 1px solid rgba(11, 18, 32, 0.12);
+    background: color-mix(in oklab, var(--brand-weak) 60%, #ffffff);
     border: 1px solid color-mix(in oklab, var(--brand) 22%, #0000);
     box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 }
 
 /* Hover-Effekt: Card hebt sich, Button wirkt klickbar */

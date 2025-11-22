@@ -90,77 +90,132 @@
     <div class="page-dim" aria-hidden="true"></div>
 
     <main id="main-content" tabindex="-1">
-      <img
-        src="/img/meals/balanced-breakfast-bowl.png"
-        alt="Balanced Breakfast Bowl"
-        style="
-          width: 100%;
-          max-height: 400px;
-          object-fit: cover;
+
+      <!-- Hero / Rezept-Hero -->
+      <section class="recipe-hero" style="
+        width: min(var(--container), 100% - 2rem);
+        margin: 1.5rem auto;
+        padding: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--shadow-md);
+      ">
+        <img
+          src="/img/meals/balanced-breakfast-bowl.png"
+          alt="Balanced Breakfast Bowl"
+          style="width:100%; height: 320px; object-fit: cover;"
+        />
+        <div style="
+          position:absolute;
+          bottom:0;
+          left:0;
+          width:100%;
+          padding:1.2rem 1.4rem;
+          background: linear-gradient(180deg, #0000, color-mix(in oklab, var(--brand-weak) 70%, rgba(0, 0, 0, 0.85)));
+          color:white;
+        ">
+          <span class="badge" style="background:rgba(255,255,255,0.2); backdrop-filter:blur(4px);">Body Recomp</span>
+          <h1 style="margin-top:0.6rem;">Balanced Breakfast Bowl</h1>
+        </div>
+      </section>
+
+      <!-- Meta-Infos -->
+      <section class="recipe-meta" style="
+        width:min(var(--container), 100% - 2rem);
+        margin: 1rem auto 2rem;
+      ">
+        <div class="recipe-meta-grid" style="
+          display:grid;
+          gap:1rem;
+          grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+          background: color-mix(in oklab, var(--brand-weak) 18%, #ffffff);
+          padding: 1.4rem;
           border-radius: 12px;
-        "
-      />
+          border: 1px solid rgba(11, 18, 32, 0.08);
+        ">
+          <div class="meta-item" style="background: color-mix(in oklab, var(--brand-weak) 25%, #ffffff); padding: 0.9rem 1rem; border-radius: 10px; border:1px solid rgba(11,18,32,0.06);">
+            <p class="label">Kalorien</p>
+            <p class="value">~430 kcal</p>
+          </div>
+          <div class="meta-item" style="background: color-mix(in oklab, var(--brand-weak) 25%, #ffffff); padding: 0.9rem 1rem; border-radius: 10px; border:1px solid rgba(11,18,32,0.06);">
+            <p class="label">Protein</p>
+            <p class="value">~28 g</p>
+          </div>
+          <div class="meta-item" style="background: color-mix(in oklab, var(--brand-weak) 25%, #ffffff); padding: 0.9rem 1rem; border-radius: 10px; border:1px solid rgba(11,18,32,0.06);">
+            <p class="label">Zubereitungszeit</p>
+            <p class="value">5–7 Min</p>
+          </div>
+          <div class="meta-item" style="background: color-mix(in oklab, var(--brand-weak) 25%, #ffffff); padding: 0.9rem 1rem; border-radius: 10px; border:1px solid rgba(11,18,32,0.06);">
+            <p class="label">Schwierigkeit</p>
+            <p class="value">Sehr leicht</p>
+          </div>
+        </div>
+      </section>
 
-      <h1>Balanced Breakfast Bowl</h1>
-      <p><strong>Kategorie:</strong> Body Recomp</p>
-
-      <section>
+      <!-- Beschreibung -->
+      <section class="recipe-section" style="width:min(var(--container),100% - 2rem); margin:1rem auto;">
         <h2>Beschreibung</h2>
         <p>
-          Die Balanced Breakfast Bowl ist dein perfekter Start in den Tag: eine
-          Kombination aus griechischem Joghurt, frischen Beeren, Haferflocken,
-          Nüssen und einem Hauch Honig. Sie liefert ausgewogene Energie, viele
-          Ballaststoffe und hochwertiges Eiweiß – ideal, um den Stoffwechsel zu
-          aktivieren und lange satt zu bleiben.
+          Diese Frühstücksbowl ist perfekt, wenn du morgens schnell Energie brauchst,
+          ohne schwer im Magen zu liegen. Die Mischung aus cremigem Joghurt, frischen
+          Beeren, sättigenden Haferflocken und knackigen Nüssen liefert alles:
+          Proteine, natürliche Süße, Ballaststoffe und gesunde Fette.
+        </p>
+        <p>
+          Ideal für Body Recomp – du bleibst lange satt, dein Blutzucker bleibt stabil
+          und du versorgst deinen Körper früh am Tag mit hochwertigen Makros.
+        </p>
+        <p>
+          Diese Bowl wurde speziell für das LiftED Meal‑System optimiert – sie ist
+          reich an Protein, ohne schwer zu sein, liefert komplexe Kohlenhydrate für
+          stabile Energie und verwendet ausschließlich Zutaten, die in jedem Supermarkt
+          verfügbar sind. Perfekt vor dem Training oder als erste Mahlzeit des Tages.
         </p>
       </section>
 
-      <section>
+      <!-- Zutaten -->
+      <section class="recipe-section" style="width:min(var(--container),100% - 2rem); margin:1rem auto;">
         <h2>Zutaten</h2>
         <ul>
           <li>200 g Griechischer Joghurt (0–2 % Fett)</li>
           <li>40 g Haferflocken</li>
-          <li>
-            80 g gemischte Beeren (z. B. Heidelbeeren, Himbeeren, Erdbeeren)
-          </li>
-          <li>15 g gehackte Nüsse (Mandeln oder Walnüsse)</li>
+          <li>80 g gemischte Beeren (frisch oder TK)</li>
+          <li>15 g gehackte Nüsse (z. B. Mandeln oder Walnüsse)</li>
           <li>1 TL Honig oder Agavendicksaft</li>
           <li>1 TL Chiasamen (optional)</li>
-          <li>etwas Zimt oder Vanillepulver nach Geschmack</li>
+          <li>Zimt oder Vanillepulver (optional)</li>
         </ul>
       </section>
 
-      <section>
+      <!-- Zubereitung -->
+      <section class="recipe-section" style="width:min(var(--container),100% - 2rem); margin:1rem auto;">
         <h2>Zubereitung</h2>
         <ol>
-          <li>
-            Haferflocken in einer Schüssel mit etwas heißem Wasser oder Milch
-            anrühren und 2–3 Minuten quellen lassen.
-          </li>
-          <li>Joghurt darüber geben und glattstreichen.</li>
-          <li>
-            Beeren waschen und zusammen mit den gehackten Nüssen auf dem Joghurt
-            anrichten.
-          </li>
-          <li>
-            Mit Honig beträufeln und optional mit Chiasamen und Zimt verfeinern.
-          </li>
+          <li>Haferflocken mit etwas heißem Wasser oder Milch anrühren und 2–3 Minuten quellen lassen.</li>
+          <li>Joghurt darüber geben und gleichmäßig verteilen.</li>
+          <li>Beeren waschen und zusammen mit den gehackten Nüssen über die Bowl geben.</li>
+          <li>Mit Honig, Chiasamen und etwas Zimt oder Vanille toppen.</li>
         </ol>
       </section>
 
-      <section>
-        <h2>Nährwerte (pro Portion, ca.)</h2>
+      <!-- Tipps -->
+      <section class="recipe-section" style="width:min(var(--container),100% - 2rem); margin:1rem auto;">
+        <h2>Tipps & Variationen</h2>
         <ul>
-          <li>Kalorien: ~430 kcal</li>
-          <li>Protein: ~28 g</li>
-          <li>Kohlenhydrate: ~40 g</li>
-          <li>Fett: ~14 g</li>
+          <li><strong>Meal Prep:</strong> Zutaten abends vorbereiten, morgens nur noch anrichten.</li>
+          <li><strong>Extra Protein:</strong> Ein Löffel Whey oder Skyr unter den Joghurt rühren.</li>
+          <li><strong>Low-Cal:</strong> Honig weglassen und etwas mehr Beeren nutzen.</li>
+          <li><strong>Mehr Crunch:</strong> Granola oder Kokoschips ergänzen.</li>
+          <li><strong>Green Boost:</strong> Ein paar frische Minzblätter oder etwas Limettensaft geben der Bowl einen zusätzlichen Frischekick.</li>
         </ul>
       </section>
 
-      <section>
-        <p><a href="../meal.html">← Zurück zur Übersicht</a></p>
+      <!-- Zurück-Link -->
+      <section style="width:min(var(--container),100% - 2rem); margin:2rem auto;">
+        <a href="../meal.html">← Zurück zur Meal-Übersicht</a>
       </section>
+
     </main>
 
     <footer class="footer">
