@@ -3475,3 +3475,19 @@ details[open] .chev {
    Landing Page Layout (merged from landing.css)
 
    ============================================= */
+
+.exercise-tiny-video {
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    width: 15vw !important;
+    height: auto !important;
+    z-index: 999 !important;
+    overflow: hidden !important;
+}
+
+.exercise-tiny-video video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
