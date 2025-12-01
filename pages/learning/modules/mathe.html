@@ -5,76 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mathematik – E-Learning</title>
     <link rel="stylesheet" href="../../../assets/css/styles.css"/>
-    <style>
-        /* Größere Überschriften */
-        .benefits-card h2.about-highlight-badge {
-            font-size: 1.8rem;
-        }
-    </style>
-</head>
-
-<body class="theme-general">
-<a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-
-<header class="main-header">
-    <div class="header-content">
-        <div class="header-left">
-            <div class="logo-container">
-                <a href="../../general/landing.html">
-                    <img src="/img/Logo.svg" alt="LiftED Logo"/>
-                </a>
-            </div>
-            <nav aria-label="Hauptnavigation">
-                <ul>
-                    <li class="has-submenu">
-                        <a href="../../training/training_plan.html" class="nav-link" id="nav-training" aria-haspopup="true">Training</a>
-                        <ul class="nav-submenu" aria-label="Training Menü" aria-labelledby="nav-training">
-                            <li><a href="../../training/plans/planselector.html">Trainingsplan</a></li>
+                    <div class="logo-container">
+                        <a href="../../general/landing.html"
+                            ><img src="/img/Logo.svg" alt="LiftED Logo"
+                        /></a>
+                    </div>
+                    <nav aria-label="Hauptnavigation">
+                        <ul>
+                            <li class="has-submenu">
+                                <a
+                                    href="../../training/training_plan.html"
+                                    class="nav-link"
+                                    id="nav-training"
+                                    aria-haspopup="true"
+                                    >Training</a
+                                >
+                                <ul
+                                    class="nav-submenu"
+                                    aria-label="Training Menü"
+                                    aria-labelledby="nav-training"
+                                >
+                                    <li>
+                                        <a href="../../training/training_plan.html">Trainingshub</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/muskel.html">Muskelgruppen</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/uebung.html">Übungsdatenbank</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/plans/planselector.html">Plan-Selector</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/plans/fb.html">Plan: Full Body</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/plans/ppl.html">Plan: Push Pull Legs</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../training/plans/ul.html">Plan: Upper Lower</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a
+                                    href="../../meals/meal.html"
+                                    class="nav-link"
+                                    id="nav-meals"
+                                    aria-haspopup="true"
+                                    >Meals</a
+                                >
+                                <ul
+                                    class="nav-submenu"
+                                    aria-label="Meals Menü"
+                                    aria-labelledby="nav-meals"
+                                >
+                                    <li>
+                                        <a href="../../meals/meal.html">Meals Hub</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/meal.html#meal-kategorien">Rezeptkategorien</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/meal.html#fettverlust">Fettverlust</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/meal.html#body-recomp">Body Recomp</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../meals/recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a
+                                    href="../learning.html"
+                                    class="nav-link"
+                                    id="nav-learning"
+                                    aria-haspopup="true"
+                                    >E-Learning</a
+                                >
+                                <ul
+                                    class="nav-submenu"
+                                    aria-label="E-Learning Menü"
+                                    aria-labelledby="nav-learning"
+                                >
+                                    <li>
+                                        <a href="../learning.html">E-Learning Hub</a>
+                                    </li>
+                                    <li>
+                                        <a href="selector.html">Lernübersicht</a>
+                                    </li>
+                                    <li>
+                                        <a href="mathe.html">Mathematik</a>
+                                    </li>
+                                    <li>
+                                        <a href="programmierung.html">Programmierung</a>
+                                    </li>
+                                    <li>
+                                        <a href="rechnungslegung.html">Rechnungslegung</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a
+                                    href="../../general/landing.html"
+                                    class="nav-link"
+                                    id="nav-about"
+                                    aria-haspopup="true"
+                                    >Über LiftED</a
+                                >
+                                <ul
+                                    class="nav-submenu"
+                                    aria-label="Über LiftED Menü"
+                                    aria-labelledby="nav-about"
+                                >
+                                    <li>
+                                        <a href="../../general/landing.html">Landing</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../general/service.html">Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../general/sofunktionierts.html"
+                                            >So funktioniert's</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="../../meals/meal.html" class="nav-link" id="nav-meals" aria-haspopup="true">Meals</a>
-                        <ul class="nav-submenu" aria-label="Meals Menü" aria-labelledby="nav-meals">
-                            <li><a href="../../meals/meal.html#fettverlust">Fettverlust</a></li>
-                            <li><a href="../../meals/meal.html#body-recomp">Body Recomp</a></li>
-                            <li><a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="../learning.html" class="nav-link" id="nav-learning" aria-haspopup="true">E-Learning</a>
-                        <ul class="nav-submenu" aria-label="E-Learning Menü" aria-labelledby="nav-learning">
-                            <li><a href="selector.html">Lernübersicht</a></li>
-                            <li><a href="mathe.html">Mathematik</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-actions">
-            <a href="../../general/sofunktionierts.html" class="header-cta">Mehr erfahren</a>
-        </div>
-    </div>
-</header>
-
-<main id="main-content" class="container" style="padding-top:4rem;">
-
-    <header style="text-align:center; margin-bottom:2rem;">
-        <h1 class="section-title section-title--center">Mathematik-Grundlagen</h1>
-        <p class="section-intro">Erklärungen zu wichtigen Konzepten: Matrizen, Limes, vollständige Induktion und mehr.</p>
-    </header>
-
-    <div class="benefits-grid">
-
-        <div class="benefits-card">
-            <h2 class="about-highlight-badge">Vollständige Induktion</h2>
-            <p>Die vollständige Induktion ist eine Beweismethode, um Aussagen über alle natürlichen Zahlen zu beweisen.</p>
-
-            <h3>Schritte</h3>
-            <ol>
-                <li><strong>Induktionsanfang:</strong> Zeige die Aussage für n = 1️⃣.</li>
-                <li><strong>Induktionsannahme:</strong> Angenommen, die Aussage gilt für ein beliebiges n.</li>
-                <li><strong>Induktionsschritt:</strong> Zeige, dass die Aussage dann auch für n+1️⃣ gilt.</li>
-            </ol>
+                    </nav>
 
             <h3>Beispiel: Summe der ersten n Zahlen</h3>
             <pre>
