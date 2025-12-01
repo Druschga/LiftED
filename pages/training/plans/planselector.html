@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftED - Trainingspläne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  <link rel="stylesheet" href="../../../assets/css/styles.css" />
+  </head>
+  <body class="theme-training">
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="logo-container">
+            <a href="../../general/landing.html"
+              ><img src="/img/Logo.svg" alt="LiftED Logo"
+            /></a>
+          </div>
+          <nav aria-label="Hauptnavigation">
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="../training_plan.html"
+                  class="nav-link"
+                  id="nav-training"
+                  aria-haspopup="true"
+                  >Training</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Training Menü"
+                  aria-labelledby="nav-training"
+                >
+                  <li><a href="planselector.html">Trainingsplan</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../../meals/meal.html"
+                  class="nav-link"
+                  id="nav-meals"
+                  aria-haspopup="true"
+                  >Meals</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="Meals Menü"
+                  aria-labelledby="nav-meals"
+                >
+                  <li>
+                    <a href="../../meals/meal.html#fettverlust">Fettverlust</a>
+                  </li>
+                  <li>
+                    <a href="../../meals/meal.html#body-recomp">Body Recomp</a>
+                  </li>
+                  <li>
+                    <a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="../../learning/learning.html"
+                  class="nav-link"
+                  id="nav-learning"
+                  aria-haspopup="true"
+                  >E-Learning</a
+                >
+                <ul
+                  class="nav-submenu"
+                  aria-label="E-Learning Menü"
+                  aria-labelledby="nav-learning"
+                >
+                  <li>
+                    <a href="../../learning/modules/selector.html">Lernübersicht</a>
+                  </li>
+                  <li>
+                    <a href="../../learning/modules/mathe.html">Mathematik</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <a href="../../general/sofunktionierts.html" class="header-cta"
+            >Mehr erfahren</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="page-dim" aria-hidden="true"></div>
+    <main class="page-plan-selector" id="main-content" tabindex="-1">
+      <div class="container">
+        <!-- HERO -->
+        <section class="planselector-hero">
+          <h1 class="planselector-title glow-title">
+            Welcher Trainingsplan passt zu dir?
+          </h1>
+          <p class="planselector-intro">
+            Wähle den Plan, der am besten zu deinem
+            <span class="text-accent">Alltag</span>, deiner
+            <span class="text-accent">Erfahrung</span> und deinem
+            <span class="text-accent">Ziel</span> passt. Du kannst später
+            jederzeit wechseln, ohne komplett neu zu starten.
+          </p>
+        </section>
+        <!-- KARTEN -->
+        <section class="planselector-grid">
+          <div class="planselector-cards">
+            <!-- FB-Plan -->
+            <a class="plan-card" href="fb.html">
+              <div class="plan-card-header">
+                <div class="plan-card-badge">Einsteiger &amp; Busy-Week</div>
+                <h2 class="plan-card-title">Ganzkörper-Plan (Full Body)</h2>
+                <p class="plan-card-subtitle">
+                  2–3 Einheiten pro Woche – perfekt, wenn du wenig Zeit hast.
+                </p>
+              </div>
+              <p class="plan-card-text">
+                Du trainierst in jeder Einheit den ganzen Körper mit ein paar
+                <span class="text-accent">Grundübungen</span>. Ideal, wenn du
+                neu im Gym bist oder deine Woche regelmäßig voll ist. Du
+                bekommst Struktur, ohne dich jeden Tag umplanen zu müssen.
+              </p>
+            </a>
+            <!-- Upper/Lower -->
+            <a class="plan-card" href="ul.html">
+              <div class="plan-card-header">
+                <div class="plan-card-badge">3–4x pro Woche</div>
+                <h2 class="plan-card-title">
+                  Ober-/Unterkörper-Plan (Upper/Lower)
+                </h2>
+                <p class="plan-card-subtitle">
+                  Mehr Volumen für Muskelaufbau bei trotzdem klarer Struktur.
+                </p>
+              </div>
+              <p class="plan-card-text">
+                Du teilst deine Einheiten in
+                <span class="text-accent">Oberkörper</span> und
+                <span class="text-accent">Unterkörper</span> auf. Dadurch kannst
+                du wichtige Übungen häufiger einbauen, ohne ewig im Gym zu
+                stehen. Perfekt, wenn du schon etwas Erfahrung hast.
+              </p>
+            </a>
+            <!-- PPL -->
+            <a class="plan-card" href="ppl.html">
+              <div class="plan-card-header">
+                <div class="plan-card-badge">Fortgeschritten</div>
+                <h2 class="plan-card-title">Push/Pull/Legs (PPL)</h2>
+                <p class="plan-card-subtitle">
+                  4–6 Einheiten pro Woche für maximalen Fokus pro Muskelgruppe.
+                </p>
+              </div>
+              <p class="plan-card-text">
+                Du trainierst <span class="text-accent">Drücken (Push)</span>,
+                <span class="text-accent">Ziehen (Pull)</span> und
+                <span class="text-accent">Beine</span> jeweils in eigenen
+                Einheiten. Dieser Plan ist sinnvoll, wenn du gerne öfter im Gym
+                bist und schon sicher mit Technik und Belastung umgehen kannst.
+              </p>
+            </a>
+          </div>
+        </section>
+        <!-- INFOS -->
+        <section class="planselector-info">
+          <ul class="planselector-hints">
+            <li>
+              <strong>Starte lieber einfacher</strong> und steigere später, als
+              direkt mit dem komplexesten Plan zu beginnen.
+            </li>
+            <li>
+              <strong>Dein Alltag entscheidet</strong>: Wenn du oft Termine,
+              Schule, Arbeit oder Verein hast, ist Full Body oder Upper/Lower
+              meist entspannter.
+            </li>
+            <li>
+              <strong>Planwechsel ist kein Rückschritt</strong> – du passt
+              deinen Plan nur an deine aktuelle Situation an.
+            </li>
+          </ul>
+        </section>
+        <div class="tp-back-bottom-wrapper">
+          <a href="../training_plan.html" class="tp-back-bottom"
+            >← Zurück zur Trainingsübersicht</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>LiftED ist ein Schülerprojekt.</p>
+    </footer>
+  </body>
+</html>
