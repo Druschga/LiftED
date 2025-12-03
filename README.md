@@ -1,8 +1,8 @@
 # LiftED
 
-LiftED ist eine Projektwebseite in der wir Körperlichen als auch geistigen Fortschritt kombinieren wollen. Das Ziel ist es, Komilitonen, die keine Zeit haben sich Stundenlang in die Trainingslehre 
-einzulesen und neben her noch zu studieren, eine Möglichkeit zu bieten beide Elemente mit einander zu verbinden. Einerseits stellen wir Trainings- und Essenspläne bereits. Andererseits bieten wir
-Inhalt für das erste Semester aus dem Wirtschaftsinformatik Studium.
+LiftED ist eine Projektwebseite in der wir Körperlichen als auch geistigen Fortschritt kombinieren wollen. Das Ziel ist es, Komilitonen, die keine Zeit haben sich stundenlang in die Trainingslehre 
+einzulesen und neben her noch zu studieren, eine Möglichkeit zu bieten beide Elemente mit einander zu verbinden. Einerseits stellen wir Trainings- und Essenspläne bereit. Andererseits bieten wir Lern-
+Inhalte für das erste Semester aus dem Wirtschaftsinformatik Studium.
 
 ## Features
 - ansprechende Landing page - schneller Überblick über die Webseite
