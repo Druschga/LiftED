@@ -1,23 +1,37 @@
 <!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mathematik – E-Learning</title>
-    <link rel="stylesheet" href="../../../assets/css/styles.css"/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
+        <title>LiftED – Mathematik Modul</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    </head>
+    <body class="theme-learning">
+        <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+        <header class="main-header" role="banner">
+            <div class="header-content">
+                <div class="header-left">
                     <div class="logo-container">
                         <a href="../../general/landing.html"
-                            ><img src="/img/Logo.svg" alt="LiftED Logo"
+                            ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
                         /></a>
                     </div>
-                    <nav aria-label="Hauptnavigation">
+                    <nav aria-label="Hauptnavigation" role="navigation">
                         <ul>
                             <li class="has-submenu">
                                 <a
                                     href="../../training/training_plan.html"
                                     class="nav-link"
                                     id="nav-training"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Training</a
                                 >
                                 <ul
@@ -25,15 +39,6 @@
                                     aria-label="Training Menü"
                                     aria-labelledby="nav-training"
                                 >
-                                    <li>
-                                        <a href="../../training/training_plan.html">Trainingshub</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../training/muskel.html">Muskelgruppen</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../training/uebung.html">Übungsdatenbank</a>
-                                    </li>
                                     <li>
                                         <a href="../../training/plans/planselector.html">Plan-Selector</a>
                                     </li>
@@ -53,7 +58,7 @@
                                     href="../../meals/meal.html"
                                     class="nav-link"
                                     id="nav-meals"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Meals</a
                                 >
                                 <ul
@@ -62,37 +67,19 @@
                                     aria-labelledby="nav-meals"
                                 >
                                     <li>
-                                        <a href="../../meals/meal.html">Meals Hub</a>
-                                    </li>
-                                    <li>
                                         <a href="../../meals/meal.html#meal-kategorien">Rezeptkategorien</a>
                                     </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#fettverlust">Fettverlust</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#body-recomp">Body Recomp</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
-                                    </li>
-                                </ul>
+                                    <li><a href="../../meals/meal.html#fettverlust">Fettverlust</a></li>
+                                    <li><a href="../../meals/meal.html#body-recomp">Body Recomp</a></li>
+                                    <li><a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a></li>
+                                    </ul>
                             </li>
                             <li class="has-submenu">
                                 <a
                                     href="../learning.html"
                                     class="nav-link"
                                     id="nav-learning"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >E-Learning</a
                                 >
                                 <ul
@@ -100,21 +87,10 @@
                                     aria-label="E-Learning Menü"
                                     aria-labelledby="nav-learning"
                                 >
-                                    <li>
-                                        <a href="../learning.html">E-Learning Hub</a>
-                                    </li>
-                                    <li>
-                                        <a href="selector.html">Lernübersicht</a>
-                                    </li>
-                                    <li>
-                                        <a href="mathe.html">Mathematik</a>
-                                    </li>
-                                    <li>
-                                        <a href="programmierung.html">Programmierung</a>
-                                    </li>
-                                    <li>
-                                        <a href="rechnungslegung.html">Rechnungslegung</a>
-                                    </li>
+                                    <li><a href="selector.html">Lernübersicht</a></li>
+                                    <li><a href="mathe.html">Mathematik</a></li>
+                                    <li><a href="programmierung.html">Programmierung</a></li>
+                                    <li><a href="rechnungslegung.html">Rechnungslegung</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
@@ -122,7 +98,7 @@
                                     href="../../general/landing.html"
                                     class="nav-link"
                                     id="nav-about"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Über LiftED</a
                                 >
                                 <ul
@@ -130,12 +106,7 @@
                                     aria-label="Über LiftED Menü"
                                     aria-labelledby="nav-about"
                                 >
-                                    <li>
-                                        <a href="../../general/landing.html">Landing</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../general/service.html">Service</a>
-                                    </li>
+                                    <li><a href="../../general/service.html">Service</a></li>
                                     <li>
                                         <a href="../../general/sofunktionierts.html"
                                             >So funktioniert's</a
@@ -145,125 +116,207 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="header-actions">
+                    <a href="../../general/sofunktionierts.html" class="header-cta"
+                        >Mehr erfahren</a>
+                </div>
+            </div>
+        </header>
+        <div class="page-dim" aria-hidden="true"></div>
 
-            <h3>Beispiel: Summe der ersten n Zahlen</h3>
-            <pre>
-1️⃣ + 2️⃣ + ... + n = n(n+1️⃣)/2
-            </pre>
-            <p>Mit Induktion beweist man, dass diese Formel für alle n ≥ 1️⃣ gilt.</p>
+        <main class="learning-page" id="main-content" tabindex="-1">
+            <section class="learning-hero">
+                <div class="learning-hero-content">
+                    <p class="learning-hero-kicker">E-Learning Modul</p>
+                    <h1 class="learning-hero-title">Mathematik</h1>
+                    <p class="learning-hero-text">
+                        Konzentrierte Einheiten zu Induktion, Matrizen und Grenzwerten –
+                        perfekt für Lern-Sprints zwischen deinen Workouts.
+                    </p>
+                    <div class="learning-hero-actions">
+                        <a href="selector.html" class="btn-link">Zur Lernübersicht</a>
+                    </div>
+                    <div class="learning-meta">
+                        <div class="learning-meta-grid">
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Schwerpunkte</span>
+                                <span class="learning-meta-value">Induktion · Matrizen · Limits</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Sessions</span>
+                                <span class="learning-meta-value">20–30 Minuten Fokus</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Level</span>
+                                <span class="learning-meta-value">Einsteiger bis Fortgeschritten</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Format</span>
+                                <span class="learning-meta-value">Theorie · Beispiele · Übungen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <h3>Tipps</h3>
-            <ul>
-                <li>Immer den Induktionsanfang sorgfältig prüfen.</li>
-                <li>Induktionsannahme exakt formulieren.</li>
-                <li>Den Induktionsschritt logisch sauber herleiten.</li>
-            </ul>
+            <section class="learning-section">
+                <header class="learning-section-header">
+                    <p class="section-kicker">Kernkonzepte</p>
+                    <h2 class="section-heading">Fundamente für jede Prüfung</h2>
+                    <p class="section-text">
+                        Jede Karte fasst die wichtigsten Ideen, Formeln und Tipps zusammen
+                        – inklusive kurzer Beispiele, die du direkt nachvollziehen kannst.
+                    </p>
+                </header>
+                <div class="learning-module-grid">
+                    <article class="learning-topic-card">
+                        <h2>Vollständige Induktion</h2>
+                        <p>
+                            Der Klassiker für Beweise über natürliche Zahlen: Induktions-
+                            anfang, Annahme und Schritt funktionieren wie ein Dominoeffekt.
+                        </p>
+                        <h3>Beispiel</h3>
+                        <pre>1 + 2 + … + n = n(n + 1) / 2</pre>
+                        <p>Zeige: Wenn es für n gilt, dann auch für n + 1.</p>
+                        <h3>Tipps</h3>
+                        <ul>
+                            <li>Anfang exakt prüfen (n = 1 oder n = 0).</li>
+                            <li>Annahme sauber formulieren – inklusive Ziel.</li>
+                            <li>Im Schritt konsequent auf die Annahme zurückgreifen.</li>
+                        </ul>
+                    </article>
+
+                    <article class="learning-topic-card">
+                        <h2>Matrizen &amp; Lineare Algebra</h2>
+                        <p>
+                            Matrizen bilden lineare Gleichungssysteme, Transformationen und
+                            Daten kompakt ab.
+                        </p>
+                        <h3>Grundbegriffe</h3>
+                        <ul>
+                            <li><strong>Dimension:</strong> Zeilen × Spalten, z. B. 2×3.</li>
+                            <li><strong>Quadratisch:</strong> Gleiche Anzahl Zeilen/Spalten.</li>
+                            <li><strong>Diagonal:</strong> Nur Diagonalelemente ≠ 0.</li>
+                        </ul>
+                        <h3>Beispiel</h3>
+                        <pre>
+A = |1 2 3|
+        |4 5 6|
+        |7 8 9|
+                        </pre>
+                        <h3>Operationen</h3>
+                        <ul>
+                            <li>Addition &amp; Skalarmultiplikation</li>
+                            <li>Matrixprodukt (Zeilen × Spalten)</li>
+                            <li>Determinante &amp; Inverse prüfen Invertierbarkeit</li>
+                        </ul>
+                    </article>
+
+                    <article class="learning-topic-card">
+                        <h2>Grenzwerte &amp; Limes</h2>
+                        <p>
+                            Beschreibt das Verhalten einer Funktion, wenn x gegen einen Wert
+                            oder ∞ läuft – Grundlage der Analysis.
+                        </p>
+                        <pre>
+f(x) = (x² - 1) / (x - 1)
+lim x→1 f(x) = 2
+                        </pre>
+                        <pre>
+f(x) = sin(x) / x
+lim x→0 f(x) = 1
+                        </pre>
+                        <pre>
+f(x) = 1 / x
+lim x→∞ f(x) = 0
+                        </pre>
+                        <ul>
+                            <li>Faktorisieren oder kürzen, bevor du einsetzt.</li>
+                            <li>Bei 0/0 Grenzwertregeln nutzen.</li>
+                            <li>Divergenz erkennen, wenn kein endlicher Wert existiert.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <header class="learning-section-header">
+                    <p class="section-kicker">Übungen</p>
+                    <h2 class="section-heading">Direkt anwenden</h2>
+                    <p class="section-text">
+                        Nutze die Aufgaben als kurze Lern-Sets. Ergebnis kontrollieren,
+                        fertig – ohne großes Skript.
+                    </p>
+                </header>
+                <div class="learning-module-grid">
+                    <article class="learning-topic-card">
+                        <h3>Induktion</h3>
+                        <pre>
+Zeige per Induktion:
+2 + 4 + … + 2n = n(n + 1)
+1 + 3 + … + (2n - 1) = n²
+                        </pre>
+                        <p>Bonus: Formuliere eine eigene Aussage und prüfe sie.</p>
+                    </article>
+                    <article class="learning-topic-card">
+                        <h3>Matrizen</h3>
+                        <pre>
+A = |1 2|
+        |3 4|
+
+B = |5 6|
+        |7 8|
+                        </pre>
+                        <ul>
+                            <li>Berechne A + B</li>
+                            <li>Berechne A · B</li>
+                            <li>Determinante von A</li>
+                            <li>Transponiere B</li>
+                        </ul>
+                    </article>
+                    <article class="learning-topic-card">
+                        <h3>Grenzwerte</h3>
+                        <pre>
+1) lim x→0 (sin x / x)
+2) lim x→∞ (1 + 1/x)^x
+3) lim x→2 ((x² - 4) / (x - 2))
+                        </pre>
+                        <p>Überprüfe dein Ergebnis durch Einsetzen oder Plotten.</p>
+                    </article>
+                </div>
+            </section>
+
+            <div class="tp-back-bottom-wrapper">
+                <a href="selector.html" class="tp-back-bottom"
+                    >← Zurück zur Lernübersicht</a
+                >
+            </div>
+        </main>
+
+        <footer class="footer" role="contentinfo" aria-label="Seitenende">
+      <div class="footer-grid">
+        <div>
+          <p><strong>LiftED</strong></p>
+          <p>Fitness- & Lernplattform aus dem 1. Semester Wirtschaftsinformatik.</p>
         </div>
-
-        <div class="benefits-card">
-            <h2 class="about-highlight-badge">Matrizen</h2>
-            <p>Matrizen sind rechteckige Anordnungen von Zahlen, Symbolen oder Funktionen in Zeilen und Spalten. Sie werden in Mathematik, Informatik und Physik eingesetzt, z. B. zur Darstellung von linearen Gleichungssystemen, Transformationen oder zur Datenorganisation.</p>
-
-            <h3>Grundbegriffe</h3>
-            <ul>
-                <li><strong>Dimensionen:</strong> Anzahl der Zeilen und Spalten, z. B. 2x3-Matrix.</li>
-                <li><strong>Einträge:</strong> Die einzelnen Elemente der Matrix, z. B. a<sub>11</sub>, a<sub>12</sub> …</li>
-                <li><strong>Quadratische Matrix:</strong> Gleiche Anzahl an Zeilen und Spalten.</li>
-                <li><strong>Diagonalmatrix:</strong> Nur die Diagonaleinträge ungleich null, alle anderen = 0.</li>
-            </ul>
-
-            <h3>Beispiel</h3>
-            <pre>
-A = | 1️⃣ 2️⃣ 3️⃣ |
-    | 4️⃣ 5️⃣ 6️⃣ |
-    | 7️⃣ 8️⃣ 9️⃣ |
-            </pre>
-
-            <h3>Operationen</h3>
-            <ul>
-                <li>Addition: Elementweise Addition gleich großer Matrizen.</li>
-                <li>Skalarmultiplikation: Jede Komponente wird mit einer Zahl multipliziert.</li>
-                <li>Multiplikation: Zeilen der ersten Matrix × Spalten der zweiten Matrix (Anzahl Spalten erste = Zeilen zweite).</li>
-                <li>Determinante: Prüft z. B. die Invertierbarkeit (nur quadratisch).</li>
-                <li>Inverse: A⁻¹, sodass A * A⁻¹ = I (Einheitsmatrix).</li>
-                <li>Transponieren: Zeilen und Spalten vertauschen → A<sup>T</sup>.</li>
-            </ul>
+        <div>
+          <p><strong>Bereiche</strong></p>
+          <ul>
+            <li><a href="../../training/training_plan.html">Training</a></li>
+            <li><a href="../../meals/meal.html">Meals</a></li>
+            <li><a href="../../learning/learning.html">E-Learning</a></li>
+          </ul>
         </div>
-
-        <div class="benefits-card">
-            <h2 class="about-highlight-badge">Limes</h2>
-            <p>Der Limes beschreibt das Verhalten einer Funktion, wenn die Eingabe einem bestimmten Wert, 0 oder ∞ näher kommt. Er ist zentral in der Analysis und bei der Berechnung von Ableitungen.</p>
-
-            <h3>Limes gegen einen Wert</h3>
-            <pre>
-f(x) = (x² - 1️⃣)/(x - 1️⃣)
-lim x→1️⃣ f(x) = 2️⃣
-            </pre>
-
-            <h3>Limes gegen 0</h3>
-            <pre>
-f(x) = sin(x)/x
-lim x→0️⃣ f(x) = 1️⃣
-            </pre>
-
-            <h3>Limes gegen ∞</h3>
-            <pre>
-f(x) = 1️⃣/x
-lim x→∞ f(x) = 0️⃣
-            </pre>
-
-            <h3>Hinweise</h3>
-            <ul>
-                <li>Wenn der Limes existiert, nähert sich die Funktion einem festen Wert.</li>
-                <li>Bei unendlichen Grenzwerten spricht man von Divergenz.</li>
-                <li>Oft hilfreich: Faktorisieren, kürzen oder bekannte Grenzwertregeln anwenden.</li>
-            </ul>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <ul>
+            <li><a href="mailto:team@lifted-campus.de">team@lifted-campus.de</a></li>
+            <li><a href="../../general/service.html">Hilfe &amp; FAQ</a></li>
+          </ul>
         </div>
-
-        <div class="benefits-card">
-            <h2 class="about-highlight-badge">Übungsaufgaben</h2>
-            <h3>Vollständige Induktion</h3>
-            <p><br>Beweise durch vollständige Induktion, dass folgende Aussage gilt:</p>
-            <pre>2️⃣ + 4️⃣ + 6️⃣ + ... + 2️⃣n = n(n + 1️⃣)
-1️⃣ + 3️⃣ + 5️⃣ + ... + (2️⃣n - 1️⃣) = n²</pre>
-            <h3>Matrizen</h3>
-            <p>Gegeben sind die Matrizen:</p>
-            <pre>
-A = | 1️⃣ 2️⃣ |
-    | 3️⃣ 4️⃣ |
-
-B = | 5️⃣ 6️⃣ |
-    | 7️⃣ 8️⃣ |
-</pre>
-            <p>Aufgaben:</p>
-            <pre>
-1️⃣ Berechne die Summe A + B
-2️⃣ Berechne das Produkt A * B
-3️⃣ Bestimme die Determinante von A
-4️⃣ Transponiere die Matrix B (B^T)
-</pre>
-            <h3>Limes</h3>
-            <p>Berechne den Grenzwert der folgenden Funktionen:</p>
-            <pre>
-1️⃣ lim x→0️⃣ (sin(x) / x)
-2️⃣ lim x→∞ (1️⃣ + 1️⃣/x)^x
-3️⃣ lim x→2️⃣ ((x² - 4️⃣) / (x - 2️⃣))
-</pre>
-
-        </div>
-
-    </div>
-
-    <div class="tp-back-bottom-wrapper">
-        <a href="selector.html" class="tp-back-bottom"
-        >← Zurück zur Lernübersicht</a>
-    </div>
-
-</main>
-
-<footer class="footer">
-    <p>LiftED ist ein Schülerprojekt.</p>
-</footer>
-
-</body>
+      </div>
+      <p class="footer-note">LiftED ist ein Schülerprojekt ohne kommerzielle Absicht.</p>
+    </footer>
+    </body>
 </html>

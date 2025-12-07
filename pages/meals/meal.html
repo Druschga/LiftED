@@ -2,8 +2,16 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="LiftED Meals liefert schnelle, studierendenfreundliche Rezepte für Fettverlust, Body Recomp und Muskelaufbau."
+    />
+    <meta name="theme-color" content="#e85a5a" />
     <title>LiftED – Meals</title>
+    <link rel="icon" href="../../img/Logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,22 +23,22 @@
   <body class="theme-meals">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
       <div class="header-content">
         <div class="header-left">
           <div class="logo-container">
             <a href="../general/landing.html">
-              <img src="/img/Logo.svg" alt="LiftED Logo" />
+              <img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite" />
             </a>
           </div>
-          <nav aria-label="Hauptnavigation">
+          <nav aria-label="Hauptnavigation" role="navigation">
             <ul>
               <li class="has-submenu">
                 <a
                   href="../training/training_plan.html"
                   class="nav-link"
                   id="nav-training"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Training</a
                 >
                 <ul
@@ -38,15 +46,6 @@
                   aria-label="Training Menü"
                   aria-labelledby="nav-training"
                 >
-                  <li>
-                    <a href="../training/training_plan.html">Trainingshub</a>
-                  </li>
-                  <li>
-                    <a href="../training/muskel.html">Muskelgruppen</a>
-                  </li>
-                  <li>
-                    <a href="../training/uebung.html">Übungsdatenbank</a>
-                  </li>
                   <li>
                     <a href="../training/plans/planselector.html">Plan-Selector</a>
                   </li>
@@ -66,7 +65,7 @@
                   href="meal.html"
                   class="nav-link"
                   id="nav-meals"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Meals</a
                 >
                 <ul
@@ -74,30 +73,20 @@
                   aria-label="Meals Menü"
                   aria-labelledby="nav-meals"
                 >
-                  <li><a href="meal.html">Meals Hub</a></li>
                   <li>
                     <a href="meal.html#meal-kategorien">Rezeptkategorien</a>
                   </li>
                   <li><a href="meal.html#fettverlust">Fettverlust</a></li>
                   <li><a href="meal.html#body-recomp">Body Recomp</a></li>
                   <li><a href="meal.html#muskelaufbau">Muskelaufbau</a></li>
-                  <li>
-                    <a href="recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
-                  </li>
-                  <li>
-                    <a href="recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
-                  </li>
-                  <li>
-                    <a href="recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
-                  </li>
-                </ul>
+                  </ul>
               </li>
               <li class="has-submenu">
                 <a
                   href="../learning/learning.html"
                   class="nav-link"
                   id="nav-learning"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >E-Learning</a
                 >
                 <ul
@@ -105,9 +94,6 @@
                   aria-label="E-Learning Menü"
                   aria-labelledby="nav-learning"
                 >
-                  <li>
-                    <a href="../learning/learning.html">E-Learning Hub</a>
-                  </li>
                   <li>
                     <a href="../learning/modules/selector.html">Lernübersicht</a>
                   </li>
@@ -131,7 +117,7 @@
                   href="../general/landing.html"
                   class="nav-link"
                   id="nav-about"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Über LiftED</a
                 >
                 <ul
@@ -139,9 +125,6 @@
                   aria-label="Über LiftED Menü"
                   aria-labelledby="nav-about"
                 >
-                  <li>
-                    <a href="../general/landing.html">Landing</a>
-                  </li>
                   <li>
                     <a href="../general/service.html">Service</a>
                   </li>
@@ -165,42 +148,37 @@
 
     <div class="page-dim" aria-hidden="true"></div>
 
-    <main id="main-content" tabindex="-1">
+    <main id="main-content" class="meals-page" tabindex="-1">
 
       <!-- Hero / Einführung -->
       <section class="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">Meals &amp; Ernährung</h1>
         <p>
-          Essen, das dein Training unterstützt. Wähle ein Ziel – wir zeigen dir
-          passende, alltagstaugliche Rezepte mit klaren Nährwerten,
-          einfachen Zutaten und realistischen Portionsgrößen.
+          Schnelle Rezepte mit klaren Nährwerten. Wähle dein Ziel und finde passende Gerichte.
         </p>
       </section>
 
-      <!-- Info-Section -->
-      <section class="info-section">
-        <h2 class="section-heading">Wie funktionieren die Meals?</h2>
-        <p class="section-text">
-          Alle Rezepte sind so aufgebaut, dass du sie ohne großen Aufwand
-          in deinen Alltag integrieren kannst. Fokus: satt werden,
-          gute Makros, schnell gemacht.
-        </p>
-
-        <div class="card-grid">
-          <div class="info-card">
+      <!-- Quick Info -->
+      <div class="meals-quick-info">
+        <div class="info-card">
+          <div>
             <h3>🎯 Zielorientiert</h3>
-            <p>Wähle dein Ziel: Fettverlust, Body Recomp oder Muskelaufbau.</p>
-          </div>
-          <div class="info-card">
-            <h3>🍽️ Einfache Zutaten</h3>
-            <p>Alle Rezepte basieren auf Lebensmitteln, die überall erhältlich sind.</p>
-          </div>
-          <div class="info-card">
-            <h3>⏱️ Schnell zubereitet</h3>
-            <p>Geringer Aufwand, klare Grammangaben, direkt umsetzbar.</p>
+            <p>Fettverlust, Recomp oder Aufbau</p>
           </div>
         </div>
-      </section>
+        <div class="info-card">
+          <div>
+            <h3>🍽️ Einfach</h3>
+            <p>Zutaten aus jedem Supermarkt</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div>
+            <h3>⏱️ Schnell</h3>
+            <p>15–30 Min Zubereitung</p>
+          </div>
+        </div>
+      </div>
 
       <!-- Meal Kategorien -->
       <section
@@ -338,8 +316,29 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <p>LiftED ist ein Schülerprojekt.</p>
+    <footer class="footer" role="contentinfo" aria-label="Seitenende">
+      <div class="footer-grid">
+        <div>
+          <p><strong>LiftED</strong></p>
+          <p>Fitness- & Lernplattform aus dem 1. Semester Wirtschaftsinformatik.</p>
+        </div>
+        <div>
+          <p><strong>Bereiche</strong></p>
+          <ul>
+            <li><a href="../training/training_plan.html">Training</a></li>
+            <li><a href="../meals/meal.html">Meals</a></li>
+            <li><a href="../learning/learning.html">E-Learning</a></li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <ul>
+            <li><a href="mailto:team@lifted-campus.de">team@lifted-campus.de</a></li>
+            <li><a href="../general/service.html">Hilfe &amp; FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">LiftED ist ein Schülerprojekt ohne kommerzielle Absicht.</p>
     </footer>
   </body>
 </html>

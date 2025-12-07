@@ -2,7 +2,9 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
     <title>LiftED - Trainingspläne</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,30 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
   <link rel="stylesheet" href="../../../assets/css/styles.css" />
   </head>
   <body class="theme-training">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-    <header class="main-header">
+    <header class="main-header" role="banner">
       <div class="header-content">
         <div class="header-left">
           <div class="logo-container">
             <a href="../../general/landing.html"
-              ><img src="/img/Logo.svg" alt="LiftED Logo"
+              ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
             /></a>
           </div>
-          <nav aria-label="Hauptnavigation">
+          <nav aria-label="Hauptnavigation" role="navigation">
             <ul>
               <li class="has-submenu">
                 <a
                   href="../../training/training_plan.html"
                   class="nav-link"
                   id="nav-training"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Training</a
                 >
                 <ul
@@ -41,15 +39,6 @@
                   aria-label="Training Menü"
                   aria-labelledby="nav-training"
                 >
-                  <li>
-                    <a href="../../training/training_plan.html">Trainingshub</a>
-                  </li>
-                  <li>
-                    <a href="../../training/muskel.html">Muskelgruppen</a>
-                  </li>
-                  <li>
-                    <a href="../../training/uebung.html">Übungsdatenbank</a>
-                  </li>
                   <li>
                     <a href="../../training/plans/planselector.html">Plan-Selector</a>
                   </li>
@@ -69,7 +58,7 @@
                   href="../../meals/meal.html"
                   class="nav-link"
                   id="nav-meals"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Meals</a
                 >
                 <ul
@@ -77,9 +66,6 @@
                   aria-label="Meals Menü"
                   aria-labelledby="nav-meals"
                 >
-                  <li>
-                    <a href="../../meals/meal.html">Meals Hub</a>
-                  </li>
                   <li>
                     <a href="../../meals/meal.html#meal-kategorien">Rezeptkategorien</a>
                   </li>
@@ -92,23 +78,14 @@
                   <li>
                     <a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a>
                   </li>
-                  <li>
-                    <a href="../../meals/recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
-                  </li>
-                  <li>
-                    <a href="../../meals/recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
-                  </li>
-                  <li>
-                    <a href="../../meals/recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
-                  </li>
-                </ul>
+                  </ul>
               </li>
               <li class="has-submenu">
                 <a
                   href="../../learning/learning.html"
                   class="nav-link"
                   id="nav-learning"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >E-Learning</a
                 >
                 <ul
@@ -116,9 +93,6 @@
                   aria-label="E-Learning Menü"
                   aria-labelledby="nav-learning"
                 >
-                  <li>
-                    <a href="../../learning/learning.html">E-Learning Hub</a>
-                  </li>
                   <li>
                     <a href="../../learning/modules/selector.html">Lernübersicht</a>
                   </li>
@@ -142,7 +116,7 @@
                   href="../../general/landing.html"
                   class="nav-link"
                   id="nav-about"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Über LiftED</a
                 >
                 <ul
@@ -150,9 +124,6 @@
                   aria-label="Über LiftED Menü"
                   aria-labelledby="nav-about"
                 >
-                  <li>
-                    <a href="../../general/landing.html">Landing</a>
-                  </li>
                   <li>
                     <a href="../../general/service.html">Service</a>
                   </li>
@@ -271,8 +242,29 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <p>LiftED ist ein Schülerprojekt.</p>
+    <footer class="footer" role="contentinfo" aria-label="Seitenende">
+      <div class="footer-grid">
+        <div>
+          <p><strong>LiftED</strong></p>
+          <p>Fitness- & Lernplattform aus dem 1. Semester Wirtschaftsinformatik.</p>
+        </div>
+        <div>
+          <p><strong>Bereiche</strong></p>
+          <ul>
+            <li><a href="../../training/training_plan.html">Training</a></li>
+            <li><a href="../../meals/meal.html">Meals</a></li>
+            <li><a href="../../learning/learning.html">E-Learning</a></li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <ul>
+            <li><a href="mailto:team@lifted-campus.de">team@lifted-campus.de</a></li>
+            <li><a href="../../general/service.html">Hilfe &amp; FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">LiftED ist ein Schülerprojekt ohne kommerzielle Absicht.</p>
     </footer>
   </body>
 </html>

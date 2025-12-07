@@ -1,23 +1,37 @@
 <!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Rechnungslegung – E-Learning</title>
-    <link rel="stylesheet" href="../../../assets/css/styles.css"/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
+        <title>LiftED – Rechnungslegung Modul</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    </head>
+    <body class="theme-learning">
+        <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
+        <header class="main-header" role="banner">
+            <div class="header-content">
+                <div class="header-left">
                     <div class="logo-container">
                         <a href="../../general/landing.html"
-                            ><img src="/img/Logo.svg" alt="LiftED Logo"
+                            ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
                         /></a>
                     </div>
-                    <nav aria-label="Hauptnavigation">
+                    <nav aria-label="Hauptnavigation" role="navigation">
                         <ul>
                             <li class="has-submenu">
                                 <a
                                     href="../../training/training_plan.html"
                                     class="nav-link"
                                     id="nav-training"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Training</a
                                 >
                                 <ul
@@ -25,15 +39,6 @@
                                     aria-label="Training Menü"
                                     aria-labelledby="nav-training"
                                 >
-                                    <li>
-                                        <a href="../../training/training_plan.html">Trainingshub</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../training/muskel.html">Muskelgruppen</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../training/uebung.html">Übungsdatenbank</a>
-                                    </li>
                                     <li>
                                         <a href="../../training/plans/planselector.html">Plan-Selector</a>
                                     </li>
@@ -53,7 +58,7 @@
                                     href="../../meals/meal.html"
                                     class="nav-link"
                                     id="nav-meals"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Meals</a
                                 >
                                 <ul
@@ -62,37 +67,19 @@
                                     aria-labelledby="nav-meals"
                                 >
                                     <li>
-                                        <a href="../../meals/meal.html">Meals Hub</a>
-                                    </li>
-                                    <li>
                                         <a href="../../meals/meal.html#meal-kategorien">Rezeptkategorien</a>
                                     </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#fettverlust">Fettverlust</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#body-recomp">Body Recomp</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../meals/recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
-                                    </li>
-                                </ul>
+                                    <li><a href="../../meals/meal.html#fettverlust">Fettverlust</a></li>
+                                    <li><a href="../../meals/meal.html#body-recomp">Body Recomp</a></li>
+                                    <li><a href="../../meals/meal.html#muskelaufbau">Muskelaufbau</a></li>
+                                    </ul>
                             </li>
                             <li class="has-submenu">
                                 <a
                                     href="../learning.html"
                                     class="nav-link"
                                     id="nav-learning"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >E-Learning</a
                                 >
                                 <ul
@@ -100,21 +87,10 @@
                                     aria-label="E-Learning Menü"
                                     aria-labelledby="nav-learning"
                                 >
-                                    <li>
-                                        <a href="../learning.html">E-Learning Hub</a>
-                                    </li>
-                                    <li>
-                                        <a href="selector.html">Lernübersicht</a>
-                                    </li>
-                                    <li>
-                                        <a href="mathe.html">Mathematik</a>
-                                    </li>
-                                    <li>
-                                        <a href="programmierung.html">Programmierung</a>
-                                    </li>
-                                    <li>
-                                        <a href="rechnungslegung.html">Rechnungslegung</a>
-                                    </li>
+                                    <li><a href="selector.html">Lernübersicht</a></li>
+                                    <li><a href="mathe.html">Mathematik</a></li>
+                                    <li><a href="programmierung.html">Programmierung</a></li>
+                                    <li><a href="rechnungslegung.html">Rechnungslegung</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
@@ -122,7 +98,7 @@
                                     href="../../general/landing.html"
                                     class="nav-link"
                                     id="nav-about"
-                                    aria-haspopup="true"
+                                    aria-haspopup="true" aria-expanded="false"
                                     >Über LiftED</a
                                 >
                                 <ul
@@ -130,12 +106,7 @@
                                     aria-label="Über LiftED Menü"
                                     aria-labelledby="nav-about"
                                 >
-                                    <li>
-                                        <a href="../../general/landing.html">Landing</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../general/service.html">Service</a>
-                                    </li>
+                                    <li><a href="../../general/service.html">Service</a></li>
                                     <li>
                                         <a href="../../general/sofunktionierts.html"
                                             >So funktioniert's</a
@@ -145,88 +116,189 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="header-actions">
+                    <a href="../../general/sofunktionierts.html" class="header-cta"
+                        >Mehr erfahren</a>
+                </div>
+            </div>
+        </header>
+        <div class="page-dim" aria-hidden="true"></div>
 
-            <h3>Typische Buchungssätze</h3>
-            <ul>
-                <li>Kasse 100€ an Umsatzerlöse 100€</li>
-                <li>Bank 500€ an Forderungen 500€</li>
-            </ul>
+        <main class="learning-page" id="main-content" tabindex="-1">
+            <section class="learning-hero">
+                <div class="learning-hero-content">
+                    <p class="learning-hero-kicker">E-Learning Modul</p>
+                    <h1 class="learning-hero-title">Rechnungslegung</h1>
+                    <p class="learning-hero-text">
+                        Buchführung, Kostenrechnung und Kennzahlen kompakt – damit du
+                        Wirtschaftlichkeit und Reporting jederzeit im Griff hast.
+                    </p>
+                    <div class="learning-hero-actions">
+                        <a href="selector.html" class="btn-link">Zur Lernübersicht</a>
+                    </div>
+                    <div class="learning-meta">
+                        <div class="learning-meta-grid">
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Schwerpunkte</span>
+                                <span class="learning-meta-value">Fibu · KLR · Kennzahlen</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Einsatz</span>
+                                <span class="learning-meta-value">Prüfung · Praxis · Projekte</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Format</span>
+                                <span class="learning-meta-value">Cheatsheets &amp; Formeln</span>
+                            </div>
+                            <div class="learning-meta-item">
+                                <span class="learning-meta-label">Zeitbedarf</span>
+                                <span class="learning-meta-value">15–25 Min pro Kapitel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <h3>Kontenarten</h3>
-            <ul>
-                <li>🟦 <strong>Aktivkonten:</strong> nehmen im Soll zu</li>
-                <li>🟥 <strong>Passivkonten:</strong> nehmen im Haben zu</li>
-                <li>🟩 <strong>Aufwandskonten:</strong> nehmen im soll zu</li>
-                <li>🟪 <strong>Ertragskonten:</strong> nehmen im haben zu</li>
-            </ul>
+            <section class="learning-section">
+                <header class="learning-section-header">
+                    <p class="section-kicker">Grundlagen</p>
+                    <h2 class="section-heading">Finanzbuchführung verstehen</h2>
+                    <p class="section-text">
+                        Mit den wichtigsten Buchungssätzen, Kontenarten und Zielen der Fibu
+                        baust du eine saubere Dokumentation auf.
+                    </p>
+                </header>
+                <div class="learning-module-grid">
+                    <article class="learning-topic-card">
+                        <h2>Finanzbuchführung Basics</h2>
+                        <h3>Typische Buchungssätze</h3>
+                        <ul>
+                            <li>Kasse 100 € an Umsatzerlöse 100 €</li>
+                            <li>Bank 500 € an Forderungen 500 €</li>
+                        </ul>
+                        <h3>Kontenarten</h3>
+                        <ul>
+                            <li>🟦 Aktivkonten: nehmen im Soll zu</li>
+                            <li>🟥 Passivkonten: nehmen im Haben zu</li>
+                            <li>🟩 Aufwandskonten: Aufwand im Soll</li>
+                            <li>🟪 Ertragskonten: Ertrag im Haben</li>
+                        </ul>
+                        <h3>Ziele der Fibu</h3>
+                        <ul>
+                            <li>Dokumentation für Finanzamt &amp; Banken</li>
+                            <li>Rechenschaft gegenüber Eigentümern</li>
+                            <li>Ermittlung des steuerlichen Gewinns</li>
+                        </ul>
+                    </article>
 
-            <h3>Ziele der Fibu</h3>
-            <ul>
-                <li>Externe Dokumentation für Finanzamt & Banken.</li>
-                <li>Rechenschaft gegenüber Eigentümern.</li>
-                <li>Steuerliche Ermittlung des Gewinns.</li>
-            </ul>
-        </div>
-
-        <div class="benefits-card">
-            <h2 class="about-highlight-badge">Kosten- & Leistungsrechnung</h2>
-            <p>Die KLR analysiert die Wirtschaftlichkeit eines Unternehmens. Sie zeigt, welche Produkte oder Bereiche Gewinn erwirtschaften oder Verluste erzeugen.</p>
-
-            <h3>Grundbegriffe</h3>
-            <ul>
-                <li>💸 <strong>Kosten:</strong> Bewerteter Güterverbrauch für die betriebliche Leistungserstellung.</li>
-                <li>📦 <strong>Leistungen:</strong> Wert der erstellten Produkte/Dienstleistungen.</li>
-                <li>📊 <strong>Erfolg:</strong> Leistungen – Kosten.</li>
-            </ul>
-
-            <h3>Kostenartenrechnung</h3>
-            <ul>
-                <li>Materialkosten 🧱</li>
-                <li>Personalkosten 👥</li>
-                <li>Kapitalkosten (Abschreibungen) 🏭</li>
-                <li>Fremdleistungen 🔧</li>
-            </ul>
-
-            <h3>Kostenstellenrechnung</h3>
-            <p>Ordnet Kosten Bereichen zu, z. B.:</p>
-            <ul>
-                <li>📍 Verwaltung</li>
-                <li>📍 Produktion</li>
-                <li>📍 Vertrieb</li>
-            </ul>
-
-            <h3>Kostenträgerrechnung</h3>
-            <p>Ermittelt die Kosten der einzelnen Produkte oder Dienstleistungen.</p>
-
-            <pre>
-Selbstkosten = Einzelkosten + Gemeinkosten
+                    <article class="learning-topic-card">
+                        <h2>Kosten- &amp; Leistungsrechnung</h2>
+                        <p>Zeigt, welche Produkte Gewinn oder Verlust erzeugen.</p>
+                        <h3>Grundbegriffe</h3>
+                        <ul>
+                            <li>💸 Kosten = bewerteter Güterverbrauch</li>
+                            <li>📦 Leistungen = Wert der erzeugten Güter</li>
+                            <li>📊 Erfolg = Leistungen – Kosten</li>
+                        </ul>
+                        <h3>Kostenarten</h3>
+                        <ul>
+                            <li>Material · Personal · Kapital · Fremdleistungen</li>
+                        </ul>
+                        <h3>Kostenstellen</h3>
+                        <p>Verwaltung · Produktion · Vertrieb</p>
+                        <h3>Kostenträger</h3>
+                        <pre>
+Selbstkosten = Einzel + Gemeinkosten
 Stückkosten = Gesamtkosten / Menge
-            </pre>
+                        </pre>
+                    </article>
 
-            <h3>Deckungsbeitrag</h3>
-            <pre>
-Deckungsbeitrag = Verkaufspreis – variable Kosten
-            </pre>
+                    <article class="learning-topic-card">
+                        <h2>Deckungsbeitrag &amp; Kennzahlen</h2>
+                        <pre>Deckungsbeitrag = Verkaufspreis – variable Kosten</pre>
+                        <ul>
+                            <li>Fixe Kosten bleiben konstant.</li>
+                            <li>Variable Kosten steigen mit der Menge.</li>
+                            <li>Positiver DB → Produkt trägt zur Kostendeckung bei.</li>
+                        </ul>
+                        <h3>Praxisnotiz</h3>
+                        <p>
+                            Nutze DB, um Produkte zu priorisieren und Break-even-Punkte zu
+                            bestimmen.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-            <ul>
-                <li>💡 Fixe Kosten bleiben unverändert.</li>
-                <li>📉 Variable Kosten steigen mit der Menge.</li>
-                <li>📈 Positiver DB → Produkt trägt zur Kostendeckung bei.</li>
-            </ul>
+            <section class="learning-section">
+                <header class="learning-section-header">
+                    <p class="section-kicker">Praxis</p>
+                    <h2 class="section-heading">Mini-Aufgaben</h2>
+                    <p class="section-text">
+                        Nimm dir 10 Minuten und führe die folgenden Checks durch.
+                    </p>
+                </header>
+                <div class="learning-module-grid">
+                    <article class="learning-topic-card">
+                        <h3>Buchungssätze üben</h3>
+                        <ul>
+                            <li>Warenverkauf auf Ziel (Brutto, 19 %)</li>
+                            <li>Begleichung einer Lieferantenrechnung per Bank</li>
+                            <li>Privateinlage in bar</li>
+                        </ul>
+                    </article>
+                    <article class="learning-topic-card">
+                        <h3>KLR-Check</h3>
+                        <pre>
+Material 20 €
+Lohn 15 €
+Fixe Kosten 10 €
+Preis 50 €
+→ DB? → Gewinn?
+                        </pre>
+                    </article>
+                    <article class="learning-topic-card">
+                        <h3>Kennzahlen</h3>
+                        <ul>
+                            <li>Eigenkapitalquote = EK / GK</li>
+                            <li>Liquidität 1. Grades = liquide Mittel / kurzfristige Verbindlichkeiten</li>
+                            <li>ROI = Gewinn / eingesetztes Kapital</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <div class="tp-back-bottom-wrapper">
+                <a href="selector.html" class="tp-back-bottom"
+                    >← Zurück zur Lernübersicht</a
+                >
+            </div>
+        </main>
+
+        <footer class="footer" role="contentinfo" aria-label="Seitenende">
+      <div class="footer-grid">
+        <div>
+          <p><strong>LiftED</strong></p>
+          <p>Fitness- & Lernplattform aus dem 1. Semester Wirtschaftsinformatik.</p>
         </div>
-
-    </div>
-
-    <div class="tp-back-bottom-wrapper">
-        <a href="selector.html" class="tp-back-bottom"
-        >← Zurück zur Lernübersicht</a>
-    </div>
-
-</main>
-
-<footer class="footer">
-    <p>LiftED ist ein Schülerprojekt.</p>
-</footer>
-
-</body>
+        <div>
+          <p><strong>Bereiche</strong></p>
+          <ul>
+            <li><a href="../../training/training_plan.html">Training</a></li>
+            <li><a href="../../meals/meal.html">Meals</a></li>
+            <li><a href="../../learning/learning.html">E-Learning</a></li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <ul>
+            <li><a href="mailto:team@lifted-campus.de">team@lifted-campus.de</a></li>
+            <li><a href="../../general/service.html">Hilfe &amp; FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">LiftED ist ein Schülerprojekt ohne kommerzielle Absicht.</p>
+    </footer>
+    </body>
 </html>

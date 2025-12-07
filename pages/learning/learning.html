@@ -2,7 +2,9 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
     <title>LiftED – E-Learning</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,22 +16,22 @@
   </head>
   <body class="theme-learning">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
-    <header class="main-header">
+    <header class="main-header" role="banner">
       <div class="header-content">
         <div class="header-left">
           <div class="logo-container">
             <a href="../general/landing.html"
-              ><img src="/img/Logo.svg" alt="LiftED Logo"
+              ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
             /></a>
           </div>
-          <nav aria-label="Hauptnavigation">
+          <nav aria-label="Hauptnavigation" role="navigation">
             <ul>
               <li class="has-submenu">
                 <a
                   href="../training/training_plan.html"
                   class="nav-link"
                   id="nav-training"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Training</a
                 >
                 <ul
@@ -37,15 +39,6 @@
                   aria-label="Training Menü"
                   aria-labelledby="nav-training"
                 >
-                  <li>
-                    <a href="../training/training_plan.html">Trainingshub</a>
-                  </li>
-                  <li>
-                    <a href="../training/muskel.html">Muskelgruppen</a>
-                  </li>
-                  <li>
-                    <a href="../training/uebung.html">Übungsdatenbank</a>
-                  </li>
                   <li>
                     <a href="../training/plans/planselector.html">Plan-Selector</a>
                   </li>
@@ -65,7 +58,7 @@
                   href="../meals/meal.html"
                   class="nav-link"
                   id="nav-meals"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Meals</a
                 >
                 <ul
@@ -73,9 +66,6 @@
                   aria-label="Meals Menü"
                   aria-labelledby="nav-meals"
                 >
-                  <li>
-                    <a href="../meals/meal.html">Meals Hub</a>
-                  </li>
                   <li>
                     <a href="../meals/meal.html#meal-kategorien">Rezeptkategorien</a>
                   </li>
@@ -88,23 +78,14 @@
                   <li>
                     <a href="../meals/meal.html#muskelaufbau">Muskelaufbau</a>
                   </li>
-                  <li>
-                    <a href="../meals/recipes/greek_chicken_bowl.html">Greek Chicken Bowl</a>
-                  </li>
-                  <li>
-                    <a href="../meals/recipes/protein_pasta_bowl.html">Protein Pasta Bowl</a>
-                  </li>
-                  <li>
-                    <a href="../meals/recipes/salmon_quinoa_bowl.html">Lachs-Quinoa-Bowl</a>
-                  </li>
-                </ul>
+                  </ul>
               </li>
               <li class="has-submenu">
                 <a
                   href="learning.html"
                   class="nav-link"
                   id="nav-learning"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >E-Learning</a
                 >
                 <ul
@@ -112,9 +93,6 @@
                   aria-label="E-Learning Menü"
                   aria-labelledby="nav-learning"
                 >
-                  <li>
-                    <a href="learning.html">E-Learning Hub</a>
-                  </li>
                   <li>
                     <a href="modules/selector.html">Lernübersicht</a>
                   </li>
@@ -134,7 +112,7 @@
                   href="../general/landing.html"
                   class="nav-link"
                   id="nav-about"
-                  aria-haspopup="true"
+                  aria-haspopup="true" aria-expanded="false"
                   >Über LiftED</a
                 >
                 <ul
@@ -142,9 +120,6 @@
                   aria-label="Über LiftED Menü"
                   aria-labelledby="nav-about"
                 >
-                  <li>
-                    <a href="../general/landing.html">Landing</a>
-                  </li>
                   <li>
                     <a href="../general/service.html">Service</a>
                   </li>
@@ -167,39 +142,146 @@
     </header>
     <div class="page-dim" aria-hidden="true"></div>
 
-    <main id="main-content" tabindex="-1">
-      <header>
-        <h1>E-Learning</h1>
-        <p>Wachse nicht nur körperlich, sondern auch geistig – mit LiftED.</p>
-      </header>
-
-      <section>
-        <h2>Lernen während der Regeneration</h2>
-        <p>
-          Nutze deine Trainingspausen sinnvoll: Unsere Lernmodule passen sich
-          deinem Rhythmus an und bieten Inhalte, die deinen Fokus fördern.
-        </p>
+    <main class="learning-page" id="main-content" tabindex="-1">
+      <section class="learning-hero">
+        <div class="learning-hero-content">
+          <p class="learning-hero-kicker">E-Learning</p>
+          <h1 class="learning-hero-title">
+            Wissen, das dein Training langfristig ergänzt
+          </h1>
+          <p class="learning-hero-text">
+            Wachse nicht nur körperlich, sondern auch geistig: LiftED bündelt
+            kompakte Lernmodule für Mathe, Programmierung und Rechnungslegung –
+            perfekt für konzentrierte Sessions zwischen deinen Workouts.
+          </p>
+          <div class="learning-hero-actions">
+            <a href="modules/selector.html" class="btn btn-primary"
+              >Module entdecken</a
+            >
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Intelligente Lernempfehlungen</h2>
-        <p>
-          LiftED analysiert dein Lernverhalten und schlägt dir gezielte Themen
-          vor, um dein Wissen kontinuierlich zu erweitern.
-        </p>
+      <section class="learning-section">
+        <header class="learning-section-header">
+          <p class="section-kicker">So nutzt du Lernpausen</p>
+          <h2 class="section-heading">Regeneration &amp; Fokus verbinden</h2>
+          <p class="section-text">
+            Jedes Modul lässt sich in kleine Blöcke aufteilen. So kannst du
+            Inhalte genau dann abrufen, wenn dein Körper regeneriert und dein
+            Kopf trotzdem Input möchte.
+          </p>
+        </header>
+        <div class="learning-info-grid">
+          <article class="learning-info-card">
+            <h3>Lernen während der Regeneration</h3>
+            <p>
+              Nutze Pausen sinnvoll: flexible Sessions passen sich an deinen
+              Alltag an und helfen dir, mental präsent zu bleiben.
+            </p>
+          </article>
+          <article class="learning-info-card">
+            <h3>Intelligente Empfehlungen</h3>
+            <p>
+              LiftED merkt sich deine Themen und schlägt dir den passenden
+              nächsten Schritt vor – ohne langes Suchen.
+            </p>
+          </article>
+          <article class="learning-info-card">
+            <h3>Gamified Learning</h3>
+            <p>
+              Sammle Fortschritt und setze dir klare Lernziele, damit dein
+              Mindset gemeinsam mit deinem Körper wächst.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Gamified Learning</h2>
-        <p>
-          Motivation durch Fortschritt: Sammle Punkte, schalte neue Levels frei
-          und beobachte, wie sich dein Mindset mit deinem Körper entwickelt.
-        </p>
+      <section class="learning-section">
+        <header class="learning-section-header">
+          <p class="section-kicker">Module</p>
+          <h2 class="section-heading">Wähle dein Fachgebiet</h2>
+          <p class="section-text">
+            Starte mit einem klaren Schwerpunkt oder springe direkt zu deiner
+            nächsten Challenge. Alle Module sind aufeinander abgestimmt und
+            kombinierbar.
+          </p>
+        </header>
+        <div class="feature-list">
+          <a href="modules/mathe.html" class="feature-card block--learning">
+            <div class="feature-icon">📘</div>
+            <h3 class="feature-title">Mathematik</h3>
+            <p class="feature-copy">
+              Analysis, Algebra, Statistik – komprimiert und verständlich.
+            </p>
+            <ul>
+              <li>Vollständige Induktion</li>
+              <li>Matrizen &amp; Lineare Algebra</li>
+              <li>Grenzwerte und Limits</li>
+            </ul>
+            <span class="feature-link">Direkt öffnen</span>
+          </a>
+
+          <a
+            href="modules/programmierung.html"
+            class="feature-card block--learning"
+          >
+            <div class="feature-icon">💻</div>
+            <h3 class="feature-title">Programmierung</h3>
+            <p class="feature-copy">
+              Python, OOP und Datenbanken mit praktischen Snippets.
+            </p>
+            <ul>
+              <li>Grundlagen &amp; Syntax</li>
+              <li>Objektorientiertes Denken</li>
+              <li>SQL &amp; Datenmodellierung</li>
+            </ul>
+            <span class="feature-link">Direkt öffnen</span>
+          </a>
+
+          <a
+            href="modules/rechnungslegung.html"
+            class="feature-card block--learning"
+          >
+            <div class="feature-icon">📊</div>
+            <h3 class="feature-title">Rechnungslegung</h3>
+            <p class="feature-copy">
+              Finanzbuchführung, Kostenrechnung und Kennzahlen kompakt.
+            </p>
+            <ul>
+              <li>Buchungssätze &amp; Konten</li>
+              <li>Kosten- &amp; Leistungsrechnung</li>
+              <li>Deckungsbeitrag &amp; Analysen</li>
+            </ul>
+            <span class="feature-link">Direkt öffnen</span>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>LiftED ist ein Schülerprojekt.</p>
+    <footer class="footer" role="contentinfo" aria-label="Seitenende">
+      <div class="footer-grid">
+        <div>
+          <p><strong>LiftED</strong></p>
+          <p>Fitness- & Lernplattform aus dem 1. Semester Wirtschaftsinformatik.</p>
+        </div>
+        <div>
+          <p><strong>Bereiche</strong></p>
+          <ul>
+            <li><a href="../training/training_plan.html">Training</a></li>
+            <li><a href="../meals/meal.html">Meals</a></li>
+            <li><a href="../learning/learning.html">E-Learning</a></li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <ul>
+            <li><a href="mailto:team@lifted-campus.de">team@lifted-campus.de</a></li>
+            <li><a href="../general/service.html">Hilfe &amp; FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">LiftED ist ein Schülerprojekt ohne kommerzielle Absicht.</p>
     </footer>
   </body>
 </html>
