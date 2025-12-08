@@ -46,20 +46,18 @@ root/
 │       └── training_plan.html   # ggf. allgemeine Übersichts-/Detailseite
 └── README.md
 
-Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
-
 ## Barierefreiheit
+Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
 - Skip-Link für Screenreader
 - ausreichende Kontraste
 - ARIA-Labels für Navigationsmenüs
 - Fokuszustände sichtbar
 - semantische HTML-Struktur
-- 
-## Komponenten
-- wiederverwendbare Strukturen (header.html/footer.html)
-- Nutzung von WebP-Bildern für schnellere Ladezeiten
-- Einsatz kleiner GIFs für leichte Animationen 
 
+## Komponenten
+- Nutzung von WebP-Bildern für schnellere Ladezeiten
+- Einsatz kleiner GIFs für leichte Animationen
+- wiederverwendbare Strukturen (header.html/footer.html)
 Diese Dateien werden in jede Seite integriert und enthalten Navigation, Logo und Barrierefreiheits-Elemente wie Skip-Links. 
 
 ## Bekannte Einschränkungen
