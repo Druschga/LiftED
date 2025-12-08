@@ -59,7 +59,9 @@ Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
 Das Projekt nutzt wiederverwendbare Strukturen wie:
 
 - `components/header.html`  
-- `components/footer.html`  
+- `components/footer.html`
+- Nutzung von WebP-Bildern für schnellere Ladezeiten
+- Einsatz kleiner GIFs für leichte Animationen 
 
 Diese Dateien werden in jede Seite integriert und enthalten Navigation, Logo und Barrierefreiheits-Elemente wie Skip-Links. 
 
