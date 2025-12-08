@@ -55,6 +55,7 @@ Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
 - semantische HTML-Struktur
 
 ## Komponenten
+- Nutzung von Vektorgrafik für Logo -> für besseres Skaling
 - Nutzung von WebP-Bildern für schnellere Ladezeiten
 - Einsatz kleiner GIFs für leichte Animationen
 - wiederverwendbare Strukturen (header.html/footer.html)
