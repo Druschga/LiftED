@@ -14,37 +14,34 @@ Inhalte für das erste Semester aus dem Wirtschaftsinformatik Studium.
 - zentrales globales Stylesheet
 
 ## Projektstruktur
-root
+root/
 ├── assets/
-│ └──css/
-│ │ └──styles.css
+│   └── css/
+│       └── styles.css
 ├── components/
-│ └──header.html
+│   └── header.html
 ├── img/
-│ └── blocks/
-│ │ └── README.md
-│ └── meals/
-│ │ └── *.html                # mehrere meals
-│ └── logos*.webp
-├── muscle/
-│ └── *body/
-│ │ └── muscle*/              # 2 Unterordner
-│ │ │ └── machines*.html      # Erklärungsseiten für die verschiedenen Maschinen
-│ │ │ └── muscle.html
-│ │ │ └── muscle.gif
+│   ├── blocks/
+│   │   └── README.md
+│   ├── meals/
+│   │   └── *.(png|jpg|webp)             # Bilder zu einzelnen Gerichten
+│   └── logos/
+│       └── *.webp                       # Bilder wie Logo etc.
 ├── pages/
-│└── general/
-│ │ └── *.html                # landingpage etc
-│ └── learning/
-│ │ └── learning.html
-│ │ └── modules/
-│ │ │ └── modules*.html      # Die Lermodula
-│ └── meals/
-│ │ └── meals.html
-│ │ └── recepies/
-│ │ │ └── recepes*.html      # Verschiedene Rezepte
-│ └── training/
-│ │ └── plans/
-│ │ │ └── plans*.html        # 3 verschiedene Trainingspläne
-│ │ └── training_plan-html
-│ │ └── uebungen.html
+│   ├── general/
+│   │   └── landing.html
+│   │   └── service.html
+│   │   └── sofunktionierts.html
+│   ├── learning/
+│   │   ├── learning.html
+│   │   └── modules/
+│   │       └── module-*.html            # einzelne Lernmodule
+│   ├── meals/
+│   │   ├── meals.html           
+│   │   └── recipes/             
+│   │       └── recipe-*.html            # einzelne Rezeptseiten
+│   └── training/
+│       ├── plans/
+│       │   └── plan-*.html      # z. B. plan1.html, plan2.html ...
+│       ├── training_plan.html   # ggf. allgemeine Übersichts-/Detailseite
+└── README.md
