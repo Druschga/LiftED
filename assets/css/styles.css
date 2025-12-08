@@ -2294,20 +2294,22 @@ nav a:hover::after {
     font-weight: 800;
 }
 
-.has-submenu:hover .nav-submenu,
-.has-submenu:focus-within .nav-submenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translate(-50%, 0);
-}
+@media (min-width: 1101px) {
+    .has-submenu:hover .nav-submenu,
+    .has-submenu:focus-within .nav-submenu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+    }
 
-nav:hover .has-submenu:not(:hover) .nav-submenu {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateX(-50%) translateY(-8px);
-    transition-delay: 0s;
+    nav:hover .has-submenu:not(:hover) .nav-submenu {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(-8px);
+        transition-delay: 0s;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -2493,6 +2495,10 @@ nav:hover .has-submenu:not(:hover) .nav-submenu {
     
     .nav-submenu a {
         font-size: 0.78rem;
+    }
+
+    .header-cta {
+        display: none;
     }
 }
 
