@@ -29,7 +29,7 @@ root/
 │       └── *.webp                       # Bilder wie Logo etc.
 ├── pages/
 │   ├── general/
-│   │   └── landing.html
+│   │   └── index.html
 │   │   └── service.html
 │   │   └── sofunktionierts.html
 │   ├── learning/
