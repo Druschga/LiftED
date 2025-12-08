@@ -25,7 +25,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="theme-general">
+  <body class="theme-general page-landing">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt springen</a>
     <header class="main-header" role="banner">
       <div class="header-content">
@@ -35,6 +35,10 @@
               ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
             /></a>
           </div>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Navigation umschalten" />
+          <label class="nav-toggle" for="nav-toggle" aria-label="Navigation umschalten">
+            <span></span><span></span><span></span>
+          </label>
           <nav aria-label="Hauptnavigation" role="navigation">
             <ul role="menubar">
               <li class="has-submenu" role="none">
@@ -167,7 +171,7 @@
         </div>
       </div>
     </header>
-    <div class="page-dim" aria-hidden="true"></div>
+    <label class="page-dim" for="nav-toggle" aria-hidden="true"></label>
 
     <main id="main-content" tabindex="-1">
       <section class="hero-section" aria-labelledby="hero-title">
@@ -535,4 +539,3 @@
     </footer>
   </body>
 </html>
-

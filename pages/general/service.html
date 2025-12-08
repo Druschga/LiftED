@@ -27,6 +27,10 @@
               ><img src="/img/Logo.svg" alt="LiftED Logo - Zur Startseite"
             /></a>
           </div>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Navigation umschalten" />
+          <label class="nav-toggle" for="nav-toggle" aria-label="Navigation umschalten">
+            <span></span><span></span><span></span>
+          </label>
           <nav aria-label="Hauptnavigation" role="navigation">
             <ul>
               <li class="has-submenu">
@@ -147,7 +151,7 @@
         </div>
       </div>
     </header>
-    <div class="page-dim" aria-hidden="true"></div>
+    <label class="page-dim" for="nav-toggle" aria-hidden="true"></label>
 
     <main id="main-content" class="service-page" tabindex="-1">
       <section class="service-hero">
