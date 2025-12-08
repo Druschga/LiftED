@@ -56,10 +56,7 @@ Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
 - semantische HTML-Struktur
 - 
 ## Komponenten
-Das Projekt nutzt wiederverwendbare Strukturen wie:
-
-- `components/header.html`  
-- `components/footer.html`
+- wiederverwendbare Strukturen (header.html/footer.html)
 - Nutzung von WebP-Bildern für schnellere Ladezeiten
 - Einsatz kleiner GIFs für leichte Animationen 
 
