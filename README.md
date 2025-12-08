@@ -48,6 +48,7 @@ root/
 
 Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
 
+## Barierefreiheit
 - Skip-Link für Screenreader
 - ausreichende Kontraste
 - ARIA-Labels für Navigationsmenüs
