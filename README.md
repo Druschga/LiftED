@@ -43,5 +43,8 @@ root/
 │   └── training/
 │       ├── plans/
 │       │   └── plan-*.html      # z. B. plan1.html, plan2.html ...
-│       ├── training_plan.html   # ggf. allgemeine Übersichts-/Detailseite
+│       └── training_plan.html   # ggf. allgemeine Übersichts-/Detailseite
 └── README.md
+
+## Barrierefreiheit
+-> AA in teilem AAA
