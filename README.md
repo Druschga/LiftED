@@ -46,5 +46,28 @@ root/
 │       └── training_plan.html   # ggf. allgemeine Übersichts-/Detailseite
 └── README.md
 
-## Barrierefreiheit
--> AA in teilem AAA
+Wir orientieren uns an WCAG 2.1 AA in teilen AAA:
+
+- Skip-Link für Screenreader
+- ausreichende Kontraste
+- ARIA-Labels für Navigationsmenüs
+- Fokuszustände sichtbar
+- semantische HTML-Struktur
+- 
+## Komponenten
+Das Projekt nutzt wiederverwendbare Strukturen wie:
+
+- `components/header.html`  
+- `components/footer.html`  
+
+Diese Dateien werden in jede Seite integriert und enthalten Navigation, Logo und Barrierefreiheits-Elemente wie Skip-Links. 
+
+## Bekannte Einschränkungen
+- Videos & hochauflösende Bilder können Ladezeit beeinflussen
+- Noch keine serverseitige Logik
+
+## To-Do / Weiterentwicklung
+- Benutzeraccounts + Login
+- Fortschrittsanalyse (Tracking)
+- Dynamische Rezeptfilter & Trainingsplan-Generator
+- Search-Funktion
