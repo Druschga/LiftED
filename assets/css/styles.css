@@ -1181,7 +1181,7 @@ body.theme-learning {
             #ffffff 100%
         ),
             linear-gradient(120deg, rgba(2, 6, 23, 0.6), rgba(11, 18, 32, 0.1)),
-            url("/img/training-plan-hero.png");
+            url("/img/training-plan-hero.webp");
     background-size: 100% 100%, 100% 100%, cover;
     background-position: center top;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -2665,7 +2665,7 @@ main > header:first-child h1:first-child {
     padding: 4rem 2rem;
     background: 
         linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.7) 100%),
-        url('../../img/image.png');
+        url('../../img/image.webp');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -5751,3 +5751,4 @@ a[href^="tel:"]::before {
 .learning-page .learning-hero {
     margin-top: 1.2rem;
 }
+
