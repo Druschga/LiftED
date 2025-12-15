@@ -188,7 +188,7 @@
         <h2 class="section-heading">Wähle dein Ziel</h2>
 
         <!-- Fettverlust -->
-        <details class="acc-item" open id="fettverlust">
+        <details class="acc-item" id="fettverlust">
           <summary>
             <span class="acc-title">🔥 Fettverlust</span>
             <span class="chev">▶</span>
@@ -230,7 +230,7 @@
         </details>
 
         <!-- Body Recomp -->
-        <details class="acc-item" id="body-recomp" open>
+        <details class="acc-item" id="body-recomp">
           <summary>
             <span class="acc-title">⚖️ Body Recomp</span>
             <span class="chev">▶</span>
@@ -272,7 +272,7 @@
         </details>
 
         <!-- Muskelaufbau -->
-        <details class="acc-item" id="muskelaufbau" open>
+        <details class="acc-item" id="muskelaufbau">
           <summary>
             <span class="acc-title">💪 Muskelaufbau</span>
             <span class="chev">▶</span>
@@ -315,6 +315,21 @@
       </section>
     </main>
 
+    <script>
+      const openDetailsFromHash = () => {
+        const hashId = window.location.hash?.slice(1);
+        if (!hashId) return;
+
+        const target = document.getElementById(hashId);
+        if (target?.tagName !== "DETAILS") return;
+
+        target.open = true;
+      };
+
+      window.addEventListener("hashchange", openDetailsFromHash);
+      openDetailsFromHash();
+    </script>
+
     <footer class="footer" role="contentinfo" aria-label="Seitenende">
       <div class="footer-grid">
         <div>
@@ -341,4 +356,3 @@
     </footer>
   </body>
 </html>
-
